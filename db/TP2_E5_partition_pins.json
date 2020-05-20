@@ -1,0 +1,225 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Lo_Hi_Reg",
+					"strict" : false
+				},
+				{
+					"name" : "K_Reg",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Instruction[10]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

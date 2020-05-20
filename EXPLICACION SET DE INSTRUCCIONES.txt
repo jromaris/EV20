@@ -90,25 +90,45 @@ No es necesario porque lo incluye la otra instrucción (MOV POi,Rj)
 
 +0 0 1 1 1 1 1  1F                1 i 0 0 0 0 0 MOV POi,W Move Working Register to Output Port I POi = W
 
-//0 0 0 1 0 0 k                  k k k k k k k MOK W,#K Move Constant to Working Register W = K
+//0 0 0 1 0 0 k                  k k k k k k k MOKL W,#K Move Constant to Working Register W = K
 
 +0 0 0 1 0 0 0  08
 +0 0 0 1 0 0 1  09
 
-//0 0 0 1 0 1 k                  k k k k k k k ANK W,#K AND Constant with Working Register W= W & K
+//0 0 0 1 0 1 k                  k k k k k k k ANKL W,#K AND Constant with Working Register W= W & K
 
 +0 0 0 1 0 1 0  0A
 +0 0 0 1 0 1 1  0B
 
-//0 0 0 1 1 0 k                  k k k k k k k ORK W,#K OR Constant with Working Register W= W OR K
+//0 0 0 1 1 0 k                  k k k k k k k ORKL W,#K OR Constant with Working Register W= W OR K
 
 +0 0 0 1 1 0 0  0C
 +0 0 0 1 1 0 1  0D
 
-//0 0 0 1 1 1 k                  k k k k k k k ADK W,#K ADD with Carry Constant with Working Register W= W + K + CY
+//0 0 0 1 1 1 k                  k k k k k k k ADKL W,#K ADD with Carry Constant with Working Register W= W + K + CY
 
 +0 0 0 1 1 1 0  0E
 +0 0 0 1 1 1 1  0F
+
+//1 0 0 1 0 0 k                  k k k k k k k MOKH W,#K Move Constant to Working Register W = K
+
++1 0 0 1 0 0 0  48
++1 0 0 1 0 0 1  49
+
+//1 0 0 1 0 1 k                  k k k k k k k ANKH W,#K AND Constant with Working Register W= W & K
+
++1 0 0 1 0 1 0  4A
++1 0 0 1 0 1 1  4B
+
+//1 0 0 1 1 0 k                  k k k k k k k ORKH W,#K OR Constant with Working Register W= W OR K
+
++1 0 0 1 1 0 0  4C
++1 0 0 1 1 0 1  4D
+
+//1 0 0 1 1 1 k                  k k k k k k k ADKH W,#K ADD with Carry Constant with Working Register W= W + K + CY
+
++1 0 0 1 1 1 0  4E
++1 0 0 1 1 1 1  4F
 
 +0 0 0 0 1 0 0  04                0 0 j j j j j MOV W,Rj Move Register J to Working Register W= Rj
 

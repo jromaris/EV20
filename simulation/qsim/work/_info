@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim
+vTP2_E5
+Z1 !s110 1589919212
+!i10b 1
+!s100 zM]O[e99P^Q7BOgXl;a6O3
+IE71B0S_:9QQdh:nijXDa82
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1589919211
+8TP2_E5.vo
+FTP2_E5.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1589919212.000000
+!s107 TP2_E5.vo|
+!s90 -work|work|TP2_E5.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@t@p2_@e5
+vTP2_E5_vlg_vec_tst
+R1
+!i10b 1
+!s100 lHRXZzYR]gSWA@5_fFB8D0
+I>[PAj7SEE;kJ22>i[_0nE1
+R2
+R0
+w1589919208
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R5
+R6
+n@t@p2_@e5_vlg_vec_tst
