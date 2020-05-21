@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Tue May 19 17:11:31 2020
+Wed May 20 21:35:56 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -48,7 +48,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue May 19 17:11:31 2020       ;
+; Analysis & Synthesis Status        ; Successful - Wed May 20 21:35:56 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
@@ -186,7 +186,7 @@ refer to the applicable agreement for further details.
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_tca1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf                 ;         ;
-; MIR.mif                          ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Manuel/Documents/GitHub/EV20/MIR.mif                                ;         ;
+; mir.mif                          ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Manuel/Documents/GitHub/EV20/mir.mif                                ;         ;
 ; busmux.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
@@ -206,8 +206,8 @@ refer to the applicable agreement for further details.
 ; Total combinational functions               ; 7                     ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 1                     ;
-;     -- 3 input functions                    ; 6                     ;
-;     -- <=2 input functions                  ; 0                     ;
+;     -- 3 input functions                    ; 5                     ;
+;     -- <=2 input functions                  ; 1                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
 ;     -- normal mode                          ; 7                     ;
@@ -223,8 +223,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                     ;
 ;                                             ;                       ;
 ; Maximum fan-out node                        ; Instruction[13]~input ;
-; Maximum fan-out                             ; 31                    ;
-; Total fan-out                               ; 340                   ;
+; Maximum fan-out                             ; 30                    ;
+; Total fan-out                               ; 339                   ;
 ; Average fan-out                             ; 2.34                  ;
 +---------------------------------------------+-----------------------+
 
@@ -387,12 +387,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 55                          ;
 ; cycloneiii_lcell_comb ; 7                           ;
 ;     normal            ; 7                           ;
-;         3 data inputs ; 6                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 1                           ;
 ; cycloneiii_ram_block  ; 28                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.60                        ;
+; Average LUT depth     ; 0.66                        ;
 +-----------------------+-----------------------------+
 
 
@@ -411,7 +412,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 19 17:11:09 2020
+    Info: Processing started: Wed May 20 21:35:25 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -473,8 +474,8 @@ Info (21057): Implemented 90 device resources after synthesis - the final resour
     Info (21064): Implemented 28 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Tue May 19 17:11:31 2020
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Processing ended: Wed May 20 21:35:57 2020
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:43
 
 

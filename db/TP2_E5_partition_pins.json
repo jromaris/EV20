@@ -204,19 +204,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instruction[12]",
-					"strict" : false
-				},
-				{
 					"name" : "Instruction[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Clock",
+					"name" : "Instruction[12]",
 					"strict" : false
 				},
 				{
 					"name" : "Instruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
 					"strict" : false
 				}
 			]

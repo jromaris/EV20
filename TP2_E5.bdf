@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 312 248 504 264)
+	(rect 504 424 696 440)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
 	(text "Instruction [13 .. 0]" (rect 5 0 99 12)(font "Arial" ))
 	(pt 192 8)
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 336 264 504 280)
+	(rect 528 440 696 456)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Clock" (rect 5 0 33 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 336 280 504 296)
+	(rect 528 456 696 472)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Hold" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 248 960 264)
+	(rect 976 424 1152 440)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Lo_Hi_Reg" (rect 90 0 144 12)(font "Arial" ))
 	(pt 0 8)
@@ -85,7 +85,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 264 977 280)
+	(rect 976 440 1169 456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "A_Addr_Reg [9 .. 0]" (rect 90 0 187 12)(font "Arial" ))
 	(pt 0 8)
@@ -101,7 +101,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 280 963 296)
+	(rect 976 456 1155 472)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Type_Reg[6 .. 0]" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
@@ -117,7 +117,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 296 960 312)
+	(rect 976 472 1152 488)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "B_Reg[5.. 0]" (rect 90 0 152 12)(font "Arial" ))
 	(pt 0 8)
@@ -133,7 +133,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 312 962 328)
+	(rect 976 488 1154 504)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Mem_Reg[1 .. 0]" (rect 90 0 172 12)(font "Arial" ))
 	(pt 0 8)
@@ -149,7 +149,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 328 960 344)
+	(rect 976 504 1152 520)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "K_Reg" (rect 90 0 123 12)(font "Arial" ))
 	(pt 0 8)
@@ -165,7 +165,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 344 981 360)
+	(rect 976 520 1173 536)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ALU_SH_Reg[5 .. 0]" (rect 90 0 191 12)(font "Arial" ))
 	(pt 0 8)
@@ -181,7 +181,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 784 360 960 376)
+	(rect 976 536 1152 552)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "C_Reg[5 .. 0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 504 224 784 416)
+	(rect 696 400 976 592)
 	(text "Decode_Unit" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
 	(port
