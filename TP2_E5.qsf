@@ -60,4 +60,13 @@ set_global_assignment -name BDF_FILE 5B_to_6B.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name BDF_FILE Pre_Load_Block.bdf
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name BDF_FILE Carry_Block.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name BDF_FILE AND16.bdf
+set_global_assignment -name BDF_FILE ON_When_16_Zeros.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

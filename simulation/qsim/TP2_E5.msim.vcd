@@ -3,7 +3,7 @@ $comment
 		vcd file TP2_E5.msim.vcd -direction
 $end
 $date
-	Tue May 19 17:13:32 2020
+	Thu May 21 18:31:37 2020
 $end
 $version
 	ModelSim Version 10.5b
@@ -13,499 +13,88 @@ $timescale
 $end
 
 $scope module TP2_E5_vlg_vec_tst $end
-$var reg 1 ! Clock $end
-$var reg 1 " Hold $end
-$var reg 14 # Instruction [13:0] $end
-$var wire 1 $ A_Addr_Reg [9] $end
-$var wire 1 % A_Addr_Reg [8] $end
-$var wire 1 & A_Addr_Reg [7] $end
-$var wire 1 ' A_Addr_Reg [6] $end
-$var wire 1 ( A_Addr_Reg [5] $end
-$var wire 1 ) A_Addr_Reg [4] $end
-$var wire 1 * A_Addr_Reg [3] $end
-$var wire 1 + A_Addr_Reg [2] $end
-$var wire 1 , A_Addr_Reg [1] $end
-$var wire 1 - A_Addr_Reg [0] $end
-$var wire 1 . ALU_SH_Reg [5] $end
-$var wire 1 / ALU_SH_Reg [4] $end
-$var wire 1 0 ALU_SH_Reg [3] $end
-$var wire 1 1 ALU_SH_Reg [2] $end
-$var wire 1 2 ALU_SH_Reg [1] $end
-$var wire 1 3 ALU_SH_Reg [0] $end
-$var wire 1 4 B_Reg [5] $end
-$var wire 1 5 B_Reg [4] $end
-$var wire 1 6 B_Reg [3] $end
-$var wire 1 7 B_Reg [2] $end
-$var wire 1 8 B_Reg [1] $end
-$var wire 1 9 B_Reg [0] $end
-$var wire 1 : C_Reg [5] $end
-$var wire 1 ; C_Reg [4] $end
-$var wire 1 < C_Reg [3] $end
-$var wire 1 = C_Reg [2] $end
-$var wire 1 > C_Reg [1] $end
-$var wire 1 ? C_Reg [0] $end
-$var wire 1 @ K_Reg $end
-$var wire 1 A Lo_Hi_Reg $end
-$var wire 1 B Mem_Reg [1] $end
-$var wire 1 C Mem_Reg [0] $end
-$var wire 1 D Type_Reg [6] $end
-$var wire 1 E Type_Reg [5] $end
-$var wire 1 F Type_Reg [4] $end
-$var wire 1 G Type_Reg [3] $end
-$var wire 1 H Type_Reg [2] $end
-$var wire 1 I Type_Reg [1] $end
-$var wire 1 J Type_Reg [0] $end
+$var reg 1 ! CY $end
+$var reg 3 " Jmp_Bits [2:0] $end
+$var reg 16 # W [15:0] $end
+$var wire 1 $ PreLoad $end
 
 $scope module i1 $end
-$var wire 1 K gnd $end
-$var wire 1 L vcc $end
-$var wire 1 M unknown $end
-$var tri1 1 N devclrn $end
-$var tri1 1 O devpor $end
-$var tri1 1 P devoe $end
-$var wire 1 Q Hold~input_o $end
-$var wire 1 R Lo_Hi_Reg~output_o $end
-$var wire 1 S K_Reg~output_o $end
-$var wire 1 T A_Addr_Reg[9]~output_o $end
-$var wire 1 U A_Addr_Reg[8]~output_o $end
-$var wire 1 V A_Addr_Reg[7]~output_o $end
-$var wire 1 W A_Addr_Reg[6]~output_o $end
-$var wire 1 X A_Addr_Reg[5]~output_o $end
-$var wire 1 Y A_Addr_Reg[4]~output_o $end
-$var wire 1 Z A_Addr_Reg[3]~output_o $end
-$var wire 1 [ A_Addr_Reg[2]~output_o $end
-$var wire 1 \ A_Addr_Reg[1]~output_o $end
-$var wire 1 ] A_Addr_Reg[0]~output_o $end
-$var wire 1 ^ ALU_SH_Reg[5]~output_o $end
-$var wire 1 _ ALU_SH_Reg[4]~output_o $end
-$var wire 1 ` ALU_SH_Reg[3]~output_o $end
-$var wire 1 a ALU_SH_Reg[2]~output_o $end
-$var wire 1 b ALU_SH_Reg[1]~output_o $end
-$var wire 1 c ALU_SH_Reg[0]~output_o $end
-$var wire 1 d B_Reg[5]~output_o $end
-$var wire 1 e B_Reg[4]~output_o $end
-$var wire 1 f B_Reg[3]~output_o $end
-$var wire 1 g B_Reg[2]~output_o $end
-$var wire 1 h B_Reg[1]~output_o $end
-$var wire 1 i B_Reg[0]~output_o $end
-$var wire 1 j C_Reg[5]~output_o $end
-$var wire 1 k C_Reg[4]~output_o $end
-$var wire 1 l C_Reg[3]~output_o $end
-$var wire 1 m C_Reg[2]~output_o $end
-$var wire 1 n C_Reg[1]~output_o $end
-$var wire 1 o C_Reg[0]~output_o $end
-$var wire 1 p Mem_Reg[1]~output_o $end
-$var wire 1 q Mem_Reg[0]~output_o $end
-$var wire 1 r Type_Reg[6]~output_o $end
-$var wire 1 s Type_Reg[5]~output_o $end
-$var wire 1 t Type_Reg[4]~output_o $end
-$var wire 1 u Type_Reg[3]~output_o $end
-$var wire 1 v Type_Reg[2]~output_o $end
-$var wire 1 w Type_Reg[1]~output_o $end
-$var wire 1 x Type_Reg[0]~output_o $end
-$var wire 1 y Instruction[13]~input_o $end
-$var wire 1 z Clock~input_o $end
-$var wire 1 { Instruction[7]~input_o $end
-$var wire 1 | Instruction[8]~input_o $end
-$var wire 1 } Instruction[9]~input_o $end
-$var wire 1 ~ Instruction[10]~input_o $end
-$var wire 1 !! Instruction[11]~input_o $end
-$var wire 1 "! Instruction[12]~input_o $end
-$var wire 1 #! Instruction[6]~input_o $end
-$var wire 1 $! Instruction[5]~input_o $end
-$var wire 1 %! Instruction[4]~input_o $end
-$var wire 1 &! Instruction[3]~input_o $end
-$var wire 1 '! Instruction[2]~input_o $end
-$var wire 1 (! Instruction[1]~input_o $end
-$var wire 1 )! Instruction[0]~input_o $end
-$var wire 1 *! inst|inst5|$00000|auto_generated|result_node[5]~0_combout $end
-$var wire 1 +! inst|inst2~0_combout $end
-$var wire 1 ,! inst|inst5|$00000|auto_generated|result_node[4]~1_combout $end
-$var wire 1 -! inst|inst5|$00000|auto_generated|result_node[3]~2_combout $end
-$var wire 1 .! inst|inst5|$00000|auto_generated|result_node[2]~3_combout $end
-$var wire 1 /! inst|inst5|$00000|auto_generated|result_node[1]~4_combout $end
-$var wire 1 0! inst|inst5|$00000|auto_generated|result_node[0]~5_combout $end
-$var wire 1 1! inst|inst|altsyncram_component|auto_generated|q_a [27] $end
-$var wire 1 2! inst|inst|altsyncram_component|auto_generated|q_a [26] $end
-$var wire 1 3! inst|inst|altsyncram_component|auto_generated|q_a [25] $end
-$var wire 1 4! inst|inst|altsyncram_component|auto_generated|q_a [24] $end
-$var wire 1 5! inst|inst|altsyncram_component|auto_generated|q_a [23] $end
-$var wire 1 6! inst|inst|altsyncram_component|auto_generated|q_a [22] $end
-$var wire 1 7! inst|inst|altsyncram_component|auto_generated|q_a [21] $end
-$var wire 1 8! inst|inst|altsyncram_component|auto_generated|q_a [20] $end
-$var wire 1 9! inst|inst|altsyncram_component|auto_generated|q_a [19] $end
-$var wire 1 :! inst|inst|altsyncram_component|auto_generated|q_a [18] $end
-$var wire 1 ;! inst|inst|altsyncram_component|auto_generated|q_a [17] $end
-$var wire 1 <! inst|inst|altsyncram_component|auto_generated|q_a [16] $end
-$var wire 1 =! inst|inst|altsyncram_component|auto_generated|q_a [15] $end
-$var wire 1 >! inst|inst|altsyncram_component|auto_generated|q_a [14] $end
-$var wire 1 ?! inst|inst|altsyncram_component|auto_generated|q_a [13] $end
-$var wire 1 @! inst|inst|altsyncram_component|auto_generated|q_a [12] $end
-$var wire 1 A! inst|inst|altsyncram_component|auto_generated|q_a [11] $end
-$var wire 1 B! inst|inst|altsyncram_component|auto_generated|q_a [10] $end
-$var wire 1 C! inst|inst|altsyncram_component|auto_generated|q_a [9] $end
-$var wire 1 D! inst|inst|altsyncram_component|auto_generated|q_a [8] $end
-$var wire 1 E! inst|inst|altsyncram_component|auto_generated|q_a [7] $end
-$var wire 1 F! inst|inst|altsyncram_component|auto_generated|q_a [6] $end
-$var wire 1 G! inst|inst|altsyncram_component|auto_generated|q_a [5] $end
-$var wire 1 H! inst|inst|altsyncram_component|auto_generated|q_a [4] $end
-$var wire 1 I! inst|inst|altsyncram_component|auto_generated|q_a [3] $end
-$var wire 1 J! inst|inst|altsyncram_component|auto_generated|q_a [2] $end
-$var wire 1 K! inst|inst|altsyncram_component|auto_generated|q_a [1] $end
-$var wire 1 L! inst|inst|altsyncram_component|auto_generated|q_a [0] $end
-$var wire 1 M! inst|inst|altsyncram_component|auto_generated|ram_block1a21_PORTADATAOUT_bus [0] $end
-$var wire 1 N! inst|inst|altsyncram_component|auto_generated|ram_block1a27_PORTADATAOUT_bus [0] $end
-$var wire 1 O! inst|inst|altsyncram_component|auto_generated|ram_block1a26_PORTADATAOUT_bus [0] $end
-$var wire 1 P! inst|inst|altsyncram_component|auto_generated|ram_block1a25_PORTADATAOUT_bus [0] $end
-$var wire 1 Q! inst|inst|altsyncram_component|auto_generated|ram_block1a24_PORTADATAOUT_bus [0] $end
-$var wire 1 R! inst|inst|altsyncram_component|auto_generated|ram_block1a23_PORTADATAOUT_bus [0] $end
-$var wire 1 S! inst|inst|altsyncram_component|auto_generated|ram_block1a22_PORTADATAOUT_bus [0] $end
-$var wire 1 T! inst|inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus [0] $end
-$var wire 1 U! inst|inst|altsyncram_component|auto_generated|ram_block1a17_PORTADATAOUT_bus [0] $end
-$var wire 1 V! inst|inst|altsyncram_component|auto_generated|ram_block1a16_PORTADATAOUT_bus [0] $end
-$var wire 1 W! inst|inst|altsyncram_component|auto_generated|ram_block1a15_PORTADATAOUT_bus [0] $end
-$var wire 1 X! inst|inst|altsyncram_component|auto_generated|ram_block1a14_PORTADATAOUT_bus [0] $end
-$var wire 1 Y! inst|inst|altsyncram_component|auto_generated|ram_block1a13_PORTADATAOUT_bus [0] $end
-$var wire 1 Z! inst|inst|altsyncram_component|auto_generated|ram_block1a5_PORTADATAOUT_bus [0] $end
-$var wire 1 [! inst|inst|altsyncram_component|auto_generated|ram_block1a4_PORTADATAOUT_bus [0] $end
-$var wire 1 \! inst|inst|altsyncram_component|auto_generated|ram_block1a3_PORTADATAOUT_bus [0] $end
-$var wire 1 ]! inst|inst|altsyncram_component|auto_generated|ram_block1a2_PORTADATAOUT_bus [0] $end
-$var wire 1 ^! inst|inst|altsyncram_component|auto_generated|ram_block1a1_PORTADATAOUT_bus [0] $end
-$var wire 1 _! inst|inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
-$var wire 1 `! inst|inst|altsyncram_component|auto_generated|ram_block1a20_PORTADATAOUT_bus [0] $end
-$var wire 1 a! inst|inst|altsyncram_component|auto_generated|ram_block1a19_PORTADATAOUT_bus [0] $end
-$var wire 1 b! inst|inst|altsyncram_component|auto_generated|ram_block1a12_PORTADATAOUT_bus [0] $end
-$var wire 1 c! inst|inst|altsyncram_component|auto_generated|ram_block1a11_PORTADATAOUT_bus [0] $end
-$var wire 1 d! inst|inst|altsyncram_component|auto_generated|ram_block1a10_PORTADATAOUT_bus [0] $end
-$var wire 1 e! inst|inst|altsyncram_component|auto_generated|ram_block1a9_PORTADATAOUT_bus [0] $end
-$var wire 1 f! inst|inst|altsyncram_component|auto_generated|ram_block1a8_PORTADATAOUT_bus [0] $end
-$var wire 1 g! inst|inst|altsyncram_component|auto_generated|ram_block1a7_PORTADATAOUT_bus [0] $end
-$var wire 1 h! inst|inst|altsyncram_component|auto_generated|ram_block1a6_PORTADATAOUT_bus [0] $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + PreLoad~output_o $end
+$var wire 1 , Jmp_Bits[2]~input_o $end
+$var wire 1 - W[15]~input_o $end
+$var wire 1 . W[14]~input_o $end
+$var wire 1 / W[13]~input_o $end
+$var wire 1 0 W[12]~input_o $end
+$var wire 1 1 inst|inst~0_combout $end
+$var wire 1 2 W[11]~input_o $end
+$var wire 1 3 W[10]~input_o $end
+$var wire 1 4 W[9]~input_o $end
+$var wire 1 5 W[8]~input_o $end
+$var wire 1 6 inst|inst~1_combout $end
+$var wire 1 7 W[7]~input_o $end
+$var wire 1 8 W[6]~input_o $end
+$var wire 1 9 W[5]~input_o $end
+$var wire 1 : W[4]~input_o $end
+$var wire 1 ; inst|inst~2_combout $end
+$var wire 1 < W[3]~input_o $end
+$var wire 1 = W[2]~input_o $end
+$var wire 1 > W[1]~input_o $end
+$var wire 1 ? W[0]~input_o $end
+$var wire 1 @ inst|inst~3_combout $end
+$var wire 1 A inst|inst~4_combout $end
+$var wire 1 B Jmp_Bits[1]~input_o $end
+$var wire 1 C CY~input_o $end
+$var wire 1 D Jmp_Bits[0]~input_o $end
+$var wire 1 E inst|inst~5_combout $end
+$var wire 1 F inst|inst~6_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
 0!
-0"
-b10011000000111 #
-1-
-1,
-1+
-0*
-0)
-0(
-0'
-0&
+b101 "
+b1000000 #
+0$
 0%
-1$
-03
-02
-01
-00
-0/
+1&
+x'
+1(
+1)
+1*
+0+
+1,
+0-
 0.
-09
-08
-07
-06
-05
+0/
+00
+01
+02
+03
 04
-0?
-0>
-0=
-0<
-0;
+05
+06
+07
+18
+09
 0:
+1;
+0<
+0=
+0>
+0?
 0@
 1A
-0C
 0B
-0J
-0I
-0H
-0G
+0C
+1D
+1E
 0F
-0E
-0D
-0K
-1L
-xM
-1N
-1O
-1P
-0Q
-1R
-0S
-1T
-0U
-0V
-0W
-0X
-0Y
-0Z
-1[
-1\
-1]
-0^
-0_
-0`
-0a
-0b
-0c
-0d
-0e
-0f
-0g
-0h
-0i
-0j
-0k
-0l
-0m
-0n
-0o
-0p
-0q
-0r
-0s
-0t
-0u
-0v
-0w
-0x
-1y
-0z
-0{
-0|
-1}
-1~
-0!!
-0"!
-0#!
-0$!
-0%!
-0&!
-1'!
-1(!
-1)!
-0*!
-0+!
-0,!
-0-!
-0.!
-0/!
-00!
-0L!
-0K!
-0J!
-0I!
-0H!
-0G!
-0F!
-0E!
-0D!
-0C!
-0B!
-0A!
-0@!
-0?!
-0>!
-0=!
-0<!
-0;!
-0:!
-09!
-08!
-07!
-06!
-05!
-04!
-03!
-02!
-01!
-0M!
-0N!
-0O!
-0P!
-0Q!
-0R!
-0S!
-0T!
-0U!
-0V!
-0W!
-0X!
-0Y!
-0Z!
-0[!
-0\!
-0]!
-0^!
-0_!
-0`!
-0a!
-0b!
-0c!
-0d!
-0e!
-0f!
-0g!
-0h!
 $end
-#25000
-1!
-1z
-#50000
-0!
-0z
-#75000
-1!
-1z
-1M!
-1O!
-1P!
-1T!
-1X!
-1Z!
-1^!
-1g!
-1h!
-1K!
-1G!
-17!
-12!
-13!
-1:!
-1>!
-1E!
-1F!
-1x
-1w
-1h
-1d
-1`
-1_
-1S
-1@
-1/
-10
-14
-18
-1I
-1J
-1/!
-1*!
-1j
-1n
-1>
-1:
-#100000
-0!
-0z
-#125000
-1!
-1z
-#150000
-0!
-0z
-#175000
-1!
-1z
-#200000
-0!
-0z
-#225000
-1!
-1z
-#250000
-0!
-0z
-#275000
-1!
-1z
-#300000
-0!
-0z
-#325000
-1!
-1z
-#350000
-0!
-0z
-#375000
-1!
-1z
-#400000
-0!
-0z
-#425000
-1!
-1z
-#450000
-0!
-0z
-#475000
-1!
-1z
-#500000
-0!
-0z
-#525000
-1!
-1z
-#550000
-0!
-0z
-#575000
-1!
-1z
-#600000
-0!
-0z
-#625000
-1!
-1z
-#650000
-0!
-0z
-#675000
-1!
-1z
-#700000
-0!
-0z
-#725000
-1!
-1z
-#750000
-0!
-0z
-#775000
-1!
-1z
-#800000
-0!
-0z
-#825000
-1!
-1z
-#850000
-0!
-0z
-#875000
-1!
-1z
-#900000
-0!
-0z
-#925000
-1!
-1z
-#950000
-0!
-0z
-#975000
-1!
-1z
 #1000000
