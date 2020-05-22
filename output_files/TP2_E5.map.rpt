@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Fri May 22 01:02:10 2020
+Fri May 22 15:38:53 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,33 +13,31 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated
- 13. Parameter Settings for User Entity Instance: Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component
- 14. Parameter Settings for User Entity Instance: Decode_Unit:inst7|BUSMUX:inst5
- 15. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst
- 16. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst1
- 17. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst2
- 18. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst3
- 19. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst4
- 20. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst5
- 21. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst6
- 22. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst7
- 23. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst8
- 24. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst9
- 25. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst10
- 26. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst11
- 27. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst12
- 28. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst13
- 29. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst14
- 30. Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst15
- 31. altsyncram Parameter Settings by Entity Instance
- 32. Post-Synthesis Netlist Statistics for Top Partition
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
+  8. Analysis & Synthesis IP Cores Summary
+  9. General Register Statistics
+ 10. Source assignments for Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated
+ 11. Parameter Settings for User Entity Instance: Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component
+ 12. Parameter Settings for User Entity Instance: Decode_Unit:inst7|BUSMUX:inst5
+ 13. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst
+ 14. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst1
+ 15. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst2
+ 16. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst3
+ 17. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst4
+ 18. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst5
+ 19. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst6
+ 20. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst7
+ 21. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst8
+ 22. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst9
+ 23. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst10
+ 24. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst11
+ 25. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst12
+ 26. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst13
+ 27. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst14
+ 28. Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst15
+ 29. altsyncram Parameter Settings by Entity Instance
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
 
 
 
@@ -65,18 +63,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 22 01:02:10 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 22 15:38:53 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 60                                          ;
-;     Total combinational functions  ; 38                                          ;
+; Total logic elements               ; 23                                          ;
+;     Total combinational functions  ; 1                                           ;
 ;     Dedicated logic registers      ; 22                                          ;
 ; Total registers                    ; 22                                          ;
-; Total pins                         ; 155                                         ;
+; Total pins                         ; 115                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 3,584                                       ;
+; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -177,12 +175,10 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -193,11 +189,17 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 ; TP2_E5.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/TP2_E5.bdf                             ;         ;
 ; MIR.v                            ; yes             ; User Wizard-Generated File             ; C:/Users/Manuel/Documents/GitHub/EV20/MIR.v                                  ;         ;
+; Control_Word_Register.bdf        ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/Control_Word_Register.bdf              ;         ;
 ; Decode_Unit.bdf                  ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/Decode_Unit.bdf                        ;         ;
 ; 5B_to_6B.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/5B_to_6B.bdf                           ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/Manuel/Documents/GitHub/EV20/ALU.v                                  ;         ;
+; Carry_Block.bdf                  ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/Carry_Block.bdf                        ;         ;
 ; Instruction_Reg.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/Instruction_Reg.bdf                    ;         ;
 ; Instr_Separator.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/Instr_Separator.bdf                    ;         ;
 ; Shifter.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel/Documents/GitHub/EV20/Shifter.bdf                            ;         ;
+; 74374.bdf                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74374.bdf           ;         ;
+; 74377b.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74377b.bdf          ;         ;
+; enadff.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/enadff.bdf          ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -215,140 +217,71 @@ refer to the applicable agreement for further details.
 ; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
 ; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf                         ;         ;
-; 74374.bdf                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74374.bdf           ;         ;
-; 74377b.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74377b.bdf          ;         ;
-; enadff.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/enadff.bdf          ;         ;
 ; mux.tdf                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
 ; db/mux_9rc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_9rc.tdf                         ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                 ;
-+---------------------------------------------+-----------------------------------------------+
-; Resource                                    ; Usage                                         ;
-+---------------------------------------------+-----------------------------------------------+
-; Estimated Total logic elements              ; 60                                            ;
-;                                             ;                                               ;
-; Total combinational functions               ; 38                                            ;
-; Logic element usage by number of LUT inputs ;                                               ;
-;     -- 4 input functions                    ; 17                                            ;
-;     -- 3 input functions                    ; 19                                            ;
-;     -- <=2 input functions                  ; 2                                             ;
-;                                             ;                                               ;
-; Logic elements by mode                      ;                                               ;
-;     -- normal mode                          ; 38                                            ;
-;     -- arithmetic mode                      ; 0                                             ;
-;                                             ;                                               ;
-; Total registers                             ; 22                                            ;
-;     -- Dedicated logic registers            ; 22                                            ;
-;     -- I/O registers                        ; 0                                             ;
-;                                             ;                                               ;
-; I/O pins                                    ; 155                                           ;
-; Total memory bits                           ; 3584                                          ;
-;                                             ;                                               ;
-; Embedded Multiplier 9-bit elements          ; 0                                             ;
-;                                             ;                                               ;
-; Maximum fan-out node                        ; Instruction_Reg:inst|74377b:inst3|enadff:25|3 ;
-; Maximum fan-out                             ; 34                                            ;
-; Total fan-out                               ; 665                                           ;
-; Average fan-out                             ; 1.67                                          ;
-+---------------------------------------------+-----------------------------------------------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 23                         ;
+;                                             ;                            ;
+; Total combinational functions               ; 1                          ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 0                          ;
+;     -- 3 input functions                    ; 0                          ;
+;     -- <=2 input functions                  ; 1                          ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 1                          ;
+;     -- arithmetic mode                      ; 0                          ;
+;                                             ;                            ;
+; Total registers                             ; 22                         ;
+;     -- Dedicated logic registers            ; 22                         ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 115                        ;
+;                                             ;                            ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; Instruction_Reg:inst|inst2 ;
+; Maximum fan-out                             ; 22                         ;
+; Total fan-out                               ; 220                        ;
+; Average fan-out                             ; 0.87                       ;
++---------------------------------------------+----------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                          ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Entity Name     ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |TP2_E5                                      ; 38 (0)              ; 22 (0)                    ; 3584        ; 0            ; 0       ; 0         ; 155  ; 0            ; |TP2_E5                                                                                           ; TP2_E5          ; work         ;
-;    |Decode_Unit:inst7|                       ; 7 (1)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7                                                                         ; Decode_Unit     ; work         ;
-;       |MIR:inst|                             ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7|MIR:inst                                                                ; MIR             ; work         ;
-;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;             |altsyncram_tca1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated ; altsyncram_tca1 ; work         ;
-;       |busmux:inst5|                         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7|busmux:inst5                                                            ; busmux          ; work         ;
-;          |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7|busmux:inst5|lpm_mux:$00000                                             ; lpm_mux         ; work         ;
-;             |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst7|busmux:inst5|lpm_mux:$00000|mux_crc:auto_generated                      ; mux_crc         ; work         ;
-;    |Instruction_Reg:inst|                    ; 1 (1)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst                                                                      ; Instruction_Reg ; work         ;
-;       |74374:inst8|                          ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74374:inst8                                                          ; 74374           ; work         ;
-;       |74377b:inst3|                         ; 0 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3                                                         ; 74377b          ; work         ;
-;          |enadff:10|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:10                                               ; enadff          ; work         ;
-;          |enadff:15|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:15                                               ; enadff          ; work         ;
-;          |enadff:18|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:18                                               ; enadff          ; work         ;
-;          |enadff:19|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:19                                               ; enadff          ; work         ;
-;          |enadff:24|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:24                                               ; enadff          ; work         ;
-;          |enadff:25|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:25                                               ; enadff          ; work         ;
-;          |enadff:2|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:2                                                ; enadff          ; work         ;
-;          |enadff:3|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:3                                                ; enadff          ; work         ;
-;       |74377b:inst4|                         ; 0 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4                                                         ; 74377b          ; work         ;
-;          |enadff:10|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:10                                               ; enadff          ; work         ;
-;          |enadff:15|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:15                                               ; enadff          ; work         ;
-;          |enadff:18|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:18                                               ; enadff          ; work         ;
-;          |enadff:19|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:19                                               ; enadff          ; work         ;
-;          |enadff:24|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:24                                               ; enadff          ; work         ;
-;          |enadff:25|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:25                                               ; enadff          ; work         ;
-;          |enadff:2|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:2                                                ; enadff          ; work         ;
-;          |enadff:3|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:3                                                ; enadff          ; work         ;
-;    |Shifter:inst19|                          ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19                                                                            ; Shifter         ; work         ;
-;       |mux:inst10|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst10                                                                 ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst10|lpm_mux:$00001                                                  ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst10|lpm_mux:$00001|mux_9rc:auto_generated                           ; mux_9rc         ; work         ;
-;       |mux:inst11|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst11                                                                 ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst11|lpm_mux:$00001                                                  ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst11|lpm_mux:$00001|mux_9rc:auto_generated                           ; mux_9rc         ; work         ;
-;       |mux:inst12|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst12                                                                 ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst12|lpm_mux:$00001                                                  ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst12|lpm_mux:$00001|mux_9rc:auto_generated                           ; mux_9rc         ; work         ;
-;       |mux:inst13|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst13                                                                 ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst13|lpm_mux:$00001                                                  ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst13|lpm_mux:$00001|mux_9rc:auto_generated                           ; mux_9rc         ; work         ;
-;       |mux:inst14|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst14                                                                 ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst14|lpm_mux:$00001                                                  ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst14|lpm_mux:$00001|mux_9rc:auto_generated                           ; mux_9rc         ; work         ;
-;       |mux:inst15|                           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst15                                                                 ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst15|lpm_mux:$00001                                                  ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst15|lpm_mux:$00001|mux_9rc:auto_generated                           ; mux_9rc         ; work         ;
-;       |mux:inst1|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst1                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst1|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst1|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst2|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst2                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst2|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst2|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst3|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst3                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst3|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst3|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst4|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst4                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst4|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst4|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst5|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst5                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst5|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst5|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst6|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst6                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst6|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst6|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst7|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst7                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst7|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst7|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst8|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst8                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst8|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst8|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst9|                            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst9                                                                  ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst9|lpm_mux:$00001                                                   ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst9|lpm_mux:$00001|mux_9rc:auto_generated                            ; mux_9rc         ; work         ;
-;       |mux:inst|                             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst                                                                   ; mux             ; work         ;
-;          |lpm_mux:$00001|                    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst|lpm_mux:$00001                                                    ; lpm_mux         ; work         ;
-;             |mux_9rc:auto_generated|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst19|mux:inst|lpm_mux:$00001|mux_9rc:auto_generated                             ; mux_9rc         ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                          ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-----------------+--------------+
+; |TP2_E5                    ; 1 (0)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 115  ; 0            ; |TP2_E5                                             ; TP2_E5          ; work         ;
+;    |Instruction_Reg:inst|  ; 1 (1)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst                        ; Instruction_Reg ; work         ;
+;       |74374:inst8|        ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74374:inst8            ; 74374           ; work         ;
+;       |74377b:inst3|       ; 0 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3           ; 74377b          ; work         ;
+;          |enadff:10|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:10 ; enadff          ; work         ;
+;          |enadff:15|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:15 ; enadff          ; work         ;
+;          |enadff:18|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:18 ; enadff          ; work         ;
+;          |enadff:19|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:19 ; enadff          ; work         ;
+;          |enadff:24|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:24 ; enadff          ; work         ;
+;          |enadff:25|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:25 ; enadff          ; work         ;
+;          |enadff:2|        ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:2  ; enadff          ; work         ;
+;          |enadff:3|        ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst3|enadff:3  ; enadff          ; work         ;
+;       |74377b:inst4|       ; 0 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4           ; 74377b          ; work         ;
+;          |enadff:10|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:10 ; enadff          ; work         ;
+;          |enadff:15|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:15 ; enadff          ; work         ;
+;          |enadff:18|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:18 ; enadff          ; work         ;
+;          |enadff:19|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:19 ; enadff          ; work         ;
+;          |enadff:24|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:24 ; enadff          ; work         ;
+;          |enadff:25|       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:25 ; enadff          ; work         ;
+;          |enadff:2|        ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:2  ; enadff          ; work         ;
+;          |enadff:3|        ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Instruction_Reg:inst|74377b:inst4|enadff:3  ; enadff          ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
-+------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------+
-; Name                                                                                                 ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF     ;
-+------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------+
-; Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 128          ; 28           ; --           ; --           ; 3584 ; MIR.mif ;
-+------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -373,15 +306,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst19|mux:inst1|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -465,7 +389,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst ;
 +----------------+-------+---------------------------------------------+
 ; Parameter Name ; Value ; Type                                        ;
 +----------------+-------+---------------------------------------------+
@@ -476,7 +400,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst1 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst1 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -487,7 +411,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst2 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst2 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -498,7 +422,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst3 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst3 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -509,7 +433,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst4 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst4 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -520,7 +444,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst5 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst5 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -531,7 +455,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst6 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst6 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -542,7 +466,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst7 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst7 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -553,7 +477,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst8 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst8 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -564,7 +488,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst9 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst9 ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -575,7 +499,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst10 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst10 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -586,7 +510,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst11 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst11 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -597,7 +521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst12 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst12 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -608,7 +532,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst13 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst13 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -619,7 +543,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst14 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst14 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -630,7 +554,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Shifter:inst19|MUX:inst15 ;
+; Parameter Settings for User Entity Instance: Shifter:inst12|MUX:inst15 ;
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
@@ -665,18 +589,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 155                         ;
+; boundary_port         ; 115                         ;
 ; cycloneiii_ff         ; 22                          ;
 ;     plain             ; 22                          ;
-; cycloneiii_lcell_comb ; 38                          ;
-;     normal            ; 38                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 19                          ;
-;         4 data inputs ; 17                          ;
-; cycloneiii_ram_block  ; 28                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         2 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.99                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -685,7 +606,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -695,7 +616,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 22 01:01:31 2020
+    Info: Processing started: Fri May 22 15:38:11 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -726,7 +647,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file instr_s
     Info (12023): Found entity 1: Instr_Separator
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.bdf
     Info (12023): Found entity 1: Shifter
+Info (12021): Found 1 design units, including 1 entities, in source file kmux.bdf
+    Info (12023): Found entity 1: Kmux
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
+Info (12128): Elaborating entity "Instr_Separator" for hierarchy "Instr_Separator:inst2"
+Info (12128): Elaborating entity "Instruction_Reg" for hierarchy "Instruction_Reg:inst"
+Info (12128): Elaborating entity "74374" for hierarchy "Instruction_Reg:inst|74374:inst8"
+Info (12130): Elaborated megafunction instantiation "Instruction_Reg:inst|74374:inst8"
+Info (12128): Elaborating entity "74377b" for hierarchy "Instruction_Reg:inst|74377b:inst3"
+Info (12130): Elaborated megafunction instantiation "Instruction_Reg:inst|74377b:inst3"
+Info (12128): Elaborating entity "enadff" for hierarchy "Instruction_Reg:inst|74377b:inst3|enadff:15"
+Info (12131): Elaborated megafunction instantiation "Instruction_Reg:inst|74377b:inst3|enadff:15", which is child of megafunction instantiation "Instruction_Reg:inst|74377b:inst3"
+Info (12128): Elaborating entity "Control_Word_Register" for hierarchy "Control_Word_Register:inst11"
 Info (12128): Elaborating entity "Decode_Unit" for hierarchy "Decode_Unit:inst7"
 Info (12128): Elaborating entity "MIR" for hierarchy "Decode_Unit:inst7|MIR:inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 87
@@ -759,31 +691,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
     Info (12023): Found entity 1: mux_crc File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf Line: 22
 Info (12128): Elaborating entity "mux_crc" for hierarchy "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "5B_to_6B" for hierarchy "Decode_Unit:inst7|5B_to_6B:inst8"
-Info (12128): Elaborating entity "Instr_Separator" for hierarchy "Instr_Separator:inst2"
-Info (12128): Elaborating entity "Instruction_Reg" for hierarchy "Instruction_Reg:inst"
-Info (12128): Elaborating entity "74374" for hierarchy "Instruction_Reg:inst|74374:inst8"
-Info (12130): Elaborated megafunction instantiation "Instruction_Reg:inst|74374:inst8"
-Info (12128): Elaborating entity "74377b" for hierarchy "Instruction_Reg:inst|74377b:inst3"
-Info (12130): Elaborated megafunction instantiation "Instruction_Reg:inst|74377b:inst3"
-Info (12128): Elaborating entity "enadff" for hierarchy "Instruction_Reg:inst|74377b:inst3|enadff:15"
-Info (12131): Elaborated megafunction instantiation "Instruction_Reg:inst|74377b:inst3|enadff:15", which is child of megafunction instantiation "Instruction_Reg:inst|74377b:inst3"
-Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:inst19"
+Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:inst12"
 Warning (275083): Bus "data10[2]" found using same base name as "data10", which might lead to a name conflict.
 Warning (275083): Bus "data11[2]" found using same base name as "data11", which might lead to a name conflict.
 Warning (275083): Bus "data12[2]" found using same base name as "data12", which might lead to a name conflict.
 Warning (275083): Bus "data10[1]" found using same base name as "data10", which might lead to a name conflict.
 Warning (275083): Bus "data11[1]" found using same base name as "data11", which might lead to a name conflict.
 Warning (275083): Bus "data12[1]" found using same base name as "data12", which might lead to a name conflict.
-Warning (275011): Block or symbol "WIRE" of instance "inst16" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst18" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst20" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst22" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst24" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst26" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst28" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst30" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst32" overlaps another block or symbol
-Warning (275011): Block or symbol "WIRE" of instance "inst50" overlaps another block or symbol
 Warning (275080): Converted elements in bus name "data1" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "data1[0]" to "data10"
     Warning (275081): Converted element name(s) from "data1[2..0]" to "data12..0"
@@ -804,66 +718,121 @@ Warning (275080): Converted elements in bus name "data12" using legacy naming ru
     Warning (275081): Converted element name(s) from "data12[0]" to "data120"
     Warning (275081): Converted element name(s) from "data12[2]" to "data122"
     Warning (275081): Converted element name(s) from "data12[1]" to "data121"
-Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst19|MUX:inst"
-Info (12130): Elaborated megafunction instantiation "Shifter:inst19|MUX:inst"
-Info (12133): Instantiated megafunction "Shifter:inst19|MUX:inst" with the following parameter:
+Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst12|MUX:inst"
+Info (12130): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst"
+Info (12133): Instantiated megafunction "Shifter:inst12|MUX:inst" with the following parameter:
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Shifter:inst19|MUX:inst|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "Shifter:inst19|MUX:inst|lpm_mux:$00001", which is child of megafunction instantiation "Shifter:inst19|MUX:inst" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Shifter:inst12|MUX:inst|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst|lpm_mux:$00001", which is child of megafunction instantiation "Shifter:inst12|MUX:inst" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9rc.tdf
     Info (12023): Found entity 1: mux_9rc File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_9rc.tdf Line: 22
-Info (12128): Elaborating entity "mux_9rc" for hierarchy "Shifter:inst19|MUX:inst|lpm_mux:$00001|mux_9rc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst19|MUX:inst1"
-Info (12130): Elaborated megafunction instantiation "Shifter:inst19|MUX:inst1"
-Info (12133): Instantiated megafunction "Shifter:inst19|MUX:inst1" with the following parameter:
+Info (12128): Elaborating entity "mux_9rc" for hierarchy "Shifter:inst12|MUX:inst|lpm_mux:$00001|mux_9rc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst12|MUX:inst1"
+Info (12130): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst1"
+Info (12133): Instantiated megafunction "Shifter:inst12|MUX:inst1" with the following parameter:
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
-Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst19|MUX:inst15"
-Info (12130): Elaborated megafunction instantiation "Shifter:inst19|MUX:inst15"
-Info (12133): Instantiated megafunction "Shifter:inst19|MUX:inst15" with the following parameter:
+Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst12|MUX:inst15"
+Info (12130): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst15"
+Info (12133): Instantiated megafunction "Shifter:inst12|MUX:inst15" with the following parameter:
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
+Info (12128): Elaborating entity "alu" for hierarchy "alu:inst5"
+Info (12128): Elaborating entity "Carry_Block" for hierarchy "Carry_Block:inst8"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 36
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[1]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 58
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[2]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 80
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[3]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 102
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[4]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 124
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[5]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 146
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[6]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 168
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[7]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 190
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[8]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 212
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[9]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 234
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[10]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 256
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[11]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 278
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[12]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 300
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[13]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 322
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[14]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 344
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[15]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 366
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[16]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 388
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[17]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 410
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[18]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 432
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[19]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 454
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[20]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 476
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[21]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 498
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[22]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 520
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[23]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 542
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[24]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 564
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[25]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 586
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[26]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 608
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[27]" File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_tca1.tdf Line: 630
 Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "Out_Instr_Reg[17]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "MIR_IN[2]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "Jump_PC_Val[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "A_Addr_Reg[9]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "Out_Instr_Reg[16]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "MIR_IN[1]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "Jump_PC_Val[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "A_Addr_Reg[8]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "Out_Instr_Reg[18]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "MIR_IN[3]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "Jump_PC_Val[10]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "Out_Instr_Reg[19]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "MIR_IN[4]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "Jmp_Opcode[0]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "Out_Instr_Reg[21]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "MIR_IN[6]" into a wire
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "Jmp_Opcode[2]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|43" to the node "Out_Instr_Reg[20]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|43" to the node "MIR_IN[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "Out_Instr_Reg[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "MIR_IN[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "Out_Instr_Reg[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "MIR_IN[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "Out_Instr_Reg[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "MIR_IN[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "Out_Instr_Reg[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "MIR_IN[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "Jmp_Opcode[2]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|43" to the node "Jmp_Opcode[1]" into a wire
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "Decode_Unit:inst7|inst9" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Instruction_Reg:inst|74374:inst8|43" to the node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" into an OR gate
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|44" to the node "Jmp_Opcode[0]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|45" to the node "Jump_PC_Val[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|46" to the node "Jump_PC_Val[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|47" to the node "Jump_PC_Val[8]" into a wire
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 243 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 42 input pins
-    Info (21059): Implemented 113 output pins
-    Info (21061): Implemented 60 logic cells
-    Info (21064): Implemented 28 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Fri May 22 01:02:10 2020
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:00:46
+Warning (21074): Design contains 32 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "A[15]"
+    Warning (15610): No output dependent on input pin "A[14]"
+    Warning (15610): No output dependent on input pin "A[13]"
+    Warning (15610): No output dependent on input pin "A[12]"
+    Warning (15610): No output dependent on input pin "A[11]"
+    Warning (15610): No output dependent on input pin "A[10]"
+    Warning (15610): No output dependent on input pin "A[9]"
+    Warning (15610): No output dependent on input pin "A[8]"
+    Warning (15610): No output dependent on input pin "A[7]"
+    Warning (15610): No output dependent on input pin "A[6]"
+    Warning (15610): No output dependent on input pin "A[5]"
+    Warning (15610): No output dependent on input pin "A[4]"
+    Warning (15610): No output dependent on input pin "A[3]"
+    Warning (15610): No output dependent on input pin "A[2]"
+    Warning (15610): No output dependent on input pin "A[1]"
+    Warning (15610): No output dependent on input pin "A[0]"
+    Warning (15610): No output dependent on input pin "B[15]"
+    Warning (15610): No output dependent on input pin "B[14]"
+    Warning (15610): No output dependent on input pin "B[13]"
+    Warning (15610): No output dependent on input pin "B[12]"
+    Warning (15610): No output dependent on input pin "B[11]"
+    Warning (15610): No output dependent on input pin "B[10]"
+    Warning (15610): No output dependent on input pin "B[9]"
+    Warning (15610): No output dependent on input pin "B[8]"
+    Warning (15610): No output dependent on input pin "B[7]"
+    Warning (15610): No output dependent on input pin "B[6]"
+    Warning (15610): No output dependent on input pin "B[5]"
+    Warning (15610): No output dependent on input pin "B[4]"
+    Warning (15610): No output dependent on input pin "B[3]"
+    Warning (15610): No output dependent on input pin "B[2]"
+    Warning (15610): No output dependent on input pin "B[1]"
+    Warning (15610): No output dependent on input pin "B[0]"
+Info (21057): Implemented 138 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 56 input pins
+    Info (21059): Implemented 59 output pins
+    Info (21061): Implemented 23 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 110 warnings
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Fri May 22 15:38:53 2020
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:00:53
 
 
