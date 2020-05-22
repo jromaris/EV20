@@ -69,4 +69,8 @@ set_global_assignment -name BDF_FILE Carry_Block.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
 set_global_assignment -name BDF_FILE AND16.bdf
 set_global_assignment -name BDF_FILE ON_When_16_Zeros.bdf
+set_global_assignment -name BDF_FILE Instruction_Reg.bdf
+set_global_assignment -name BDF_FILE Instr_Separator.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name BDF_FILE Shifter.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
