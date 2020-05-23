@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/21/2020 17:33:22"
+// Generated on "05/23/2020 18:16:49"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -29,230 +29,102 @@
 module TP2_E5_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [15:0] A;
-reg [3:0] ALU_Sel;
-reg [15:0] B;
-reg System_Clk;
+reg clk;
+reg [10:0] in;
+reg preload;
+reg res;
 // wires                                               
-wire [15:0] ALU_Out;
-wire Carry_In;
-wire CY_Out;
+wire [10:0] out;
 
 // assign statements (if any)                          
 TP2_E5 i1 (
 // port map - connection between master ports and signals/registers   
-	.A(A),
-	.ALU_Out(ALU_Out),
-	.ALU_Sel(ALU_Sel),
-	.B(B),
-	.Carry_In(Carry_In),
-	.CY_Out(CY_Out),
-	.System_Clk(System_Clk)
+	.clk(clk),
+	.in(in),
+	.out(out),
+	.preload(preload),
+	.res(res)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A[ 15 ]
-initial
-begin
-	A[15] = 1'b1;
-end 
-// A[ 14 ]
-initial
-begin
-	A[14] = 1'b1;
-end 
-// A[ 13 ]
-initial
-begin
-	A[13] = 1'b1;
-end 
-// A[ 12 ]
-initial
-begin
-	A[12] = 1'b1;
-end 
-// A[ 11 ]
-initial
-begin
-	A[11] = 1'b1;
-end 
-// A[ 10 ]
-initial
-begin
-	A[10] = 1'b1;
-end 
-// A[ 9 ]
-initial
-begin
-	A[9] = 1'b0;
-end 
-// A[ 8 ]
-initial
-begin
-	A[8] = 1'b0;
-end 
-// A[ 7 ]
-initial
-begin
-	A[7] = 1'b0;
-end 
-// A[ 6 ]
-initial
-begin
-	A[6] = 1'b0;
-end 
-// A[ 5 ]
-initial
-begin
-	A[5] = 1'b0;
-end 
-// A[ 4 ]
-initial
-begin
-	A[4] = 1'b0;
-	A[4] = #800000 1'b1;
-end 
-// A[ 3 ]
-initial
-begin
-	A[3] = 1'b0;
-	A[3] = #400000 1'b1;
-	A[3] = #400000 1'b0;
-end 
-// A[ 2 ]
-initial
-begin
-	repeat(2)
-	begin
-		A[2] = 1'b0;
-		A[2] = #200000 1'b1;
-		# 200000;
-	end
-	A[2] = 1'b0;
-end 
-// A[ 1 ]
+
+// clk
 always
 begin
-	A[1] = 1'b0;
-	A[1] = #100000 1'b1;
-	#100000;
+	clk = 1'b0;
+	clk = #25000 1'b1;
+	#25000;
 end 
-// A[ 0 ]
-always
-begin
-	A[0] = 1'b0;
-	A[0] = #50000 1'b1;
-	#50000;
-end 
-// ALU_Sel[ 3 ]
+// in[ 10 ]
 initial
 begin
-	ALU_Sel[3] = 1'b0;
+	in[10] = 1'b1;
 end 
-// ALU_Sel[ 2 ]
+// in[ 9 ]
 initial
 begin
-	ALU_Sel[2] = 1'b1;
+	in[9] = 1'b0;
 end 
-// ALU_Sel[ 1 ]
+// in[ 8 ]
 initial
 begin
-	ALU_Sel[1] = 1'b0;
+	in[8] = 1'b1;
 end 
-// ALU_Sel[ 0 ]
+// in[ 7 ]
 initial
 begin
-	ALU_Sel[0] = 1'b1;
+	in[7] = 1'b0;
 end 
-// B[ 15 ]
+// in[ 6 ]
 initial
 begin
-	B[15] = 1'b1;
+	in[6] = 1'b1;
 end 
-// B[ 14 ]
+// in[ 5 ]
 initial
 begin
-	B[14] = 1'b0;
+	in[5] = 1'b0;
 end 
-// B[ 13 ]
+// in[ 4 ]
 initial
 begin
-	B[13] = 1'b0;
+	in[4] = 1'b1;
 end 
-// B[ 12 ]
+// in[ 3 ]
 initial
 begin
-	B[12] = 1'b0;
+	in[3] = 1'b0;
 end 
-// B[ 11 ]
+// in[ 2 ]
 initial
 begin
-	B[11] = 1'b0;
+	in[2] = 1'b1;
 end 
-// B[ 10 ]
+// in[ 1 ]
 initial
 begin
-	B[10] = 1'b0;
+	in[1] = 1'b0;
 end 
-// B[ 9 ]
+// in[ 0 ]
 initial
 begin
-	B[9] = 1'b0;
-end 
-// B[ 8 ]
-initial
-begin
-	B[8] = 1'b0;
-end 
-// B[ 7 ]
-initial
-begin
-	B[7] = 1'b0;
-end 
-// B[ 6 ]
-initial
-begin
-	B[6] = 1'b0;
-end 
-// B[ 5 ]
-initial
-begin
-	B[5] = 1'b0;
-end 
-// B[ 4 ]
-initial
-begin
-	B[4] = 1'b0;
-end 
-// B[ 3 ]
-initial
-begin
-	B[3] = 1'b0;
-end 
-// B[ 2 ]
-initial
-begin
-	B[2] = 1'b0;
-end 
-// B[ 1 ]
-initial
-begin
-	B[1] = 1'b0;
-end 
-// B[ 0 ]
-initial
-begin
-	B[0] = 1'b0;
+	in[0] = 1'b1;
 end 
 
-// System_Clk
-always
+// preload
+initial
 begin
-	System_Clk = 1'b0;
-	System_Clk = #25000 1'b1;
-	#25000;
+	preload = 1'b0;
+	preload = #390000 1'b1;
+	preload = #450000 1'b0;
+end 
+
+// res
+initial
+begin
+	res = 1'b1;
 end 
 endmodule
 
