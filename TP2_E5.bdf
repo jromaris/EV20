@@ -100,6 +100,54 @@ refer to the applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
+	(input)
+	(rect 1000 664 1176 680)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "ALU_Bus[3 .. 0]" (rect 5 0 84 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 984 776 1160 792)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "ALU_Sel[3..0]" (rect 5 0 73 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 1264 728 1440 744)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "SH_Sel[1 .. 0]" (rect 5 0 74 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 480 216 686 232)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -168,6 +216,22 @@ refer to the applicable agreement for further details.
 	(rect 856 288 1032 304)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "MIR_IN[6 .. 0]" (rect 90 0 160 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1688 728 1867 744)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Shft_Out[15 .. 0]" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -439,7 +503,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1160 608 1336 704)
+	(rect 1176 608 1352 704)
 	(text "Carry_Block" (rect 5 0 75 19)(font "Intel Clear" (font_size 8)))
 	(text "inst8" (rect 8 75 30 92)(font "Intel Clear" ))
 	(port
@@ -802,16 +866,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1160 672)
-	(pt 1144 672)
-	(bus)
-)
-(connector
-	(pt 1160 784)
-	(pt 1144 784)
-	(bus)
-)
-(connector
 	(pt 1384 768)
 	(pt 1392 768)
 )
@@ -820,32 +874,8 @@ refer to the applicable agreement for further details.
 	(pt 1392 600)
 )
 (connector
-	(pt 1392 600)
-	(pt 1152 600)
-)
-(connector
-	(pt 1160 640)
-	(pt 1152 640)
-)
-(connector
-	(pt 1152 640)
-	(pt 1152 600)
-)
-(connector
-	(pt 1336 640)
-	(pt 1352 640)
-)
-(connector
-	(pt 1352 640)
-	(pt 1352 712)
-)
-(connector
 	(pt 1352 712)
 	(pt 1152 712)
-)
-(connector
-	(pt 1152 712)
-	(pt 1152 800)
 )
 (connector
 	(pt 1160 800)
@@ -923,40 +953,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1608 568)
-	(pt 1608 432)
-	(bus)
-)
-(connector
-	(pt 1144 568)
-	(pt 1104 568)
-	(bus)
-)
-(connector
-	(pt 1144 672)
-	(pt 1144 784)
-	(bus)
-)
-(connector
-	(pt 1608 568)
-	(pt 1432 568)
-	(bus)
-)
-(connector
-	(pt 1432 568)
-	(pt 1144 568)
-	(bus)
-)
-(connector
-	(pt 1440 736)
-	(pt 1432 736)
-	(bus)
-)
-(connector
-	(pt 1160 656)
-	(pt 1128 656)
-)
-(connector
 	(pt 1160 816)
 	(pt 1128 816)
 )
@@ -969,6 +965,10 @@ refer to the applicable agreement for further details.
 	(pt 856 520)
 )
 (connector
+	(pt 1352 712)
+	(pt 1352 640)
+)
+(connector
 	(pt 1128 520)
 	(pt 1128 656)
 )
@@ -977,29 +977,28 @@ refer to the applicable agreement for further details.
 	(pt 1128 816)
 )
 (connector
-	(text "ALU_SH_Out[1 .. 0]" (rect 1416 646 1433 736)(font "Intel Clear" )(vertical))
-	(pt 1432 736)
-	(pt 1432 568)
-	(bus)
+	(pt 1160 640)
+	(pt 1176 640)
 )
 (connector
-	(text "ALU_SH_Out[5 .. 2]" (rect 1120 580 1137 670)(font "Intel Clear" )(vertical))
-	(pt 1144 568)
-	(pt 1144 672)
-	(bus)
+	(pt 1128 656)
+	(pt 1176 656)
 )
 (connector
-	(text "ALU_SH_Out[5 .. 0]" (rect 1568 416 1658 433)(font "Intel Clear" ))
-	(pt 1568 432)
-	(pt 1608 432)
-	(bus)
+	(pt 1160 600)
+	(pt 1392 600)
+)
+(connector
+	(pt 1160 600)
+	(pt 1160 640)
+)
+(connector
+	(pt 1152 800)
+	(pt 1152 712)
 )
 (junction (pt 464 352))
 (junction (pt 136 368))
 (junction (pt 840 368))
 (junction (pt 856 456))
-(junction (pt 1144 568))
-(junction (pt 1144 672))
-(junction (pt 1432 568))
 (junction (pt 1128 520))
 (junction (pt 1128 656))

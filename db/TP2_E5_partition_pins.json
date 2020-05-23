@@ -240,6 +240,78 @@
 					"strict" : false
 				},
 				{
+					"name" : "Shft_Out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Shft_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SH_Sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SH_Sel[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Instr_Mem[21]",
 					"strict" : false
 				},
@@ -328,11 +400,171 @@
 					"strict" : false
 				},
 				{
+					"name" : "B[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[14]",
+					"strict" : false
+				},
+				{
+					"name" : "B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Sel[2]",
+					"strict" : false
+				},
+				{
 					"name" : "Clock",
 					"strict" : false
 				},
 				{
+					"name" : "B[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A[15]",
+					"strict" : false
+				},
+				{
 					"name" : "Hold",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Bus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Bus[2]",
 					"strict" : false
 				}
 			]
