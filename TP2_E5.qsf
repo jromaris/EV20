@@ -77,3 +77,5 @@ set_global_assignment -name BDF_FILE Kmux.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE SubRoutine_Control_Block.bdf
 set_global_assignment -name VERILOG_FILE Up_Down_3Bit_Counter.v
+set_global_assignment -name BDF_FILE Control_Word_Register2.bdf
+set_global_assignment -name BDF_FILE "UC-2.bdf"
