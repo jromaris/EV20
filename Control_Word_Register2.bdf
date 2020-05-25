@@ -5051,6 +5051,56 @@ https://fpgasoftware.intel.com/eula.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 672 4720 832 4848)
+	(text "UC-1" (rect 5 0 34 15)(font "Intel Clear" (font_size 8)))
+	(text "inst151" (rect 8 111 45 124)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 27 37 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Hold" (rect 0 0 28 15)(font "Intel Clear" (font_size 8)))
+		(text "Hold" (rect 21 43 49 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Tin[6..0]" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "Tin[6..0]" (rect 21 59 68 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Cin[5..0]" (rect 0 0 48 15)(font "Intel Clear" (font_size 8)))
+		(text "Cin[5..0]" (rect 21 75 69 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "Tout[6..0]" (rect 0 0 56 15)(font "Intel Clear" (font_size 8)))
+		(text "Tout[6..0]" (rect 83 27 139 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "Cout[5..0]" (rect 0 0 56 15)(font "Intel Clear" (font_size 8)))
+		(text "Cout[5..0]" (rect 83 43 139 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 48)(pt 144 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 112))
+	)
+)
 (connector
 	(pt 400 1376)
 	(pt 456 1376)
@@ -6730,10 +6780,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 664 4528)
 )
 (connector
-	(pt 664 4528)
-	(pt 664 4632)
-)
-(connector
 	(pt 664 4112)
 	(pt 664 4216)
 )
@@ -7374,53 +7420,14 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 600 4616)
-	(pt 632 4616)
-)
-(connector
-	(pt 600 4408)
-	(pt 632 4408)
-)
-(connector
-	(pt 632 4512)
-	(pt 632 4616)
-	(bus)
-)
-(connector
-	(pt 600 4304)
-	(pt 632 4304)
-)
-(connector
 	(pt 632 4408)
 	(pt 632 4512)
 	(bus)
 )
 (connector
-	(pt 632 4096)
-	(pt 600 4096)
-)
-(connector
 	(pt 632 4304)
 	(pt 632 4408)
 	(bus)
-)
-(connector
-	(pt 632 4200)
-	(pt 632 4304)
-	(bus)
-)
-(connector
-	(pt 600 4200)
-	(pt 632 4200)
-)
-(connector
-	(text "C3[0]" (rect 642 4600 670 4613)(font "Intel Clear" ))
-	(pt 632 4616)
-	(pt 680 4616)
-)
-(connector
-	(pt 600 4512)
-	(pt 632 4512)
 )
 (connector
 	(text "C3[1]" (rect 642 4496 670 4509)(font "Intel Clear" ))
@@ -7431,11 +7438,6 @@ https://fpgasoftware.intel.com/eula.
 	(text "C3[2]" (rect 642 4392 670 4405)(font "Intel Clear" ))
 	(pt 632 4408)
 	(pt 680 4408)
-)
-(connector
-	(text "C3[3]" (rect 642 4288 670 4301)(font "Intel Clear" ))
-	(pt 632 4304)
-	(pt 680 4304)
 )
 (connector
 	(text "C3[4]" (rect 642 4184 670 4197)(font "Intel Clear" ))
@@ -7599,42 +7601,9 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 600 2424)
-	(pt 632 2424)
-)
-(connector
-	(pt 600 2320)
-	(pt 632 2320)
-)
-(connector
-	(pt 600 2216)
-	(pt 632 2216)
-)
-(connector
-	(pt 632 2320)
-	(pt 632 2424)
-	(bus)
-)
-(connector
-	(pt 600 2104)
-	(pt 632 2104)
-)
-(connector
 	(pt 632 2216)
 	(pt 632 2320)
 	(bus)
-)
-(connector
-	(pt 600 1896)
-	(pt 632 1896)
-)
-(connector
-	(pt 600 1792)
-	(pt 632 1792)
-)
-(connector
-	(pt 600 2000)
-	(pt 632 2000)
 )
 (connector
 	(pt 632 1896)
@@ -7913,10 +7882,6 @@ https://fpgasoftware.intel.com/eula.
 )
 (connector
 	(pt 1656 1608)
-	(pt 288 1608)
-)
-(connector
-	(pt 1656 1608)
 	(pt 1656 1000)
 )
 (connector
@@ -7926,6 +7891,267 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 1656 1000)
 	(pt 1664 1000)
+)
+(connector
+	(pt 616 4408)
+	(pt 616 4512)
+	(bus)
+)
+(connector
+	(pt 616 4304)
+	(pt 616 4408)
+	(bus)
+)
+(connector
+	(pt 616 4096)
+	(pt 616 4200)
+	(bus)
+)
+(connector
+	(pt 672 4752)
+	(pt 664 4752)
+)
+(connector
+	(pt 664 4528)
+	(pt 664 4632)
+)
+(connector
+	(pt 664 4632)
+	(pt 664 4752)
+)
+(connector
+	(pt 672 4800)
+	(pt 616 4800)
+	(bus)
+)
+(connector
+	(pt 616 4512)
+	(pt 616 4616)
+	(bus)
+)
+(connector
+	(pt 616 4616)
+	(pt 616 4800)
+	(bus)
+)
+(connector
+	(text "C3[3]" (rect 642 4288 670 4301)(font "Intel Clear" ))
+	(pt 632 4304)
+	(pt 680 4304)
+)
+(connector
+	(pt 616 4200)
+	(pt 616 4304)
+	(bus)
+)
+(connector
+	(pt 632 4200)
+	(pt 632 4304)
+	(bus)
+)
+(connector
+	(text "C3[0]" (rect 642 4600 670 4613)(font "Intel Clear" ))
+	(pt 632 4616)
+	(pt 680 4616)
+)
+(connector
+	(pt 632 4512)
+	(pt 632 4616)
+	(bus)
+)
+(connector
+	(pt 632 4616)
+	(pt 632 4696)
+	(bus)
+)
+(connector
+	(pt 632 4696)
+	(pt 872 4696)
+	(bus)
+)
+(connector
+	(pt 872 4696)
+	(pt 872 4768)
+	(bus)
+)
+(connector
+	(pt 832 4768)
+	(pt 872 4768)
+	(bus)
+)
+(connector
+	(text "Cin[0]" (rect 600 4600 630 4613)(font "Intel Clear" ))
+	(pt 600 4616)
+	(pt 616 4616)
+)
+(connector
+	(text "Cin[1]" (rect 600 4496 630 4509)(font "Intel Clear" ))
+	(pt 600 4512)
+	(pt 616 4512)
+)
+(connector
+	(text "Cin[2]" (rect 600 4392 630 4405)(font "Intel Clear" ))
+	(pt 600 4408)
+	(pt 616 4408)
+)
+(connector
+	(text "Cin[3]" (rect 600 4288 630 4301)(font "Intel Clear" ))
+	(pt 600 4304)
+	(pt 616 4304)
+)
+(connector
+	(text "Cin[4]" (rect 600 4184 630 4197)(font "Intel Clear" ))
+	(pt 600 4200)
+	(pt 616 4200)
+)
+(connector
+	(text "Cin[5]" (rect 600 4080 630 4093)(font "Intel Clear" ))
+	(pt 616 4096)
+	(pt 600 4096)
+)
+(connector
+	(pt 288 1608)
+	(pt 1576 1608)
+)
+(connector
+	(pt 1576 1608)
+	(pt 1656 1608)
+)
+(connector
+	(pt 672 4768)
+	(pt 640 4768)
+)
+(connector
+	(pt 640 4768)
+	(pt 640 4856)
+)
+(connector
+	(pt 640 4856)
+	(pt 1576 4856)
+)
+(connector
+	(pt 1576 1608)
+	(pt 1576 4856)
+)
+(connector
+	(pt 616 1792)
+	(pt 616 1896)
+	(bus)
+)
+(connector
+	(pt 616 1896)
+	(pt 616 2000)
+	(bus)
+)
+(connector
+	(pt 616 2000)
+	(pt 616 2104)
+	(bus)
+)
+(connector
+	(pt 616 2104)
+	(pt 616 2216)
+	(bus)
+)
+(connector
+	(pt 616 2216)
+	(pt 616 2320)
+	(bus)
+)
+(connector
+	(pt 616 2320)
+	(pt 616 2424)
+	(bus)
+)
+(connector
+	(pt 616 2424)
+	(pt 616 2456)
+	(bus)
+)
+(connector
+	(pt 240 4784)
+	(pt 672 4784)
+	(bus)
+)
+(connector
+	(pt 240 2456)
+	(pt 240 4784)
+	(bus)
+)
+(connector
+	(pt 240 2456)
+	(pt 616 2456)
+	(bus)
+)
+(connector
+	(pt 632 2320)
+	(pt 632 2424)
+	(bus)
+)
+(connector
+	(pt 632 2424)
+	(pt 632 2552)
+	(bus)
+)
+(connector
+	(pt 832 4752)
+	(pt 936 4752)
+	(bus)
+)
+(connector
+	(pt 936 4752)
+	(pt 936 4888)
+	(bus)
+)
+(connector
+	(pt 256 4888)
+	(pt 936 4888)
+	(bus)
+)
+(connector
+	(pt 632 2552)
+	(pt 256 2552)
+	(bus)
+)
+(connector
+	(pt 256 2552)
+	(pt 256 4888)
+	(bus)
+)
+(connector
+	(text "Tin[0]" (rect 600 2408 630 2421)(font "Intel Clear" ))
+	(pt 600 2424)
+	(pt 616 2424)
+)
+(connector
+	(text "Tin[1]" (rect 600 2304 630 2317)(font "Intel Clear" ))
+	(pt 600 2320)
+	(pt 616 2320)
+)
+(connector
+	(text "Tin[2]" (rect 600 2200 630 2213)(font "Intel Clear" ))
+	(pt 600 2216)
+	(pt 616 2216)
+)
+(connector
+	(text "Tin[3]" (rect 600 2088 630 2101)(font "Intel Clear" ))
+	(pt 600 2104)
+	(pt 616 2104)
+)
+(connector
+	(text "Tin[4]" (rect 600 1984 630 1997)(font "Intel Clear" ))
+	(pt 600 2000)
+	(pt 616 2000)
+)
+(connector
+	(text "Tin[5]" (rect 600 1880 630 1893)(font "Intel Clear" ))
+	(pt 600 1896)
+	(pt 616 1896)
+)
+(connector
+	(text "Tin[6]" (rect 600 1776 630 1789)(font "Intel Clear" ))
+	(pt 600 1792)
+	(pt 616 1792)
 )
 (junction (pt 456 1376))
 (junction (pt 456 1480))
@@ -8120,7 +8346,6 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 456 728))
 (junction (pt 456 2504))
 (junction (pt 456 1776))
-(junction (pt 632 4616))
 (junction (pt 632 4512))
 (junction (pt 632 4408))
 (junction (pt 632 4304))
@@ -8133,7 +8358,6 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 784 4200))
 (junction (pt 784 4096))
 (junction (pt 1160 4072))
-(junction (pt 632 2424))
 (junction (pt 632 2320))
 (junction (pt 632 2216))
 (junction (pt 632 2104))
@@ -8153,3 +8377,18 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 360 1440))
 (junction (pt 520 1448))
 (junction (pt 1656 1000))
+(junction (pt 616 4616))
+(junction (pt 616 4512))
+(junction (pt 616 4408))
+(junction (pt 616 4304))
+(junction (pt 616 4200))
+(junction (pt 664 4632))
+(junction (pt 632 4616))
+(junction (pt 1576 1608))
+(junction (pt 616 1896))
+(junction (pt 616 2000))
+(junction (pt 616 2104))
+(junction (pt 616 2216))
+(junction (pt 616 2320))
+(junction (pt 616 2424))
+(junction (pt 632 2424))

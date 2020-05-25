@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Sun May 24 19:49:32 2020
+Sun May 24 22:33:26 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun May 24 19:49:32 2020           ;
+; Analysis & Synthesis Status        ; Failed - Sun May 24 22:33:26 2020           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
@@ -162,10 +162,17 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun May 24 19:49:17 2020
+    Info: Processing started: Sun May 24 22:33:09 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file UC-1.bdf
+    Info (12023): Found entity 1: UC-1
+Error (10170): Verilog HDL syntax error at Up_Down_3Bit_Counter.v(7) near text: ")";  expecting a direction. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: /home/marcos/Documentos/E5/Ev20/EV20/Up_Down_3Bit_Counter.v Line: 7
+Error (10112): Ignored design unit "alu" at Up_Down_3Bit_Counter.v(3) due to previous errors File: /home/marcos/Documentos/E5/Ev20/EV20/Up_Down_3Bit_Counter.v Line: 3
+Info (12021): Found 0 design units, including 0 entities, in source file Up_Down_3Bit_Counter.v
+Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
+    Info (12023): Found entity 1: alu File: /home/marcos/Documentos/E5/Ev20/EV20/ALU.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file TP2_E5.bdf
     Info (12023): Found entity 1: TP2_E5
 Info (12021): Found 1 design units, including 1 entities, in source file MIR.v
@@ -179,8 +186,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file 5B_to_6
     Info (12023): Found entity 1: 5B_to_6B
 Info (12021): Found 1 design units, including 1 entities, in source file Pre_Load_Block.bdf
     Info (12023): Found entity 1: Pre_Load_Block
-Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
-    Info (12023): Found entity 1: alu File: /home/marcos/Documentos/E5/Ev20/EV20/ALU.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file Carry_Block.bdf
     Info (12023): Found entity 1: Carry_Block
 Info (12021): Found 1 design units, including 1 entities, in source file AND16.bdf
@@ -197,9 +202,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file Kmux.bd
     Info (12023): Found entity 1: Kmux
 Info (12021): Found 1 design units, including 1 entities, in source file SubRoutine_Control_Block.bdf
     Info (12023): Found entity 1: SubRoutine_Control_Block
-Error (10170): Verilog HDL syntax error at Up_Down_3Bit_Counter.v(7) near text: ")";  expecting a direction. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: /home/marcos/Documentos/E5/Ev20/EV20/Up_Down_3Bit_Counter.v Line: 7
-Error (10112): Ignored design unit "alu" at Up_Down_3Bit_Counter.v(3) due to previous errors File: /home/marcos/Documentos/E5/Ev20/EV20/Up_Down_3Bit_Counter.v Line: 3
-Info (12021): Found 0 design units, including 0 entities, in source file Up_Down_3Bit_Counter.v
 Info (12021): Found 1 design units, including 1 entities, in source file Control_Word_Register2.bdf
     Info (12023): Found entity 1: Control_Word_Register2
 Info (12021): Found 1 design units, including 1 entities, in source file UC-2.bdf
@@ -207,9 +209,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file UC-2.bd
 Info (12021): Found 1 design units, including 1 entities, in source file Reg_Comp.bdf
     Info (12023): Found entity 1: Reg_Comp
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
-    Error: Peak virtual memory: 843 megabytes
-    Error: Processing ended: Sun May 24 19:49:32 2020
-    Error: Elapsed time: 00:00:15
+    Error: Peak virtual memory: 842 megabytes
+    Error: Processing ended: Sun May 24 22:33:26 2020
+    Error: Elapsed time: 00:00:17
     Error: Total CPU time (on all processors): 00:00:29
 
 

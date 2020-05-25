@@ -47,13 +47,18 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name BDF_FILE "UC-1.bdf"
+set_global_assignment -name VERILOG_FILE Up_Down_3Bit_Counter.v
+set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name BDF_FILE TP2_E5.bdf
 set_global_assignment -name QIP_FILE MIR.qip
 set_global_assignment -name BDF_FILE Control_Word_Register.bdf
 set_global_assignment -name BDF_FILE Decode_Unit.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE Decode_Test.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name BDF_FILE 5B_to_6B.bdf
@@ -61,7 +66,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_global_assignment -name BDF_FILE Pre_Load_Block.bdf
-set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
@@ -75,7 +79,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name BDF_FILE Shifter.bdf
 set_global_assignment -name BDF_FILE Kmux.bdf
 set_global_assignment -name BDF_FILE SubRoutine_Control_Block.bdf
-set_global_assignment -name VERILOG_FILE Up_Down_3Bit_Counter.v
 set_global_assignment -name BDF_FILE Control_Word_Register2.bdf
 set_global_assignment -name BDF_FILE "UC-2.bdf"
 set_global_assignment -name BDF_FILE Reg_Comp.bdf
