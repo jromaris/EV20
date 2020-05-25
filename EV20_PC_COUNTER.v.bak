@@ -10,7 +10,7 @@ always @(posedge clk) begin
 	// Preload 
 		out = in;
 	end
-	else if(~res) begin
+	else if( not(res)) begin
 	// Reset pong mi salida en 0
 		out = 11'b0000000000;
 	end
