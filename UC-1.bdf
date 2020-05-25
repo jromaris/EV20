@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -320 568 -152 584)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Hold" (rect 5 0 28 12)(font "Arial" ))
+	(text "Hold" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 64 512 232 528)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Tin[6..0]" (rect 5 0 46 12)(font "Arial" ))
+	(text "Tin[6..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 168 912 336 928)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Cin[5..0]" (rect 5 0 44 17)(font "Intel Clear" ))
+	(text "Cin[5..0]" (rect 5 0 43 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -288 616 -120 632)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -696,64 +696,7 @@ refer to the applicable agreement for further details.
 	(pt 296 328)
 )
 (connector
-	(pt 424 440)
-	(pt 424 520)
-)
-(connector
-	(pt 336 208)
-	(pt 336 520)
-)
-(connector
-	(pt 328 520)
-	(pt 336 520)
-)
-(connector
-	(pt 360 256)
-	(pt 360 520)
-)
-(connector
-	(pt 336 520)
-	(pt 360 520)
-)
-(connector
-	(pt 376 296)
-	(pt 376 520)
-)
-(connector
-	(pt 360 520)
-	(pt 376 520)
-)
-(connector
-	(pt 392 344)
-	(pt 392 520)
-)
-(connector
-	(pt 376 520)
-	(pt 392 520)
-)
-(connector
-	(pt 408 392)
-	(pt 408 520)
-)
-(connector
-	(pt 392 520)
-	(pt 408 520)
-)
-(connector
-	(pt 232 520)
-	(pt 328 520)
-	(bus)
-)
-(connector
 	(pt 440 488)
-	(pt 440 520)
-)
-(connector
-	(pt 408 520)
-	(pt 424 520)
-)
-(connector
-	(pt 424 520)
 	(pt 440 520)
 )
 (connector
@@ -809,61 +752,8 @@ refer to the applicable agreement for further details.
 	(pt 504 728)
 )
 (connector
-	(pt 632 840)
-	(pt 632 920)
-)
-(connector
-	(pt 544 608)
-	(pt 544 920)
-)
-(connector
-	(pt 568 656)
-	(pt 568 920)
-)
-(connector
-	(pt 584 696)
-	(pt 584 920)
-)
-(connector
-	(pt 600 744)
-	(pt 600 920)
-)
-(connector
-	(pt 616 792)
-	(pt 616 920)
-)
-(connector
-	(pt 536 920)
-	(pt 544 920)
-)
-(connector
-	(pt 544 920)
-	(pt 568 920)
-)
-(connector
-	(pt 568 920)
-	(pt 584 920)
-)
-(connector
-	(pt 584 920)
-	(pt 600 920)
-)
-(connector
-	(pt 600 920)
-	(pt 616 920)
-)
-(connector
 	(pt 280 312)
 	(pt 296 312)
-)
-(connector
-	(pt 616 920)
-	(pt 632 920)
-)
-(connector
-	(pt 336 920)
-	(pt 536 920)
-	(bus)
 )
 (connector
 	(pt 280 312)
@@ -999,11 +889,6 @@ refer to the applicable agreement for further details.
 	(pt 360 256)
 )
 (connector
-	(text "Tin[4]" (rect 386 280 413 297)(font "Intel Clear" ))
-	(pt 376 296)
-	(pt 488 296)
-)
-(connector
 	(text "Tin[3]" (rect 402 328 429 345)(font "Intel Clear" ))
 	(pt 488 344)
 	(pt 392 344)
@@ -1118,18 +1003,134 @@ refer to the applicable agreement for further details.
 	(pt 696 840)
 	(pt 632 840)
 )
+(connector
+	(pt 432 520)
+	(pt 440 520)
+)
+(connector
+	(pt 424 520)
+	(pt 424 440)
+)
+(connector
+	(pt 432 520)
+	(pt 424 520)
+	(bus)
+)
+(connector
+	(pt 408 520)
+	(pt 408 392)
+)
+(connector
+	(pt 424 520)
+	(pt 408 520)
+	(bus)
+)
+(connector
+	(pt 392 520)
+	(pt 392 344)
+)
+(connector
+	(pt 408 520)
+	(pt 392 520)
+	(bus)
+)
+(connector
+	(text "Tin[4]" (rect 386 280 413 297)(font "Intel Clear" ))
+	(pt 488 296)
+	(pt 376 296)
+)
+(connector
+	(pt 376 296)
+	(pt 376 520)
+)
+(connector
+	(pt 392 520)
+	(pt 376 520)
+	(bus)
+)
+(connector
+	(pt 360 520)
+	(pt 360 256)
+)
+(connector
+	(pt 376 520)
+	(pt 360 520)
+	(bus)
+)
+(connector
+	(pt 336 520)
+	(pt 336 208)
+)
+(connector
+	(pt 360 520)
+	(pt 336 520)
+	(bus)
+)
+(connector
+	(pt 336 520)
+	(pt 232 520)
+	(bus)
+)
+(connector
+	(pt 632 920)
+	(pt 632 840)
+)
+(connector
+	(pt 616 920)
+	(pt 616 792)
+)
+(connector
+	(pt 632 920)
+	(pt 616 920)
+	(bus)
+)
+(connector
+	(pt 600 920)
+	(pt 600 744)
+)
+(connector
+	(pt 616 920)
+	(pt 600 920)
+	(bus)
+)
+(connector
+	(pt 584 920)
+	(pt 584 696)
+)
+(connector
+	(pt 600 920)
+	(pt 584 920)
+	(bus)
+)
+(connector
+	(pt 568 920)
+	(pt 568 656)
+)
+(connector
+	(pt 584 920)
+	(pt 568 920)
+	(bus)
+)
+(connector
+	(pt 544 920)
+	(pt 544 608)
+)
+(connector
+	(pt 568 920)
+	(pt 544 920)
+	(bus)
+)
+(connector
+	(pt 544 920)
+	(pt 336 920)
+	(bus)
+)
 (junction (pt 296 240))
 (junction (pt 296 280))
 (junction (pt 296 328))
 (junction (pt 296 376))
 (junction (pt 296 424))
 (junction (pt 296 312))
-(junction (pt 336 520))
-(junction (pt 360 520))
-(junction (pt 376 520))
-(junction (pt 392 520))
-(junction (pt 408 520))
-(junction (pt 424 520))
 (junction (pt 768 200))
 (junction (pt 768 248))
 (junction (pt 768 288))
@@ -1138,11 +1139,6 @@ refer to the applicable agreement for further details.
 (junction (pt 768 432))
 (junction (pt 504 640))
 (junction (pt 504 680))
-(junction (pt 544 920))
-(junction (pt 568 920))
-(junction (pt 584 920))
-(junction (pt 600 920))
-(junction (pt 616 920))
 (junction (pt 280 576))
 (junction (pt 176 592))
 (junction (pt 176 776))
@@ -1152,3 +1148,14 @@ refer to the applicable agreement for further details.
 (junction (pt 920 648))
 (junction (pt 920 600))
 (junction (pt 176 576))
+(junction (pt 424 520))
+(junction (pt 408 520))
+(junction (pt 392 520))
+(junction (pt 376 520))
+(junction (pt 360 520))
+(junction (pt 336 520))
+(junction (pt 616 920))
+(junction (pt 600 920))
+(junction (pt 584 920))
+(junction (pt 568 920))
+(junction (pt 544 920))
