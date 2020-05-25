@@ -1,6 +1,6 @@
 Analysis & Synthesis report for TP2_E5
-Sun May 24 23:20:47 2020
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Mon May 25 00:10:37 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -45,9 +45,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -57,15 +57,16 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 24 23:20:47 2020       ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon May 25 00:10:37 2020       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
@@ -172,59 +173,59 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; UC-1.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/UC-1.bdf                                             ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File                  ; C:/Tomas/Electro 5/EV20/ALU.v                                                ;         ;
-; TP2_E5.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/TP2_E5.bdf                                           ;         ;
-; MIR.v                            ; yes             ; User Wizard-Generated File             ; C:/Tomas/Electro 5/EV20/MIR.v                                                ;         ;
-; Decode_Unit.bdf                  ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Decode_Unit.bdf                                      ;         ;
-; 5B_to_6B.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/5B_to_6B.bdf                                         ;         ;
-; Carry_Block.bdf                  ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Carry_Block.bdf                                      ;         ;
-; Instruction_Reg.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Instruction_Reg.bdf                                  ;         ;
-; Instr_Separator.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Instr_Separator.bdf                                  ;         ;
-; Shifter.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Shifter.bdf                                          ;         ;
-; Control_Word_Register2.bdf       ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Control_Word_Register2.bdf                           ;         ;
-; UC-2.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/UC-2.bdf                                             ;         ;
-; Reg_Comp.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Tomas/Electro 5/EV20/Reg_Comp.bdf                                         ;         ;
-; 74374.bdf                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74374.bdf           ;         ;
-; 74377b.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74377b.bdf          ;         ;
-; enadff.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/enadff.bdf          ;         ;
-; mux.tdf                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_9rc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Tomas/Electro 5/EV20/db/mux_9rc.tdf                                       ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_tca1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf                               ;         ;
-; MIR.mif                          ; yes             ; Auto-Found Memory Initialization File  ; C:/Tomas/Electro 5/EV20/MIR.mif                                              ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
-; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Tomas/Electro 5/EV20/db/mux_crc.tdf                                       ;         ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------+---------+
+; UC-1.bdf                         ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/UC-1.bdf                                          ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File                  ; /home/marcos/Documentos/E5/Ev20/EV20/ALU.v                                             ;         ;
+; TP2_E5.bdf                       ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/TP2_E5.bdf                                        ;         ;
+; MIR.v                            ; yes             ; User Wizard-Generated File             ; /home/marcos/Documentos/E5/Ev20/EV20/MIR.v                                             ;         ;
+; Decode_Unit.bdf                  ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Decode_Unit.bdf                                   ;         ;
+; 5B_to_6B.bdf                     ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/5B_to_6B.bdf                                      ;         ;
+; Carry_Block.bdf                  ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Carry_Block.bdf                                   ;         ;
+; Instruction_Reg.bdf              ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Instruction_Reg.bdf                               ;         ;
+; Instr_Separator.bdf              ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Instr_Separator.bdf                               ;         ;
+; Shifter.bdf                      ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Shifter.bdf                                       ;         ;
+; Control_Word_Register2.bdf       ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Control_Word_Register2.bdf                        ;         ;
+; UC-2.bdf                         ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/UC-2.bdf                                          ;         ;
+; Reg_Comp.bdf                     ; yes             ; User Block Diagram/Schematic File      ; /home/marcos/Documentos/E5/Ev20/EV20/Reg_Comp.bdf                                      ;         ;
+; 74374.bdf                        ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/others/maxplus2/74374.bdf           ;         ;
+; 74377b.bdf                       ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/others/maxplus2/74377b.bdf          ;         ;
+; enadff.bdf                       ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/others/maxplus2/enadff.bdf          ;         ;
+; mux.tdf                          ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; aglobal191.inc                   ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc        ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mux_9rc.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/marcos/Documentos/E5/Ev20/EV20/db/mux_9rc.tdf                                    ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_tca1.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf                            ;         ;
+; MIR.mif                          ; yes             ; Auto-Found Memory Initialization File  ; /home/marcos/Documentos/E5/Ev20/EV20/MIR.mif                                           ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                           ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
+; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/marcos/Documentos/E5/Ev20/EV20/db/mux_crc.tdf                                    ;         ;
++----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------+
@@ -364,14 +365,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; 16:1               ; 16 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; Yes        ; |TP2_E5|alu:inst5|ALU_Result[14]                                                      ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst12|mux:inst1|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; 16:1               ; 16 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; Yes        ; |TP2_E5|alu:inst5|ALU_Result[13]                                                       ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst12|mux:inst14|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -680,7 +681,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -689,49 +690,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 24 23:20:19 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Mon May 25 00:10:19 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file uc-1.bdf
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file UC-1.bdf
     Info (12023): Found entity 1: UC-1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Tomas/Electro 5/EV20/ALU.v Line: 32
-Info (12021): Found 1 design units, including 1 entities, in source file tp2_e5.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
+    Info (12023): Found entity 1: alu File: /home/marcos/Documentos/E5/Ev20/EV20/ALU.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file TP2_E5.bdf
     Info (12023): Found entity 1: TP2_E5
-Info (12021): Found 1 design units, including 1 entities, in source file mir.v
-    Info (12023): Found entity 1: MIR File: C:/Tomas/Electro 5/EV20/MIR.v Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file control_word_register.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file MIR.v
+    Info (12023): Found entity 1: MIR File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file Control_Word_Register.bdf
     Info (12023): Found entity 1: Control_Word_Register
-Info (12021): Found 1 design units, including 1 entities, in source file decode_unit.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Decode_Unit.bdf
     Info (12023): Found entity 1: Decode_Unit
 Warning (12019): Can't analyze file -- file Decode_Test.bdf is missing
-Info (12021): Found 1 design units, including 1 entities, in source file 5b_to_6b.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file 5B_to_6B.bdf
     Info (12023): Found entity 1: 5B_to_6B
-Info (12021): Found 1 design units, including 1 entities, in source file pre_load_block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Pre_Load_Block.bdf
     Info (12023): Found entity 1: Pre_Load_Block
-Info (12021): Found 1 design units, including 1 entities, in source file carry_block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Carry_Block.bdf
     Info (12023): Found entity 1: Carry_Block
-Info (12021): Found 1 design units, including 1 entities, in source file and16.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file AND16.bdf
     Info (12023): Found entity 1: AND16
-Info (12021): Found 1 design units, including 1 entities, in source file on_when_16_zeros.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file ON_When_16_Zeros.bdf
     Info (12023): Found entity 1: ON_When_16_Zeros
-Info (12021): Found 1 design units, including 1 entities, in source file instruction_reg.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Instruction_Reg.bdf
     Info (12023): Found entity 1: Instruction_Reg
-Info (12021): Found 1 design units, including 1 entities, in source file instr_separator.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Instr_Separator.bdf
     Info (12023): Found entity 1: Instr_Separator
-Info (12021): Found 1 design units, including 1 entities, in source file shifter.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Shifter.bdf
     Info (12023): Found entity 1: Shifter
-Info (12021): Found 1 design units, including 1 entities, in source file kmux.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Kmux.bdf
     Info (12023): Found entity 1: Kmux
-Info (12021): Found 1 design units, including 1 entities, in source file subroutine_control_block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file SubRoutine_Control_Block.bdf
     Info (12023): Found entity 1: SubRoutine_Control_Block
-Info (12021): Found 1 design units, including 1 entities, in source file control_word_register2.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Control_Word_Register2.bdf
     Info (12023): Found entity 1: Control_Word_Register2
-Info (12021): Found 1 design units, including 1 entities, in source file uc-2.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file UC-2.bdf
     Info (12023): Found entity 1: UC-2
-Info (12021): Found 1 design units, including 1 entities, in source file reg_comp.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file Reg_Comp.bdf
     Info (12023): Found entity 1: Reg_Comp
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
 Warning (275011): Block or symbol "alu" of instance "inst5" overlaps another block or symbol
@@ -775,11 +776,11 @@ Info (12130): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst"
 Info (12133): Instantiated megafunction "Shifter:inst12|MUX:inst" with the following parameter:
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Shifter:inst12|MUX:inst|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst|lpm_mux:$00001", which is child of megafunction instantiation "Shifter:inst12|MUX:inst" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Shifter:inst12|MUX:inst|lpm_mux:$00001" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst|lpm_mux:$00001", which is child of megafunction instantiation "Shifter:inst12|MUX:inst" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9rc.tdf
-    Info (12023): Found entity 1: mux_9rc File: C:/Tomas/Electro 5/EV20/db/mux_9rc.tdf Line: 22
-Info (12128): Elaborating entity "mux_9rc" for hierarchy "Shifter:inst12|MUX:inst|lpm_mux:$00001|mux_9rc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+    Info (12023): Found entity 1: mux_9rc File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_9rc.tdf Line: 23
+Info (12128): Elaborating entity "mux_9rc" for hierarchy "Shifter:inst12|MUX:inst|lpm_mux:$00001|mux_9rc:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst12|MUX:inst1"
 Info (12130): Elaborated megafunction instantiation "Shifter:inst12|MUX:inst1"
 Info (12133): Instantiated megafunction "Shifter:inst12|MUX:inst1" with the following parameter:
@@ -793,50 +794,17 @@ Info (12133): Instantiated megafunction "Shifter:inst12|MUX:inst15" with the fol
 Info (12128): Elaborating entity "alu" for hierarchy "alu:inst5"
 Info (12128): Elaborating entity "Carry_Block" for hierarchy "Carry_Block:inst8"
 Info (12128): Elaborating entity "Control_Word_Register2" for hierarchy "Control_Word_Register2:inst1"
-Warning (275011): Block or symbol "DFF" of instance "inst68" overlaps another block or symbol
-Warning (275011): Block or symbol "DFF" of instance "inst137" overlaps another block or symbol
-Warning (275002): No superset bus at connection
-Warning (275002): No superset bus at connection
-Warning (275008): Primitive "VCC" of instance "inst100" not used
-Warning (275008): Primitive "VCC" of instance "inst101" not used
-Warning (275008): Primitive "VCC" of instance "inst102" not used
-Warning (275008): Primitive "DFF" of instance "inst116" not used
-Warning (275008): Primitive "DFF" of instance "inst117" not used
-Warning (275008): Primitive "DFF" of instance "inst118" not used
-Warning (275008): Primitive "DFF" of instance "inst119" not used
-Warning (275008): Primitive "DFF" of instance "inst120" not used
-Warning (275008): Primitive "DFF" of instance "inst121" not used
-Warning (275008): Primitive "DFF" of instance "inst122" not used
-Warning (275008): Primitive "VCC" of instance "inst123" not used
-Warning (275008): Primitive "VCC" of instance "inst124" not used
-Warning (275008): Primitive "VCC" of instance "inst125" not used
-Warning (275008): Primitive "VCC" of instance "inst126" not used
-Warning (275008): Primitive "VCC" of instance "inst127" not used
-Warning (275008): Primitive "VCC" of instance "inst128" not used
-Warning (275008): Primitive "VCC" of instance "inst129" not used
-Warning (275008): Primitive "VCC" of instance "inst130" not used
-Warning (275008): Primitive "DFF" of instance "inst91" not used
-Warning (275008): Primitive "DFF" of instance "inst92" not used
-Warning (275008): Primitive "DFF" of instance "inst93" not used
-Warning (275008): Primitive "DFF" of instance "inst94" not used
-Warning (275008): Primitive "DFF" of instance "inst95" not used
-Warning (275008): Primitive "DFF" of instance "inst96" not used
-Warning (275008): Primitive "VCC" of instance "inst97" not used
-Warning (275008): Primitive "VCC" of instance "inst98" not used
-Warning (275008): Primitive "VCC" of instance "inst99" not used
 Info (12128): Elaborating entity "UC-2" for hierarchy "Control_Word_Register2:inst1|UC-2:inst147"
 Warning (275002): No superset bus at connection
 Warning (275002): No superset bus at connection
 Warning (275009): Pin "B2_IN" not connected
 Info (12128): Elaborating entity "Reg_Comp" for hierarchy "Control_Word_Register2:inst1|UC-2:inst147|Reg_Comp:inst5"
 Info (12128): Elaborating entity "UC-1" for hierarchy "Control_Word_Register2:inst1|UC-1:inst151"
-Warning (275011): Block or symbol "AND2" of instance "inst2" overlaps another block or symbol
-Warning (275011): Block or symbol "AND2" of instance "inst9" overlaps another block or symbol
 Info (12128): Elaborating entity "Decode_Unit" for hierarchy "Decode_Unit:inst7"
 Info (12128): Elaborating entity "MIR" for hierarchy "Decode_Unit:inst7|MIR:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" File: C:/Tomas/Electro 5/EV20/MIR.v Line: 87
-Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" File: C:/Tomas/Electro 5/EV20/MIR.v Line: 87
-Info (12133): Instantiated megafunction "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Tomas/Electro 5/EV20/MIR.v Line: 87
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 87
+Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 87
+Info (12133): Instantiated megafunction "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component" with the following parameter: File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 87
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "NORMAL"
@@ -852,48 +820,48 @@ Info (12133): Instantiated megafunction "Decode_Unit:inst7|MIR:inst|altsyncram:a
     Info (12134): Parameter "width_a" = "28"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tca1.tdf
-    Info (12023): Found entity 1: altsyncram_tca1 File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_tca1" for hierarchy "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_tca1 File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_tca1" for hierarchy "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "Decode_Unit:inst7|BUSMUX:inst5"
 Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst7|BUSMUX:inst5"
 Info (12133): Instantiated megafunction "Decode_Unit:inst7|BUSMUX:inst5" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "Decode_Unit:inst7|BUSMUX:inst5" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "Decode_Unit:inst7|BUSMUX:inst5" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
-    Info (12023): Found entity 1: mux_crc File: C:/Tomas/Electro 5/EV20/db/mux_crc.tdf Line: 22
-Info (12128): Elaborating entity "mux_crc" for hierarchy "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+    Info (12023): Found entity 1: mux_crc File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_crc.tdf Line: 23
+Info (12128): Elaborating entity "mux_crc" for hierarchy "Decode_Unit:inst7|BUSMUX:inst5|lpm_mux:$00000|mux_crc:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "5B_to_6B" for hierarchy "Decode_Unit:inst7|5B_to_6B:inst8"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 36
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[1]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 58
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[2]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 80
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[3]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 102
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[4]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 124
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[5]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 146
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[6]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 168
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[7]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 190
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[8]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 212
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[9]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 234
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[10]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 256
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[11]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 278
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[12]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 300
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[13]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 322
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[14]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 344
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[15]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 366
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[16]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 388
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[17]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 410
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[18]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 432
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[19]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 454
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[20]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 476
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[21]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 498
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[22]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 520
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[23]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 542
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[24]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 564
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[25]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 586
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[26]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 608
-        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[27]" File: C:/Tomas/Electro 5/EV20/db/altsyncram_tca1.tdf Line: 630
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[0]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 37
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[1]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 59
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[2]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 81
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[3]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 103
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[4]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 125
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[5]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 147
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[6]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 169
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[7]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 191
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[8]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 213
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[9]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 235
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[10]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 257
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[11]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 279
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[12]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 301
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[13]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 323
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[14]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 345
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[15]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 367
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[16]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 389
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[17]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 411
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[18]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 433
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[19]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 455
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[20]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 477
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[21]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 499
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[22]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 521
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[23]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 543
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[24]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 565
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[25]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 587
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[26]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 609
+        Warning (14320): Synthesized away node "Decode_Unit:inst7|MIR:inst|altsyncram:altsyncram_component|altsyncram_tca1:auto_generated|q_a[27]" File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_tca1.tdf Line: 631
 Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "Out_Instr_Reg[21]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Instruction_Reg:inst|74374:inst8|42" to the node "MIR_IN[6]" into a wire
@@ -920,10 +888,10 @@ Info (21057): Implemented 301 device resources after synthesis - the final resou
     Info (21058): Implemented 66 input pins
     Info (21059): Implemented 75 output pins
     Info (21061): Implemented 160 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 114 warnings
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Sun May 24 23:20:47 2020
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:50
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 81 warnings
+    Info: Peak virtual memory: 951 megabytes
+    Info: Processing ended: Mon May 25 00:10:37 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:32
 
 
