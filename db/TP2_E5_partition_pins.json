@@ -4,6 +4,126 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "HOLD4",
+					"strict" : false
+				},
+				{
+					"name" : "K_Reg_Out",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Addr_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SH_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_Reg_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C_Reg_Out[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Jmp_Opcode[2]",
 					"strict" : false
 				},
@@ -124,6 +244,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "Mem_Reg_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Mem_Reg_Out[0]",
+					"strict" : false
+				},
+				{
 					"name" : "MIR_IN[6]",
 					"strict" : false
 				},
@@ -149,6 +277,50 @@
 				},
 				{
 					"name" : "MIR_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out[0]",
 					"strict" : false
 				},
 				{
@@ -304,11 +476,63 @@
 					"strict" : false
 				},
 				{
+					"name" : "Type_Reg_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Type_Reg_Out[0]",
+					"strict" : false
+				},
+				{
 					"name" : "SH_Sel[1]",
 					"strict" : false
 				},
 				{
 					"name" : "SH_Sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Instr_Mem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr_Mem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr_Mem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr_Mem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr_Mem[11]",
 					"strict" : false
 				},
 				{
@@ -348,26 +572,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Instr_Mem[11]",
-					"strict" : false
-				},
-				{
-					"name" : "Instr_Mem[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Instr_Mem[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Instr_Mem[8]",
-					"strict" : false
-				},
-				{
 					"name" : "Instr_Mem[7]",
 					"strict" : false
 				},
@@ -397,6 +601,10 @@
 				},
 				{
 					"name" : "Instr_Mem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "preload",
 					"strict" : false
 				},
 				{
@@ -533,10 +741,6 @@
 				},
 				{
 					"name" : "ALU_Sel[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Clock",
 					"strict" : false
 				},
 				{
