@@ -87,7 +87,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -496 320 -320 336)
+	(rect -496 816 -320 832)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "fromBusC[15..0]" (rect 9 0 91 12)(font "Arial" ))
 	(pt 176 8)
@@ -103,35 +103,37 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -496 336 -320 352)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "C[5..0]" (rect 9 0 43 12)(font "Arial" ))
-	(pt 176 8)
+	(rect -256 1400 -240 1576)
+	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
+	(text "C[5..0]" (rect 0 133 12 167)(font "Arial" )(vertical))
+	(pt 8 0)
 	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
 	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(rotate90)
+	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
 )
 (pin
 	(input)
-	(rect -496 352 -320 368)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "clk5" (rect 9 0 29 12)(font "Arial" ))
-	(pt 176 8)
+	(rect -216 1400 -200 1576)
+	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
+	(text "clk5" (rect 0 147 12 167)(font "Arial" )(vertical))
+	(pt 8 0)
 	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
 	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(rotate90)
+	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
 )
 (pin
 	(output)
@@ -152,7 +154,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1344 160 1520 176)
+	(rect 1352 200 1528 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "toBusA[15..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
@@ -168,7 +170,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1344 144 1520 160)
+	(rect 1352 184 1528 200)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "toBusB[15..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
@@ -2564,25 +2566,25 @@ refer to the applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 0 80)
+		(pt 0 576)
 		(input)
 		(text "BUS[15..0]" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
-		(text "BUS[15..0]" (rect 21 75 85 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
+		(text "BUS[15..0]" (rect 21 571 85 590)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 576)(pt 16 576)(line_width 3))
 	)
 	(port
-		(pt 0 96)
+		(pt 72 1152)
 		(input)
 		(text "C_[5..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
-		(text "C_[5..0]" (rect 21 91 67 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
+		(text "C_[5..0]" (rect 64 1080 83 1126)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 72 1152)(pt 72 1135)(line_width 3))
 	)
 	(port
-		(pt 0 112)
+		(pt 112 1152)
 		(input)
 		(text "CLK_5_in" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
-		(text "CLK_5_in" (rect 21 107 77 126)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 112)(pt 16 112))
+		(text "CLK_5_in" (rect 104 1070 123 1126)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 112 1152)(pt 112 1135))
 	)
 	(port
 		(pt 296 32)
@@ -2594,8 +2596,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 48)
 		(output)
-		(text "WR-Wreg" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-Wreg" (rect 220 43 275 62)(font "Intel Clear" (font_size 8)))
+		(text "WR_Wreg" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_Wreg" (rect 218 43 275 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 48)(pt 280 48))
 	)
 	(port
@@ -2608,8 +2610,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 80)
 		(output)
-		(text "WR-Aux2" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-Aux2" (rect 221 75 275 94)(font "Intel Clear" (font_size 8)))
+		(text "WR_Aux2" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_Aux2" (rect 219 75 275 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 80)(pt 280 80))
 	)
 	(port
@@ -2622,8 +2624,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 112)
 		(output)
-		(text "WR-Aux1" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-Aux1" (rect 221 107 275 126)(font "Intel Clear" (font_size 8)))
+		(text "WR_Aux1" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_Aux1" (rect 219 107 275 126)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 112)(pt 280 112))
 	)
 	(port
@@ -2636,8 +2638,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 144)
 		(output)
-		(text "WR-PO2" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-PO2" (rect 225 139 275 158)(font "Intel Clear" (font_size 8)))
+		(text "WR_PO2" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_PO2" (rect 222 139 275 158)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 144)(pt 280 144))
 	)
 	(port
@@ -2650,8 +2652,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 192)
 		(output)
-		(text "WR-PO1" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-PO1" (rect 225 187 275 206)(font "Intel Clear" (font_size 8)))
+		(text "WR_PO1" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_PO1" (rect 222 187 275 206)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 192)(pt 280 192))
 	)
 	(port
@@ -2664,8 +2666,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 224)
 		(output)
-		(text "WR-R27" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R27" (rect 226 219 275 238)(font "Intel Clear" (font_size 8)))
+		(text "WR_R27" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R27" (rect 224 219 275 238)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 224)(pt 280 224))
 	)
 	(port
@@ -2678,8 +2680,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 256)
 		(output)
-		(text "WR-R26" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R26" (rect 226 251 275 270)(font "Intel Clear" (font_size 8)))
+		(text "WR_R26" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R26" (rect 224 251 275 270)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 256)(pt 280 256))
 	)
 	(port
@@ -2692,8 +2694,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 288)
 		(output)
-		(text "WR-R25" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R25" (rect 226 283 275 302)(font "Intel Clear" (font_size 8)))
+		(text "WR_R25" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R25" (rect 224 283 275 302)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 288)(pt 280 288))
 	)
 	(port
@@ -2706,8 +2708,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 320)
 		(output)
-		(text "WR-R24" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R24" (rect 226 315 275 334)(font "Intel Clear" (font_size 8)))
+		(text "WR_R24" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R24" (rect 224 315 275 334)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 320)(pt 280 320))
 	)
 	(port
@@ -2720,8 +2722,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 352)
 		(output)
-		(text "WR-R23" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R23" (rect 226 347 275 366)(font "Intel Clear" (font_size 8)))
+		(text "WR_R23" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R23" (rect 224 347 275 366)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 352)(pt 280 352))
 	)
 	(port
@@ -2734,8 +2736,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 384)
 		(output)
-		(text "WR-R22" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R22" (rect 226 379 275 398)(font "Intel Clear" (font_size 8)))
+		(text "WR_R22" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R22" (rect 224 379 275 398)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 384)(pt 280 384))
 	)
 	(port
@@ -2748,8 +2750,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 416)
 		(output)
-		(text "WR-R21" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R21" (rect 226 411 275 430)(font "Intel Clear" (font_size 8)))
+		(text "WR_R21" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R21" (rect 224 411 275 430)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 416)(pt 280 416))
 	)
 	(port
@@ -2762,8 +2764,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 448)
 		(output)
-		(text "WR-R20" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R20" (rect 226 443 275 462)(font "Intel Clear" (font_size 8)))
+		(text "WR_R20" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R20" (rect 224 443 275 462)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 448)(pt 280 448))
 	)
 	(port
@@ -2776,8 +2778,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 480)
 		(output)
-		(text "WR-R19" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R19" (rect 226 475 275 494)(font "Intel Clear" (font_size 8)))
+		(text "WR_R19" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R19" (rect 224 475 275 494)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 480)(pt 280 480))
 	)
 	(port
@@ -2790,8 +2792,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 512)
 		(output)
-		(text "WR-R18" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R18" (rect 226 507 275 526)(font "Intel Clear" (font_size 8)))
+		(text "WR_R18" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R18" (rect 224 507 275 526)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 512)(pt 280 512))
 	)
 	(port
@@ -2804,8 +2806,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 544)
 		(output)
-		(text "WR-R17" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R17" (rect 226 539 275 558)(font "Intel Clear" (font_size 8)))
+		(text "WR_R17" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R17" (rect 224 539 275 558)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 544)(pt 280 544))
 	)
 	(port
@@ -2818,8 +2820,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 576)
 		(output)
-		(text "WR-R16" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R16" (rect 226 571 275 590)(font "Intel Clear" (font_size 8)))
+		(text "WR_R16" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R16" (rect 224 571 275 590)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 576)(pt 280 576))
 	)
 	(port
@@ -2832,8 +2834,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 608)
 		(output)
-		(text "WR-R15" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R15" (rect 226 603 275 622)(font "Intel Clear" (font_size 8)))
+		(text "WR_R15" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R15" (rect 224 603 275 622)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 608)(pt 280 608))
 	)
 	(port
@@ -2846,8 +2848,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 640)
 		(output)
-		(text "WR-R14" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R14" (rect 226 635 275 654)(font "Intel Clear" (font_size 8)))
+		(text "WR_R14" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R14" (rect 224 635 275 654)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 640)(pt 280 640))
 	)
 	(port
@@ -2860,8 +2862,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 672)
 		(output)
-		(text "WR-R13" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R13" (rect 226 667 275 686)(font "Intel Clear" (font_size 8)))
+		(text "WR_R13" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R13" (rect 224 667 275 686)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 672)(pt 280 672))
 	)
 	(port
@@ -2874,8 +2876,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 704)
 		(output)
-		(text "WR-R12" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R12" (rect 226 699 275 718)(font "Intel Clear" (font_size 8)))
+		(text "WR_R12" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R12" (rect 224 699 275 718)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 704)(pt 280 704))
 	)
 	(port
@@ -2888,8 +2890,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 736)
 		(output)
-		(text "WR-R11" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R11" (rect 226 731 275 750)(font "Intel Clear" (font_size 8)))
+		(text "WR_R11" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R11" (rect 224 731 275 750)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 736)(pt 280 736))
 	)
 	(port
@@ -2902,8 +2904,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 768)
 		(output)
-		(text "WR-R10" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R10" (rect 226 763 275 782)(font "Intel Clear" (font_size 8)))
+		(text "WR_R10" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R10" (rect 224 763 275 782)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 768)(pt 280 768))
 	)
 	(port
@@ -2916,8 +2918,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 800)
 		(output)
-		(text "WR-R9" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R9" (rect 234 795 275 814)(font "Intel Clear" (font_size 8)))
+		(text "WR_R9" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R9" (rect 232 795 275 814)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 800)(pt 280 800))
 	)
 	(port
@@ -2930,8 +2932,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 832)
 		(output)
-		(text "WR-R8" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R8" (rect 234 827 275 846)(font "Intel Clear" (font_size 8)))
+		(text "WR_R8" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R8" (rect 232 827 275 846)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 832)(pt 280 832))
 	)
 	(port
@@ -2944,8 +2946,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 864)
 		(output)
-		(text "WR-R7" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R7" (rect 234 859 275 878)(font "Intel Clear" (font_size 8)))
+		(text "WR_R7" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R7" (rect 232 859 275 878)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 864)(pt 280 864))
 	)
 	(port
@@ -2958,8 +2960,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 896)
 		(output)
-		(text "WR-R6" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R6" (rect 234 891 275 910)(font "Intel Clear" (font_size 8)))
+		(text "WR_R6" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R6" (rect 232 891 275 910)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 896)(pt 280 896))
 	)
 	(port
@@ -2972,8 +2974,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 928)
 		(output)
-		(text "WR-R5" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R5" (rect 234 923 275 942)(font "Intel Clear" (font_size 8)))
+		(text "WR_R5" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R5" (rect 232 923 275 942)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 928)(pt 280 928))
 	)
 	(port
@@ -2986,8 +2988,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 960)
 		(output)
-		(text "WR-R4" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R4" (rect 234 955 275 974)(font "Intel Clear" (font_size 8)))
+		(text "WR_R4" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R4" (rect 232 955 275 974)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 960)(pt 280 960))
 	)
 	(port
@@ -3000,8 +3002,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 992)
 		(output)
-		(text "WR-R3" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R3" (rect 234 987 275 1006)(font "Intel Clear" (font_size 8)))
+		(text "WR_R3" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R3" (rect 232 987 275 1006)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 992)(pt 280 992))
 	)
 	(port
@@ -3014,8 +3016,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 1024)
 		(output)
-		(text "WR-R2" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R2" (rect 234 1019 275 1038)(font "Intel Clear" (font_size 8)))
+		(text "WR_R2" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R2" (rect 232 1019 275 1038)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 1024)(pt 280 1024))
 	)
 	(port
@@ -3028,8 +3030,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 1056)
 		(output)
-		(text "WR-R1" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R1" (rect 234 1051 275 1070)(font "Intel Clear" (font_size 8)))
+		(text "WR_R1" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R1" (rect 232 1051 275 1070)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 1056)(pt 280 1056))
 	)
 	(port
@@ -3042,8 +3044,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 1088)
 		(output)
-		(text "WR-R0" (rect 0 0 41 19)(font "Intel Clear" (font_size 8)))
-		(text "WR-R0" (rect 234 1083 275 1102)(font "Intel Clear" (font_size 8)))
+		(text "WR_R0" (rect 0 0 43 19)(font "Intel Clear" (font_size 8)))
+		(text "WR_R0" (rect 232 1083 275 1102)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 1088)(pt 280 1088))
 	)
 	(port
@@ -4466,26 +4468,6 @@ refer to the applicable agreement for further details.
 	(pt 512 1640)
 )
 (connector
-	(pt 1344 152)
-	(pt 1336 152)
-	(bus)
-)
-(connector
-	(pt 1336 192)
-	(pt 1352 192)
-	(bus)
-)
-(connector
-	(pt 1344 168)
-	(pt 1336 168)
-	(bus)
-)
-(connector
-	(pt 1336 208)
-	(pt 1352 208)
-	(bus)
-)
-(connector
 	(pt 776 192)
 	(pt 1088 192)
 	(bus)
@@ -4831,21 +4813,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1336 192)
-	(pt 1336 208)
-	(bus)
-)
-(connector
-	(pt 1336 152)
-	(pt 1336 168)
-	(bus)
-)
-(connector
-	(pt 1336 168)
-	(pt 1336 192)
-	(bus)
-)
-(connector
 	(pt 776 192)
 	(pt 776 216)
 	(bus)
@@ -4890,5 +4857,3 @@ refer to the applicable agreement for further details.
 (junction (pt 512 496))
 (junction (pt 512 1536))
 (junction (pt 512 1432))
-(junction (pt 1336 192))
-(junction (pt 1336 168))
