@@ -16,13 +16,16 @@ CONTENT                       -- start of (address : data pairs)
 BEGIN
 
 -- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus 
--- MOK W,#K
-000 : 0001001111000111000111;                -- memory address : data
+-- MOV Ri,Rj
+000 : 0010001000001000000000;                -- memory address : data
 -- ADW Ri,Rj
 001 : 0110000110010100000000;
 -- JMP X
 002 : 1001010101010100000000;
-002 : 1001010101010100000000;
--- MOV POi,PIj
-[003..7FF] :0010111111110000000000;
+-- CLR CY
+003 : 0000001000000000000000;
+-- CLR CY
+004 : 0000001000000000000000;
+-- SET CY
+[005..7FF] :0000010000000000000000;
 END;

@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/28/2020 14:40:21"
+// Generated on "05/28/2020 18:00:55"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -31,6 +31,7 @@ module TP2_E5_vlg_vec_tst();
 // general purpose registers
 reg [15:0] ALU_B_IN;
 reg Clock;
+reg hold;
 reg [15:0] KMUX_Reg_Bank_IN;
 reg Mem_Clock;
 reg [15:0] W;
@@ -65,6 +66,7 @@ TP2_E5 i1 (
 	.DEC_Jump_PC(DEC_Jump_PC),
 	.DEC_K_VAL(DEC_K_VAL),
 	.DEC_TYPE(DEC_TYPE),
+	.hold(hold),
 	.KMUX_Reg_Bank_IN(KMUX_Reg_Bank_IN),
 	.Mem_Clock(Mem_Clock),
 	.Mem_Out(Mem_Out),
@@ -170,8 +172,14 @@ end
 always
 begin
 	Clock = 1'b0;
-	Clock = #50000 1'b1;
-	#50000;
+	Clock = #25000 1'b1;
+	#25000;
+end 
+
+// hold
+initial
+begin
+	hold = 1'b0;
 end 
 // KMUX_Reg_Bank_IN[ 15 ]
 initial
