@@ -1,6 +1,6 @@
-// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
+// and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
@@ -10,7 +10,8 @@
 // agreement, including, without limitation, that your use is for
 // the sole purpose of programming logic devices manufactured by
 // Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details.
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
 
 // *****************************************************************************
 // This file contains a Verilog test bench with test vectors .The test vectors  
@@ -18,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/28/2020 18:33:10"
+// Generated on "05/28/2020 20:11:05"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -33,7 +34,6 @@ reg [15:0] ALU_B_IN;
 reg Clock;
 reg hold;
 reg [15:0] KMUX_Reg_Bank_IN;
-reg Mem_Clock;
 reg [15:0] W;
 // wires                                               
 wire [5:0] DEC_ALU_SH;
@@ -68,7 +68,6 @@ TP2_E5 i1 (
 	.DEC_TYPE(DEC_TYPE),
 	.hold(hold),
 	.KMUX_Reg_Bank_IN(KMUX_Reg_Bank_IN),
-	.Mem_Clock(Mem_Clock),
 	.Mem_Out(Mem_Out),
 	.New_PC(New_PC),
 	.Pipe_A_Addr(Pipe_A_Addr),
@@ -172,8 +171,8 @@ end
 always
 begin
 	Clock = 1'b0;
-	Clock = #25000 1'b1;
-	#25000;
+	Clock = #50000 1'b1;
+	#50000;
 end 
 
 // hold
@@ -260,14 +259,6 @@ end
 initial
 begin
 	KMUX_Reg_Bank_IN[0] = 1'b0;
-end 
-
-// Mem_Clock
-always
-begin
-	Mem_Clock = 1'b0;
-	Mem_Clock = #25000 1'b1;
-	#25000;
 end 
 // W[ 15 ]
 initial

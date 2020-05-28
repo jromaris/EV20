@@ -762,10 +762,6 @@
 				{
 					"name" : "ALU_B_IN[15]",
 					"strict" : false
-				},
-				{
-					"name" : "Mem_Clock",
-					"strict" : false
 				}
 			]
 		}
