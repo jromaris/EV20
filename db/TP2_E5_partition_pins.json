@@ -4,411 +4,503 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "HOLD4",
+					"name" : "PreLoad",
 					"strict" : false
 				},
 				{
-					"name" : "K_Reg_Out",
+					"name" : "Pipe_Hold",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[9]",
+					"name" : "Pipe_K_Reg",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[8]",
+					"name" : "DEC_ALU_SH[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[7]",
+					"name" : "DEC_ALU_SH[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[6]",
+					"name" : "DEC_ALU_SH[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[5]",
+					"name" : "DEC_ALU_SH[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[4]",
+					"name" : "DEC_ALU_SH[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[3]",
+					"name" : "DEC_ALU_SH[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[2]",
+					"name" : "DEC_B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[1]",
+					"name" : "DEC_B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A_Addr_Out[0]",
+					"name" : "DEC_B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_SH_Out[5]",
+					"name" : "DEC_B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_SH_Out[4]",
+					"name" : "DEC_B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_SH_Out[3]",
+					"name" : "DEC_B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_SH_Out[2]",
+					"name" : "DEC_C[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_SH_Out[1]",
+					"name" : "DEC_C[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_SH_Out[0]",
+					"name" : "DEC_C[3]",
 					"strict" : false
 				},
 				{
-					"name" : "B_Reg_Out[5]",
+					"name" : "DEC_C[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B_Reg_Out[4]",
+					"name" : "DEC_C[1]",
 					"strict" : false
 				},
 				{
-					"name" : "B_Reg_Out[3]",
+					"name" : "DEC_C[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B_Reg_Out[2]",
+					"name" : "DEC_Jump_PC[10]",
 					"strict" : false
 				},
 				{
-					"name" : "B_Reg_Out[1]",
+					"name" : "DEC_Jump_PC[9]",
 					"strict" : false
 				},
 				{
-					"name" : "B_Reg_Out[0]",
+					"name" : "DEC_Jump_PC[8]",
 					"strict" : false
 				},
 				{
-					"name" : "C_Reg_Out[5]",
+					"name" : "DEC_Jump_PC[7]",
 					"strict" : false
 				},
 				{
-					"name" : "C_Reg_Out[4]",
+					"name" : "DEC_Jump_PC[6]",
 					"strict" : false
 				},
 				{
-					"name" : "C_Reg_Out[3]",
+					"name" : "DEC_Jump_PC[5]",
 					"strict" : false
 				},
 				{
-					"name" : "C_Reg_Out[2]",
+					"name" : "DEC_Jump_PC[4]",
 					"strict" : false
 				},
 				{
-					"name" : "C_Reg_Out[1]",
+					"name" : "DEC_Jump_PC[3]",
 					"strict" : false
 				},
 				{
-					"name" : "C_Reg_Out[0]",
+					"name" : "DEC_Jump_PC[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Jmp_Opcode[2]",
+					"name" : "DEC_Jump_PC[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Jmp_Opcode[1]",
+					"name" : "DEC_Jump_PC[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Jmp_Opcode[0]",
+					"name" : "DEC_K_VAL[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[10]",
+					"name" : "DEC_K_VAL[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[9]",
+					"name" : "DEC_K_VAL[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[8]",
+					"name" : "DEC_K_VAL[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[7]",
+					"name" : "DEC_K_VAL[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[6]",
+					"name" : "DEC_K_VAL[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[5]",
+					"name" : "DEC_K_VAL[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[4]",
+					"name" : "DEC_K_VAL[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[3]",
+					"name" : "DEC_K_VAL[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[2]",
+					"name" : "DEC_K_VAL[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[1]",
+					"name" : "DEC_K_VAL[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Jump_PC_Val[0]",
+					"name" : "DEC_K_VAL[4]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[15]",
+					"name" : "DEC_K_VAL[3]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[14]",
+					"name" : "DEC_K_VAL[2]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[13]",
+					"name" : "DEC_K_VAL[1]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[12]",
+					"name" : "DEC_K_VAL[0]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[11]",
+					"name" : "DEC_TYPE[6]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[10]",
+					"name" : "DEC_TYPE[5]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[9]",
+					"name" : "DEC_TYPE[4]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[8]",
+					"name" : "DEC_TYPE[3]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[7]",
+					"name" : "DEC_TYPE[2]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[6]",
+					"name" : "DEC_TYPE[1]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[5]",
+					"name" : "DEC_TYPE[0]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[4]",
+					"name" : "Mem_Out[21]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[3]",
+					"name" : "Mem_Out[20]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[2]",
+					"name" : "Mem_Out[19]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[1]",
+					"name" : "Mem_Out[18]",
 					"strict" : false
 				},
 				{
-					"name" : "K_Val[0]",
+					"name" : "Mem_Out[17]",
 					"strict" : false
 				},
 				{
-					"name" : "Mem_Reg_Out[1]",
+					"name" : "Mem_Out[16]",
 					"strict" : false
 				},
 				{
-					"name" : "Mem_Reg_Out[0]",
+					"name" : "Mem_Out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[6]",
+					"name" : "Mem_Out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[5]",
+					"name" : "Mem_Out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[4]",
+					"name" : "Mem_Out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[3]",
+					"name" : "Mem_Out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[2]",
+					"name" : "Mem_Out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[1]",
+					"name" : "Mem_Out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "MIR_IN[0]",
+					"name" : "Mem_Out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "out[10]",
+					"name" : "Mem_Out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "out[9]",
+					"name" : "Mem_Out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "out[8]",
+					"name" : "Mem_Out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "out[7]",
+					"name" : "Mem_Out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "out[6]",
+					"name" : "Mem_Out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "out[5]",
+					"name" : "Mem_Out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "out[4]",
+					"name" : "Mem_Out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "out[3]",
+					"name" : "Mem_Out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "out[2]",
+					"name" : "New_PC[10]",
 					"strict" : false
 				},
 				{
-					"name" : "out[1]",
+					"name" : "New_PC[9]",
 					"strict" : false
 				},
 				{
-					"name" : "out[0]",
+					"name" : "New_PC[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[21]",
+					"name" : "New_PC[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[20]",
+					"name" : "New_PC[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[19]",
+					"name" : "New_PC[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[18]",
+					"name" : "New_PC[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[17]",
+					"name" : "New_PC[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[16]",
+					"name" : "New_PC[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[15]",
+					"name" : "New_PC[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[14]",
+					"name" : "New_PC[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[13]",
+					"name" : "Pipe_A_Addr[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[12]",
+					"name" : "Pipe_A_Addr[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[11]",
+					"name" : "Pipe_A_Addr[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[10]",
+					"name" : "Pipe_A_Addr[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[9]",
+					"name" : "Pipe_A_Addr[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[8]",
+					"name" : "Pipe_A_Addr[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[7]",
+					"name" : "Pipe_A_Addr[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[6]",
+					"name" : "Pipe_A_Addr[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[5]",
+					"name" : "Pipe_A_Addr[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[4]",
+					"name" : "Pipe_A_Addr[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[3]",
+					"name" : "Pipe_ALU_SH[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[2]",
+					"name" : "Pipe_ALU_SH[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[1]",
+					"name" : "Pipe_ALU_SH[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Out_Instr_Reg[0]",
+					"name" : "Pipe_ALU_SH[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_ALU_SH[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_ALU_SH[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_B_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_B_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_B_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_B_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_B_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_B_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_C_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_C_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_C_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_C_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_C_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_C_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Mem_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Mem_Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Pipe_Type_Reg[0]",
 					"strict" : false
 				},
 				{
@@ -476,39 +568,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[6]",
+					"name" : "W[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[5]",
+					"name" : "W[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[4]",
+					"name" : "W[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[3]",
+					"name" : "W[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[2]",
+					"name" : "W[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[1]",
+					"name" : "W[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Type_Reg_Out[0]",
+					"name" : "W[9]",
 					"strict" : false
 				},
 				{
-					"name" : "SH_Sel[1]",
+					"name" : "W[8]",
 					"strict" : false
 				},
 				{
-					"name" : "SH_Sel[0]",
+					"name" : "W[7]",
+					"strict" : false
+				},
+				{
+					"name" : "W[6]",
+					"strict" : false
+				},
+				{
+					"name" : "W[5]",
+					"strict" : false
+				},
+				{
+					"name" : "W[4]",
+					"strict" : false
+				},
+				{
+					"name" : "W[3]",
+					"strict" : false
+				},
+				{
+					"name" : "W[2]",
+					"strict" : false
+				},
+				{
+					"name" : "W[1]",
+					"strict" : false
+				},
+				{
+					"name" : "W[0]",
 					"strict" : false
 				},
 				{
@@ -516,259 +636,135 @@
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[12]",
+					"name" : "ALU_B_IN[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[10]",
+					"name" : "KMUX_Reg_Bank_IN[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[9]",
+					"name" : "KMUX_Reg_Bank_IN[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[8]",
+					"name" : "ALU_B_IN[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[11]",
+					"name" : "KMUX_Reg_Bank_IN[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[21]",
+					"name" : "ALU_B_IN[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[20]",
+					"name" : "KMUX_Reg_Bank_IN[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[19]",
+					"name" : "ALU_B_IN[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[18]",
+					"name" : "KMUX_Reg_Bank_IN[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[17]",
+					"name" : "ALU_B_IN[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[16]",
+					"name" : "KMUX_Reg_Bank_IN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[15]",
+					"name" : "ALU_B_IN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[14]",
+					"name" : "KMUX_Reg_Bank_IN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[13]",
+					"name" : "ALU_B_IN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[7]",
+					"name" : "KMUX_Reg_Bank_IN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[6]",
+					"name" : "ALU_B_IN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[5]",
+					"name" : "KMUX_Reg_Bank_IN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[4]",
+					"name" : "ALU_B_IN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[3]",
+					"name" : "KMUX_Reg_Bank_IN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[2]",
+					"name" : "ALU_B_IN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[1]",
+					"name" : "KMUX_Reg_Bank_IN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr_Mem[0]",
+					"name" : "ALU_B_IN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "preload",
+					"name" : "KMUX_Reg_Bank_IN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "B[14]",
+					"name" : "ALU_B_IN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_Sel[0]",
+					"name" : "KMUX_Reg_Bank_IN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_Sel[3]",
+					"name" : "ALU_B_IN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_Sel[1]",
+					"name" : "KMUX_Reg_Bank_IN[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[14]",
+					"name" : "ALU_B_IN[1]",
 					"strict" : false
 				},
 				{
-					"name" : "B[13]",
+					"name" : "KMUX_Reg_Bank_IN[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A[13]",
+					"name" : "ALU_B_IN[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B[12]",
+					"name" : "KMUX_Reg_Bank_IN[15]",
 					"strict" : false
 				},
 				{
-					"name" : "A[12]",
+					"name" : "ALU_B_IN[15]",
 					"strict" : false
 				},
 				{
-					"name" : "B[11]",
-					"strict" : false
-				},
-				{
-					"name" : "A[11]",
-					"strict" : false
-				},
-				{
-					"name" : "B[10]",
-					"strict" : false
-				},
-				{
-					"name" : "A[10]",
-					"strict" : false
-				},
-				{
-					"name" : "B[9]",
-					"strict" : false
-				},
-				{
-					"name" : "A[9]",
-					"strict" : false
-				},
-				{
-					"name" : "B[8]",
-					"strict" : false
-				},
-				{
-					"name" : "A[8]",
-					"strict" : false
-				},
-				{
-					"name" : "B[7]",
-					"strict" : false
-				},
-				{
-					"name" : "A[7]",
-					"strict" : false
-				},
-				{
-					"name" : "B[6]",
-					"strict" : false
-				},
-				{
-					"name" : "A[6]",
-					"strict" : false
-				},
-				{
-					"name" : "B[5]",
-					"strict" : false
-				},
-				{
-					"name" : "A[5]",
-					"strict" : false
-				},
-				{
-					"name" : "B[4]",
-					"strict" : false
-				},
-				{
-					"name" : "A[4]",
-					"strict" : false
-				},
-				{
-					"name" : "B[3]",
-					"strict" : false
-				},
-				{
-					"name" : "A[3]",
-					"strict" : false
-				},
-				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A[1]",
-					"strict" : false
-				},
-				{
-					"name" : "B[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_Sel[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B[15]",
-					"strict" : false
-				},
-				{
-					"name" : "A[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Hold",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_Bus[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_Bus[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_Bus[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_Bus[2]",
+					"name" : "Mem_Clock",
 					"strict" : false
 				}
 			]
