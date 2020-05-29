@@ -208,6 +208,46 @@
 					"strict" : false
 				},
 				{
+					"name" : "DEC_A_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_A_Addr[0]",
+					"strict" : false
+				},
+				{
 					"name" : "DEC_ALU_SH[5]",
 					"strict" : false
 				},
@@ -277,6 +317,18 @@
 				},
 				{
 					"name" : "DEC_C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_JMP_OPCODE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_JMP_OPCODE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEC_JMP_OPCODE[0]",
 					"strict" : false
 				},
 				{

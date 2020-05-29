@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 288 112)
+	(rect 16 16 288 144)
 	(text "Kmux" (rect 5 0 38 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,16 +33,30 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "Reg_Bank[15 .. 0]" (rect 0 0 105 19)(font "Intel Clear" (font_size 8)))
-		(text "Reg_Bank[15 .. 0]" (rect 21 43 126 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "Clk" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
+		(text "Clk" (rect 21 43 39 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "K_Sel" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "K_Sel" (rect 21 59 55 78)(font "Intel Clear" (font_size 8)))
+		(text "Hold" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "Hold" (rect 21 59 49 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Reg_Bank[15 .. 0]" (rect 0 0 105 19)(font "Intel Clear" (font_size 8)))
+		(text "Reg_Bank[15 .. 0]" (rect 21 75 126 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "K_Sel" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "K_Sel" (rect 21 91 55 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
 	)
 	(port
 		(pt 272 32)
@@ -52,6 +66,6 @@ refer to the applicable agreement for further details.
 		(line (pt 272 32)(pt 256 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 256 80))
+		(rectangle (rect 16 16 256 112))
 	)
 )
