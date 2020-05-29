@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "Mem_Clock" (rect 0 0 68 19)(font "Intel Clear" (font_size 8)))
-		(text "Mem_Clock" (rect 21 59 89 78)(font "Intel Clear" (font_size 8)))
+		(text "N_Hold" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "N_Hold" (rect 21 59 65 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "Clock" (rect 0 0 31 19)(font "Intel Clear" (font_size 8)))
-		(text "Clock" (rect 21 75 52 94)(font "Intel Clear" (font_size 8)))
+		(text "Mem_Clock" (rect 0 0 68 19)(font "Intel Clear" (font_size 8)))
+		(text "Mem_Clock" (rect 21 75 89 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port

@@ -16,7 +16,8 @@
 FUNCTION Program_Mem 
 (
 	address[10..0],
-	clock
+	clock,
+	rden
 )
 
 RETURNS (

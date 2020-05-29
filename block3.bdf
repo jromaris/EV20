@@ -3957,21 +3957,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Bdec[32]" (rect 878 -2784 920 -2767)(font "Intel Clear" ))
-	(pt 480 -2768)
-	(pt 1008 -2768)
-)
-(connector
-	(text "Bdec[31]" (rect 839 -2648 881 -2631)(font "Intel Clear" ))
-	(pt 480 -2632)
-	(pt 1008 -2632)
-)
-(connector
-	(text "Bdec[30]" (rect 870 -2536 912 -2519)(font "Intel Clear" ))
-	(pt 480 -2520)
-	(pt 1008 -2520)
-)
-(connector
 	(text "Bdec[29]" (rect 872 -2432 914 -2415)(font "Intel Clear" ))
 	(pt 480 -2416)
 	(pt 1008 -2416)
@@ -4115,21 +4100,6 @@ refer to the applicable agreement for further details.
 	(text "Bdec[1]" (rect 846 744 882 761)(font "Intel Clear" ))
 	(pt 472 760)
 	(pt 1008 760)
-)
-(connector
-	(text "Adec[32]" (rect 838 -2736 880 -2719)(font "Intel Clear" ))
-	(pt 680 -2720)
-	(pt 912 -2720)
-)
-(connector
-	(text "Adec[31]" (rect 856 -2608 898 -2591)(font "Intel Clear" ))
-	(pt 680 -2592)
-	(pt 912 -2592)
-)
-(connector
-	(text "Adec[30]" (rect 864 -2496 906 -2479)(font "Intel Clear" ))
-	(pt 912 -2480)
-	(pt 680 -2480)
 )
 (connector
 	(text "Adec[29]" (rect 869 -2392 911 -2375)(font "Intel Clear" ))
@@ -4986,6 +4956,36 @@ refer to the applicable agreement for further details.
 	(pt 1224 1240)
 	(pt 1392 1240)
 	(bus)
+)
+(connector
+	(text "Bdec[34]" (rect 878 -2784 920 -2767)(font "Intel Clear" ))
+	(pt 480 -2768)
+	(pt 1008 -2768)
+)
+(connector
+	(text "Adec[34]" (rect 838 -2736 880 -2719)(font "Intel Clear" ))
+	(pt 680 -2720)
+	(pt 912 -2720)
+)
+(connector
+	(text "Bdec[33]" (rect 839 -2648 881 -2631)(font "Intel Clear" ))
+	(pt 480 -2632)
+	(pt 1008 -2632)
+)
+(connector
+	(text "Adec[33]" (rect 856 -2608 898 -2591)(font "Intel Clear" ))
+	(pt 680 -2592)
+	(pt 912 -2592)
+)
+(connector
+	(text "Bdec[32]" (rect 870 -2536 912 -2519)(font "Intel Clear" ))
+	(pt 480 -2520)
+	(pt 1008 -2520)
+)
+(connector
+	(text "Adec[32]" (rect 864 -2496 906 -2479)(font "Intel Clear" ))
+	(pt 912 -2480)
+	(pt 680 -2480)
 )
 (junction (pt 360 -2712))
 (junction (pt 368 -2584))

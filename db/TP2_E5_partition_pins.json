@@ -144,6 +144,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "C_To_RGank[15]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[14]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[13]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[12]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[11]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[10]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[9]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[8]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[7]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[6]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[5]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[4]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C_To_RGank[0]",
+					"strict" : false
+				},
+				{
 					"name" : "DEC_ALU_SH[5]",
 					"strict" : false
 				},

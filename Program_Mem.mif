@@ -17,11 +17,11 @@ BEGIN
 
 -- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus 
 -- MOK W,#K
-000 : 0001001111111111111111;                -- memory address : data
+000 : 0001001010101010101010;                -- memory address : data
 -- ANK W,#K
-001 : 0001011010101010101010;
--- ANK W,#K
-002 : 0001010101010101010101;
+001 : 0001010101010101010101;
+-- ORK W,#K
+002 : 0001101111111111111111;
 -- JZE X
 003 : 1011111111111100000000;
 -- CLR CY

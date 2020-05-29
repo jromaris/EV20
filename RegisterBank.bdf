@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 1136 784 1152 960)
+	(rect 1136 816 1152 992)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "B[5..0]" (rect 0 134 12 167)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1176 784 1192 960)
+	(rect 1176 816 1192 992)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
 	(text "A[5..0]" (rect 0 134 12 167)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -3402,21 +3402,6 @@ refer to the applicable agreement for further details.
 	(pt -16 1352)
 )
 (connector
-	(pt 1144 768)
-	(pt 1144 784)
-	(bus)
-)
-(connector
-	(pt 1040 768)
-	(pt 1144 768)
-	(bus)
-)
-(connector
-	(pt 1184 744)
-	(pt 1184 784)
-	(bus)
-)
-(connector
 	(pt 1232 3144)
 	(pt 1232 3704)
 )
@@ -4632,21 +4617,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1040 768)
-	(pt 1040 720)
-	(bus)
-)
-(connector
-	(pt 1088 744)
-	(pt 1088 736)
-	(bus)
-)
-(connector
-	(pt 1184 744)
-	(pt 1088 744)
-	(bus)
-)
-(connector
 	(pt 1032 704)
 	(pt 1088 704)
 	(bus)
@@ -4820,6 +4790,41 @@ refer to the applicable agreement for further details.
 	(text "WR[15..0]" (rect 424 165 441 212)(font "Intel Clear" )(vertical))
 	(pt 424 192)
 	(pt 424 216)
+	(bus)
+)
+(connector
+	(pt 1088 736)
+	(pt 1064 736)
+	(bus)
+)
+(connector
+	(pt 1064 736)
+	(pt 1064 784)
+	(bus)
+)
+(connector
+	(pt 1064 784)
+	(pt 1184 784)
+	(bus)
+)
+(connector
+	(pt 1184 784)
+	(pt 1184 816)
+	(bus)
+)
+(connector
+	(pt 1040 720)
+	(pt 1040 808)
+	(bus)
+)
+(connector
+	(pt 1144 816)
+	(pt 1144 808)
+	(bus)
+)
+(connector
+	(pt 1144 808)
+	(pt 1040 808)
 	(bus)
 )
 (junction (pt 512 392))

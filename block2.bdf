@@ -2091,34 +2091,9 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Cdec[28]" (rect 367 -2352 409 -2335)(font "Intel Clear" ))
-	(pt 256 -2336)
-	(pt 416 -2336)
-)
-(connector
-	(text "Cdec[29]" (rect 354 -2464 396 -2447)(font "Intel Clear" ))
-	(pt 256 -2448)
-	(pt 416 -2448)
-)
-(connector
-	(text "Cdec[30]" (rect 374 -2584 416 -2567)(font "Intel Clear" ))
-	(pt 416 -2568)
-	(pt 256 -2568)
-)
-(connector
-	(text "Cdec[31]" (rect 370 -2696 412 -2679)(font "Intel Clear" ))
-	(pt 416 -2680)
-	(pt 256 -2680)
-)
-(connector
 	(pt 256 -2784)
 	(pt 256 -2680)
 	(bus)
-)
-(connector
-	(text "Cdec[32]" (rect 264 -2784 306 -2767)(font "Intel Clear" ))
-	(pt 352 -2784)
-	(pt 256 -2784)
 )
 (connector
 	(pt 232 -2280)
@@ -2135,6 +2110,31 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 352 -2800)
 	(pt 232 -2800)
+)
+(connector
+	(text "Cdec[30]" (rect 367 -2352 409 -2335)(font "Intel Clear" ))
+	(pt 256 -2336)
+	(pt 416 -2336)
+)
+(connector
+	(text "Cdec[31]" (rect 354 -2464 396 -2447)(font "Intel Clear" ))
+	(pt 256 -2448)
+	(pt 416 -2448)
+)
+(connector
+	(text "Cdec[32]" (rect 374 -2584 416 -2567)(font "Intel Clear" ))
+	(pt 416 -2568)
+	(pt 256 -2568)
+)
+(connector
+	(text "Cdec[33]" (rect 370 -2696 412 -2679)(font "Intel Clear" ))
+	(pt 416 -2680)
+	(pt 256 -2680)
+)
+(connector
+	(text "Cdec[34]" (rect 264 -2784 306 -2767)(font "Intel Clear" ))
+	(pt 352 -2784)
+	(pt 256 -2784)
 )
 (junction (pt 320 720))
 (junction (pt 256 760))

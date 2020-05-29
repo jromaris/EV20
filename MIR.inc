@@ -16,7 +16,8 @@
 FUNCTION MIR 
 (
 	address[6..0],
-	clock
+	clock,
+	rden
 )
 
 RETURNS (

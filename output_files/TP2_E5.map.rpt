@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Fri May 29 00:41:57 2020
+Fri May 29 12:30:29 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,8 +18,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_cm91:auto_generated
- 14. Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_ija1:auto_generated
+ 13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated
+ 14. Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated
  15. Parameter Settings for User Entity Instance: Pre_Load_Block:inst10|MUX:inst2
  16. Parameter Settings for User Entity Instance: Kmux:inst|BUSMUX:inst2
  17. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component
@@ -73,16 +73,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 29 00:41:56 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 29 12:30:29 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,515                                       ;
-;     Total combinational functions  ; 961                                         ;
-;     Dedicated logic registers      ; 620                                         ;
-; Total registers                    ; 620                                         ;
-; Total pins                         ; 206                                         ;
+; Total logic elements               ; 1,521                                       ;
+;     Total combinational functions  ; 967                                         ;
+;     Dedicated logic registers      ; 636                                         ;
+; Total registers                    ; 636                                         ;
+; Total pins                         ; 222                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 48,640                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -240,10 +240,10 @@ refer to the applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_cm91.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_cm91.tdf                 ;         ;
+; db/altsyncram_laa1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_laa1.tdf                 ;         ;
 ; mir.mif                          ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/mir.mif                                ;         ;
 ; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf                         ;         ;
-; db/altsyncram_ija1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_ija1.tdf                 ;         ;
+; db/altsyncram_r7b1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_r7b1.tdf                 ;         ;
 ; program_mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/program_mem.mif                        ;         ;
 ; registerbank.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/registerbank.bdf                       ;         ;
 ; block2.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/block2.bdf                             ;         ;
@@ -265,31 +265,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------+
 ; Resource                                    ; Usage                              ;
 +---------------------------------------------+------------------------------------+
-; Estimated Total logic elements              ; 1,515                              ;
+; Estimated Total logic elements              ; 1,521                              ;
 ;                                             ;                                    ;
-; Total combinational functions               ; 961                                ;
+; Total combinational functions               ; 967                                ;
 ; Logic element usage by number of LUT inputs ;                                    ;
-;     -- 4 input functions                    ; 789                                ;
-;     -- 3 input functions                    ; 105                                ;
-;     -- <=2 input functions                  ; 67                                 ;
+;     -- 4 input functions                    ; 785                                ;
+;     -- 3 input functions                    ; 128                                ;
+;     -- <=2 input functions                  ; 54                                 ;
 ;                                             ;                                    ;
 ; Logic elements by mode                      ;                                    ;
-;     -- normal mode                          ; 919                                ;
+;     -- normal mode                          ; 925                                ;
 ;     -- arithmetic mode                      ; 42                                 ;
 ;                                             ;                                    ;
-; Total registers                             ; 620                                ;
-;     -- Dedicated logic registers            ; 620                                ;
+; Total registers                             ; 636                                ;
+;     -- Dedicated logic registers            ; 636                                ;
 ;     -- I/O registers                        ; 0                                  ;
 ;                                             ;                                    ;
-; I/O pins                                    ; 206                                ;
+; I/O pins                                    ; 222                                ;
 ; Total memory bits                           ; 48640                              ;
 ;                                             ;                                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                                  ;
 ;                                             ;                                    ;
-; Maximum fan-out node                        ; Control_Word_Register2:inst8|inst2 ;
-; Maximum fan-out                             ; 106                                ;
-; Total fan-out                               ; 5857                               ;
-; Average fan-out                             ; 2.84                               ;
+; Maximum fan-out node                        ; Control_Word_Register2:inst8|inst3 ;
+; Maximum fan-out                             ; 225                                ;
+; Total fan-out                               ; 6051                               ;
+; Average fan-out                             ; 2.86                               ;
 +---------------------------------------------+------------------------------------+
 
 
@@ -298,12 +298,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TP2_E5                                         ; 961 (2)             ; 620 (0)                   ; 48640       ; 0            ; 0       ; 0         ; 206  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
+; |TP2_E5                                         ; 967 (0)             ; 636 (0)                   ; 48640       ; 0            ; 0       ; 0         ; 222  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
+;    |16bitReg:inst1|                             ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst1                                                                                              ; 16bitReg               ; work         ;
 ;    |Carry_Block:inst5|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5                                                                                           ; Carry_Block            ; work         ;
-;    |Control_Word_Register2:inst8|               ; 28 (1)              ; 72 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst8                                                                                ; Control_Word_Register2 ; work         ;
-;       |UC-1:inst151|                            ; 13 (13)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst8|UC-1:inst151                                                                   ; UC-1                   ; work         ;
+;    |Control_Word_Register2:inst8|               ; 28 (1)              ; 71 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst8                                                                                ; Control_Word_Register2 ; work         ;
+;       |UC-1:inst151|                            ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst8|UC-1:inst151                                                                   ; UC-1                   ; work         ;
 ;       |UC-2:inst146|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst8|UC-2:inst146                                                                   ; UC-2                   ; work         ;
-;    |Decode_Unit:inst21|                         ; 9 (2)               ; 23 (0)                    ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
+;    |Decode_Unit:inst21|                         ; 7 (0)               ; 23 (0)                    ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
 ;       |Instr_Separator:inst|                    ; 0 (0)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst                                                                     ; Instr_Separator        ; work         ;
 ;          |FFD11bits:inst3|                      ; 0 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3                                                     ; FFD11bits              ; work         ;
 ;          |FFD16bits:inst1|                      ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1                                                     ; FFD16bits              ; work         ;
@@ -311,20 +312,20 @@ refer to the applicable agreement for further details.
 ;       |MIR_DECODE:inst3|                        ; 7 (1)               ; 1 (1)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3                                                                         ; MIR_DECODE             ; work         ;
 ;          |MIR:inst|                             ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst                                                                ; MIR                    ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
-;                |altsyncram_cm91:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_cm91:auto_generated ; altsyncram_cm91        ; work         ;
+;                |altsyncram_laa1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated ; altsyncram_laa1        ; work         ;
 ;          |busmux:inst5|                         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5                                                            ; busmux                 ; work         ;
 ;             |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000                                             ; lpm_mux                ; work         ;
 ;                |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000|mux_crc:auto_generated                      ; mux_crc                ; work         ;
-;    |Kmux:inst|                                  ; 325 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst                                                                                                   ; Kmux                   ; work         ;
-;       |busmux:inst2|                            ; 325 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2                                                                                      ; busmux                 ; work         ;
-;          |lpm_mux:$00000|                       ; 325 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000                                                                       ; lpm_mux                ; work         ;
-;             |mux_tsc:auto_generated|            ; 325 (325)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated                                                ; mux_tsc                ; work         ;
-;    |PC_COUNTER:inst11|                          ; 11 (11)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|PC_COUNTER:inst11                                                                                           ; PC_COUNTER             ; work         ;
+;    |Kmux:inst|                                  ; 304 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst                                                                                                   ; Kmux                   ; work         ;
+;       |busmux:inst2|                            ; 304 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2                                                                                      ; busmux                 ; work         ;
+;          |lpm_mux:$00000|                       ; 304 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000                                                                       ; lpm_mux                ; work         ;
+;             |mux_tsc:auto_generated|            ; 304 (304)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated                                                ; mux_tsc                ; work         ;
+;    |PC_COUNTER:inst2|                           ; 11 (11)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|PC_COUNTER:inst2                                                                                            ; PC_COUNTER             ; work         ;
 ;    |Pre_Load_Block:inst10|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Pre_Load_Block:inst10                                                                                       ; Pre_Load_Block         ; work         ;
-;    |Program_Mem:inst14|                         ; 0 (0)               ; 0 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14                                                                                          ; Program_Mem            ; work         ;
-;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component                                                          ; altsyncram             ; work         ;
-;          |altsyncram_ija1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_ija1:auto_generated                           ; altsyncram_ija1        ; work         ;
-;    |RegisterBank:inst18|                        ; 457 (40)            ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18                                                                                         ; RegisterBank           ; work         ;
+;    |Program_Mem:inst14|                         ; 2 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14                                                                                          ; Program_Mem            ; work         ;
+;       |altsyncram:altsyncram_component|         ; 2 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component                                                          ; altsyncram             ; work         ;
+;          |altsyncram_r7b1:auto_generated|       ; 2 (2)               ; 1 (1)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated                           ; altsyncram_r7b1        ; work         ;
+;    |RegisterBank:inst18|                        ; 472 (41)            ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18                                                                                         ; RegisterBank           ; work         ;
 ;       |16bitReg:inst13|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst13                                                                         ; 16bitReg               ; work         ;
 ;       |16bitReg:inst2|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst2                                                                          ; 16bitReg               ; work         ;
 ;       |16bitReg:inst3|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst3                                                                          ; 16bitReg               ; work         ;
@@ -355,63 +356,62 @@ refer to the applicable agreement for further details.
 ;       |16bitReg:inst66|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst66                                                                         ; 16bitReg               ; work         ;
 ;       |16bitReg:inst67|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst67                                                                         ; 16bitReg               ; work         ;
 ;       |16bitReg:inst69|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst69                                                                         ; 16bitReg               ; work         ;
-;       |16bitReg:inst|                           ; 15 (15)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst                                                                           ; 16bitReg               ; work         ;
-;       |block2:inst70|                           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block2:inst70                                                                           ; block2                 ; work         ;
+;       |16bitReg:inst|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|16bitReg:inst                                                                           ; 16bitReg               ; work         ;
+;       |block2:inst70|                           ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block2:inst70                                                                           ; block2                 ; work         ;
 ;          |lpm_decode:inst|                      ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block2:inst70|lpm_decode:inst                                                           ; lpm_decode             ; work         ;
 ;             |decode_3df:auto_generated|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block2:inst70|lpm_decode:inst|decode_3df:auto_generated                                 ; decode_3df             ; work         ;
-;          |multiplexer16b:inst1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block2:inst70|multiplexer16b:inst1                                                      ; multiplexer16b         ; work         ;
-;       |block3:inst71|                           ; 398 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71                                                                           ; block3                 ; work         ;
-;          |TRI16:inst12|                         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|TRI16:inst12                                                              ; TRI16                  ; work         ;
-;          |TRI16:inst16|                         ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|TRI16:inst16                                                              ; TRI16                  ; work         ;
-;          |TRI16:inst44|                         ; 342 (342)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|TRI16:inst44                                                              ; TRI16                  ; work         ;
-;          |lpm_decode:inst73|                    ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|lpm_decode:inst73                                                         ; lpm_decode             ; work         ;
-;             |decode_3df:auto_generated|         ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                               ; decode_3df             ; work         ;
-;    |Shifter:inst4|                              ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4                                                                                               ; Shifter                ; work         ;
-;       |mux:inst10|                              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10                                                                                    ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
-;       |mux:inst11|                              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst11                                                                                    ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst11|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst11|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
-;       |mux:inst12|                              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst12                                                                                    ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst12|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst12|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
-;       |mux:inst13|                              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst13                                                                                    ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst13|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst13|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
-;       |mux:inst14|                              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst14                                                                                    ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst14|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst14|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
+;          |multiplexer16b:inst1|                 ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block2:inst70|multiplexer16b:inst1                                                      ; multiplexer16b         ; work         ;
+;       |block3:inst71|                           ; 412 (14)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71                                                                           ; block3                 ; work         ;
+;          |TRI16:inst14|                         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|TRI16:inst14                                                              ; TRI16                  ; work         ;
+;          |TRI16:inst44|                         ; 355 (355)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|TRI16:inst44                                                              ; TRI16                  ; work         ;
+;          |lpm_decode:inst73|                    ; 39 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|lpm_decode:inst73                                                         ; lpm_decode             ; work         ;
+;             |decode_3df:auto_generated|         ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst18|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                               ; decode_3df             ; work         ;
+;    |Shifter:inst4|                              ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4                                                                                               ; Shifter                ; work         ;
+;       |mux:inst10|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10                                                                                    ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
+;       |mux:inst11|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst11                                                                                    ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst11|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst11|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
+;       |mux:inst12|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst12                                                                                    ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst12|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst12|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
+;       |mux:inst13|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst13                                                                                    ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst13|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst13|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
+;       |mux:inst14|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst14                                                                                    ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst14|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst14|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
 ;       |mux:inst15|                              ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst15                                                                                    ; mux                    ; work         ;
 ;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst15|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
 ;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst15|lpm_mux:$00001|mux_9rc:auto_generated                                              ; mux_9rc                ; work         ;
-;       |mux:inst1|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst1                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst1|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst1|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst2|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst2                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst2|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst2|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst3|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst3                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst3|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst3|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst4|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst4                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst4|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst4|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst5|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst5                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst5|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst5|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst6|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst6                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst6|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst6|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst7|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst7                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst7|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst7|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst8|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst8                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst8|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst8|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
-;       |mux:inst9|                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst9                                                                                     ; mux                    ; work         ;
-;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst9|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
-;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst9|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst1|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst1                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst1|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst1|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst2|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst2                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst2|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst2|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst3|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst3                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst3|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst3|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst4|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst4                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst4|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst4|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst5|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst5                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst5|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst5|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst6|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst6                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst6|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst6|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst7|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst7                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst7|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst7|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst8|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst8                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst8|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst8|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
+;       |mux:inst9|                               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst9                                                                                     ; mux                    ; work         ;
+;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst9|lpm_mux:$00001                                                                      ; lpm_mux                ; work         ;
+;             |mux_9rc:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst9|lpm_mux:$00001|mux_9rc:auto_generated                                               ; mux_9rc                ; work         ;
 ;       |mux:inst|                                ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst                                                                                      ; mux                    ; work         ;
 ;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001                                                                       ; lpm_mux                ; work         ;
 ;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001|mux_9rc:auto_generated                                                ; mux_9rc                ; work         ;
@@ -425,8 +425,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------------+
 ; Name                                                                                                                   ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF             ;
 +------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------------+
-; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_cm91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 128          ; 28           ; --           ; --           ; 3584  ; MIR.mif         ;
-; Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_ija1:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM  ; 2048         ; 22           ; --           ; --           ; 45056 ; Program_Mem.mif ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 128          ; 28           ; --           ; --           ; 3584  ; MIR.mif         ;
+; Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM  ; 2048         ; 22           ; --           ; --           ; 45056 ; Program_Mem.mif ;
 +------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------------+
 
 
@@ -440,68 +440,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                           ;
-+----------------------------------------------------------------+-----------------------------------------------------------------------------+
-; Register name                                                  ; Reason for Removal                                                          ;
-+----------------------------------------------------------------+-----------------------------------------------------------------------------+
-; RegisterBank:inst18|16bitReg:inst6|inst                        ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst1                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst2                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst3                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst4                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst5                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst6                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst7                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst8                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst9_                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst11                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst12                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst13                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst14                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst15                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst6|inst10                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst                       ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst1                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst2                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst3                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst4                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst5                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst6                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst7                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst8                      ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst9_                     ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst11                     ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst12                     ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst13                     ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst14                     ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst15                     ; Stuck at VCC due to stuck port data_in                                      ;
-; RegisterBank:inst18|16bitReg:inst12|inst10                     ; Stuck at VCC due to stuck port data_in                                      ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[0] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[8]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[0] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[8]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[1] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[9]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[1] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[9]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[2] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[10] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[2] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[10] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[3] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[11] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[3] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[11] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[4] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[12] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[4] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[12] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[5] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5btis:inst4|out[0]  ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[5] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[6] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5btis:inst4|out[1]  ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[6] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[7] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5btis:inst4|out[2]  ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[7] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15] ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[8] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[8]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5btis:inst4|out[3]  ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[8]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[9] ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[9]  ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5btis:inst4|out[4]  ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[9]  ;
-; Total Number of Removed Registers = 55                         ;                                                                             ;
-+----------------------------------------------------------------+-----------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                            ; Reason for Removal                                                                                         ;
++--------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+; RegisterBank:inst18|16bitReg:inst6|inst                                                                                  ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst1                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst2                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst3                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst4                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst5                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst6                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst7                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst8                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst9_                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst11                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst12                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst13                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst14                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst15                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst6|inst10                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst                                                                                 ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst1                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst2                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst3                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst4                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst5                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst6                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst7                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst8                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst9_                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst11                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst12                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst13                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst14                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst15                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; RegisterBank:inst18|16bitReg:inst12|inst10                                                                               ; Stuck at VCC due to stuck port data_in                                                                     ;
+; Control_Word_Register2:inst8|UC-1:inst151|inst70                                                                         ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated|rden_a_store ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[0]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[8]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[0]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[8]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[1]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[9]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[1]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[9]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[2]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[10]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[2]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[10]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[3]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[11]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[3]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[11]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[4]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[12]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[4]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[12]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[5]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[0]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[5]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[6]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[1]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[6]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[7]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[2]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[7]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15]                                ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[8]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[8]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[3]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[8]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[9]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[9]                                 ;
+; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[4]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[9]                                 ;
+; Total Number of Removed Registers = 57                                                                                   ;                                                                                                            ;
++--------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -509,12 +511,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 620   ;
+; Total registers                              ; 636   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 26    ;
+; Number of registers using Synchronous Load   ; 11    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 17    ;
+; Number of registers using Clock Enable       ; 51    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -524,14 +526,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-; 16:1               ; 16 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; Yes        ; |TP2_E5|alu:inst3|ALU_Result[1]                                                      ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 96 LEs               ; 64 LEs                 ; Yes        ; |TP2_E5|alu:inst3|ALU_Result[8]                                                      ;
 ; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst4|mux:inst4|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 320 LEs              ; 32 LEs                 ; No         ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated|result_node[0]  ;
+; 31:1               ; 16 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated|result_node[15] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_cm91:auto_generated ;
+; Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -540,7 +542,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------+
-; Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_ija1:auto_generated ;
+; Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                         ;
 +---------------------------------+--------------------+------+--------------------------------------------+
@@ -625,7 +627,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_cm91      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_laa1      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -696,7 +698,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                             ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                             ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                             ;
-; CBXI_PARAMETER                     ; altsyncram_ija1      ; Untyped                             ;
+; CBXI_PARAMETER                     ; altsyncram_r7b1      ; Untyped                             ;
 +------------------------------------+----------------------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -970,26 +972,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 206                         ;
-; cycloneiii_ff         ; 620                         ;
-;     ENA               ; 17                          ;
-;     SLD               ; 26                          ;
-;     plain             ; 577                         ;
+; boundary_port         ; 222                         ;
+; cycloneiii_ff         ; 636                         ;
+;     ENA               ; 40                          ;
+;     ENA SLD           ; 11                          ;
+;     plain             ; 585                         ;
 ; cycloneiii_io_obuf    ; 32                          ;
-; cycloneiii_lcell_comb ; 961                         ;
+; cycloneiii_lcell_comb ; 967                         ;
 ;     arith             ; 42                          ;
 ;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 17                          ;
-;     normal            ; 919                         ;
+;     normal            ; 925                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 39                          ;
-;         3 data inputs ; 88                          ;
-;         4 data inputs ; 789                         ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 111                         ;
+;         4 data inputs ; 785                         ;
 ; cycloneiii_ram_block  ; 50                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.90                       ;
-; Average LUT depth     ; 8.38                        ;
+; Max LUT depth         ; 11.60                       ;
+; Average LUT depth     ; 7.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -998,7 +1000,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -1008,7 +1010,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 29 00:41:17 2020
+    Info: Processing started: Fri May 29 12:29:29 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1060,7 +1062,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file ffd10bi
 Info (12021): Found 1 design units, including 1 entities, in source file ffd11bits.v
     Info (12023): Found entity 1: FFD11bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD11bits.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file ffd5bits.v
-    Info (12023): Found entity 1: FFD5btis File: C:/Users/Manuel/Documents/GitHub/EV20/FFD5bits.v Line: 2
+    Info (12023): Found entity 1: FFD5bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD5bits.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file program_mem.v
     Info (12023): Found entity 1: Program_Mem File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file pc_counter.v
@@ -1073,6 +1075,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/manuel/desktop/debug.bdf
     Info (12023): Found entity 1: debug
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
+Warning (275008): Primitive "VCC" of instance "inst7" not used
 Info (12128): Elaborating entity "Pre_Load_Block" for hierarchy "Pre_Load_Block:inst10"
 Info (12128): Elaborating entity "MUX" for hierarchy "Pre_Load_Block:inst10|MUX:inst2"
 Info (12130): Elaborated megafunction instantiation "Pre_Load_Block:inst10|MUX:inst2"
@@ -1106,11 +1109,10 @@ Info (12128): Elaborating entity "Reg_Comp" for hierarchy "Control_Word_Register
 Info (12128): Elaborating entity "UC-1" for hierarchy "Control_Word_Register2:inst8|UC-1:inst151"
 Info (12128): Elaborating entity "Decode_Unit" for hierarchy "Decode_Unit:inst21"
 Info (12128): Elaborating entity "MIR_DECODE" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3"
-Warning (275009): Pin "Clock" not connected
 Info (12128): Elaborating entity "MIR" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 81
-Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 81
-Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 81
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 84
+Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 84
+Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 84
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1125,9 +1127,9 @@ Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR
     Info (12134): Parameter "widthad_a" = "7"
     Info (12134): Parameter "width_a" = "28"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cm91.tdf
-    Info (12023): Found entity 1: altsyncram_cm91 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_cm91.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_cm91" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_cm91:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_laa1.tdf
+    Info (12023): Found entity 1: altsyncram_laa1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_laa1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_laa1" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5"
 Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5"
 Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5" with the following parameter:
@@ -1140,14 +1142,14 @@ Info (12128): Elaborating entity "mux_crc" for hierarchy "Decode_Unit:inst21|MIR
 Info (12128): Elaborating entity "5B_to_6B" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|5B_to_6B:inst8"
 Info (12128): Elaborating entity "Instr_Separator" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst"
 Info (12128): Elaborating entity "FFD10bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2"
-Info (12128): Elaborating entity "FFD5btis" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD5btis:inst4"
+Info (12128): Elaborating entity "FFD5bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4"
 Info (12128): Elaborating entity "FFD3bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD3bits:inst"
 Info (12128): Elaborating entity "FFD11bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3"
 Info (12128): Elaborating entity "FFD16bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1"
 Info (12128): Elaborating entity "Program_Mem" for hierarchy "Program_Mem:inst14"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 81
-Info (12130): Elaborated megafunction instantiation "Program_Mem:inst14|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 81
-Info (12133): Instantiated megafunction "Program_Mem:inst14|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 81
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 84
+Info (12130): Elaborated megafunction instantiation "Program_Mem:inst14|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 84
+Info (12133): Instantiated megafunction "Program_Mem:inst14|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 84
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1162,11 +1164,11 @@ Info (12133): Instantiated megafunction "Program_Mem:inst14|altsyncram:altsyncra
     Info (12134): Parameter "widthad_a" = "11"
     Info (12134): Parameter "width_a" = "22"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ija1.tdf
-    Info (12023): Found entity 1: altsyncram_ija1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_ija1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_ija1" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_ija1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "PC_COUNTER" for hierarchy "PC_COUNTER:inst11"
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(19): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_r7b1.tdf
+    Info (12023): Found entity 1: altsyncram_r7b1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_r7b1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_r7b1" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "PC_COUNTER" for hierarchy "PC_COUNTER:inst2"
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(16): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 16
 Warning (12125): Using design file registerbank.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: RegisterBank
 Info (12128): Elaborating entity "registerbank" for hierarchy "registerbank:inst18"
@@ -1277,16 +1279,16 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1798 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1820 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 189 output pins
+    Info (21059): Implemented 205 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 1542 logic cells
+    Info (21061): Implemented 1548 logic cells
     Info (21064): Implemented 50 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 74 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Fri May 29 00:41:57 2020
-    Info: Elapsed time: 00:00:40
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Fri May 29 12:30:30 2020
+    Info: Elapsed time: 00:01:01
     Info: Total CPU time (on all processors): 00:00:49
 
 
