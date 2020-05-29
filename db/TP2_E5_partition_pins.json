@@ -568,199 +568,71 @@
 					"strict" : false
 				},
 				{
-					"name" : "W[15]",
+					"name" : "FromToW[15]",
 					"strict" : false
 				},
 				{
-					"name" : "W[14]",
+					"name" : "FromToW[14]",
 					"strict" : false
 				},
 				{
-					"name" : "W[13]",
+					"name" : "FromToW[13]",
 					"strict" : false
 				},
 				{
-					"name" : "W[12]",
+					"name" : "FromToW[12]",
 					"strict" : false
 				},
 				{
-					"name" : "W[11]",
+					"name" : "FromToW[11]",
 					"strict" : false
 				},
 				{
-					"name" : "W[10]",
+					"name" : "FromToW[10]",
 					"strict" : false
 				},
 				{
-					"name" : "W[9]",
+					"name" : "FromToW[9]",
 					"strict" : false
 				},
 				{
-					"name" : "W[8]",
+					"name" : "FromToW[8]",
 					"strict" : false
 				},
 				{
-					"name" : "W[7]",
+					"name" : "FromToW[7]",
 					"strict" : false
 				},
 				{
-					"name" : "W[6]",
+					"name" : "FromToW[6]",
 					"strict" : false
 				},
 				{
-					"name" : "W[5]",
+					"name" : "FromToW[5]",
 					"strict" : false
 				},
 				{
-					"name" : "W[4]",
+					"name" : "FromToW[4]",
 					"strict" : false
 				},
 				{
-					"name" : "W[3]",
+					"name" : "FromToW[3]",
 					"strict" : false
 				},
 				{
-					"name" : "W[2]",
+					"name" : "FromToW[2]",
 					"strict" : false
 				},
 				{
-					"name" : "W[1]",
+					"name" : "FromToW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "W[0]",
+					"name" : "FromToW[0]",
 					"strict" : false
 				},
 				{
 					"name" : "Clock",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[14]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[14]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[0]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[0]",
-					"strict" : false
-				},
-				{
-					"name" : "KMUX_Reg_Bank_IN[15]",
-					"strict" : false
-				},
-				{
-					"name" : "ALU_B_IN[15]",
 					"strict" : false
 				}
 			]

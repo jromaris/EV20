@@ -1,65 +1,145 @@
 Determining the location of the ModelSim executable...
 
-Using: /home/marcos/intelFPGA_lite/19.1/modelsim_ase/linuxaloem/
+Using: c:/intelfpga_lite/18.1/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source="/home/marcos/Documentos/E5/Ev20/EV20/Waveform.vwf" --testbench_file="/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source="C:/Users/Manuel/Documents/GitHub/EV20/Waveform4.vwf" --testbench_file="C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/Waveform4.vwf.vt"
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details, at    Info: https://fpgasoftware.intel.com/eula.    Info: Processing started: Thu May 28 20:11:04 2020Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=/home/marcos/Documentos/E5/Ev20/EV20/Waveform.vwf --testbench_file=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/Waveform.vwf.vtWarning (125092): Tcl Script File PROGRAM_MEM.qip not found    Info (125063): set_global_assignment -name QIP_FILE PROGRAM_MEM.qipInfo (119006): Selected device EP4CE22F17C6 for design "TP2_E5"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-PC" in vector source file when writing test bench files
-ad" in vector source file when writing test bench files
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu May 28 23:39:34 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/Manuel/Documents/GitHub/EV20/Waveform4.vwf --testbench_file=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/Waveform4.vwf.vt
+Info (119006): Selected device EP4CE22F17C6 for design "TP2_E5"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+: Ignoring output pin "Shft_Out[15]" in vector source file when writing test bench files
+
 Completed successfully. 
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/" TP2_E5 -c TP2_E5
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/" TP2_E5 -c TP2_E5
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and any partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details, at    Info: https://fpgasoftware.intel.com/eula.    Info: Processing started: Thu May 28 20:11:06 2020Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/ TP2_E5 -c TP2_E5Warning (125092): Tcl Script File PROGRAM_MEM.qip not found    Info (125063): set_global_assignment -name QIP_FILE PROGRAM_MEM.qipInfo (119006): Selected device EP4CE22F17C6 for design "TP2_E5"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file TP2_E5.vo in folder "/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings    Info: Peak virtual memory: 1033 megabytes    Info: Processing ended: Thu May 28 20:11:07 2020    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu May 28 23:39:38 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
+Info (119006): Selected device EP4CE22F17C6 for design "TP2_E5"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file TP2_E5.vo in folder "C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Thu May 28 23:39:43 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/TP2_E5.do generated.
+C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/TP2_E5.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-/home/marcos/intelFPGA_lite/19.1/modelsim_ase/linuxaloem//vsim -c -do TP2_E5.do
+c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do TP2_E5.do
 
-Reading pref.tcl
+Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
 # 10.5b
+
 # do TP2_E5.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:11:07 on May 28,2020# vlog -work work TP2_E5.vo 
+# Start time: 23:39:44 on May 28,2020
+# vlog -work work TP2_E5.vo 
+
 # -- Compiling module TP2_E5
-# # Top level modules:# 	TP2_E5# End time: 20:11:08 on May 28,2020, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016# Start time: 20:11:08 on May 28,2020# vlog -work work Waveform.vwf.vt 
+
+# 
+# Top level modules:
+# 	TP2_E5
+# End time: 23:39:45 on May 28,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:39:45 on May 28,2020
+# vlog -work work Waveform4.vwf.vt 
+
 # -- Compiling module TP2_E5_vlg_vec_tst
-# # Top level modules:# 	TP2_E5_vlg_vec_tst
-# End time: 20:11:08 on May 28,2020, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.TP2_E5_vlg_vec_tst # Start time: 20:11:08 on May 28,2020# Loading work.TP2_E5_vlg_vec_tst# Loading work.TP2_E5# Loading cycloneive_ver.cycloneive_io_obuf# Loading cycloneive_ver.cycloneive_io_ibuf# Loading cycloneive_ver.cycloneive_lcell_comb# Loading altera_ver.dffeas# Loading cycloneive_ver.cycloneive_ram_block# Loading cycloneive_ver.cycloneive_ram_register# Loading cycloneive_ver.cycloneive_ram_pulse_generator# Loading altera_ver.PRIM_GDFF_LOW
+# 
+# Top level modules:
+# 	TP2_E5_vlg_vec_tst
+
+# End time: 23:39:45 on May 28,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.TP2_E5_vlg_vec_tst 
+# Start time: 23:39:45 on May 28,2020
+# Loading work.TP2_E5_vlg_vec_tst
+# Loading work.TP2_E5
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libpthread.so.0 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/librt.so.1 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libdl.so.2 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libm.so.6 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libc.so.6 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /usr/lib32/libnss_files.so.2 : module was loaded at an absolute address.# ** Note: $finish    : Waveform.vwf.vt(87)#    Time: 1 us  Iteration: 0  Instance: /TP2_E5_vlg_vec_tst
-# End time: 20:11:08 on May 28,2020, Elapsed time: 0:00:00# Errors: 0, Warnings: 8
+
+# ** Note: $finish    : Waveform4.vwf.vt(82)
+#    Time: 1 us  Iteration: 0  Instance: /TP2_E5_vlg_vec_tst
+# End time: 23:39:46 on May 28,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading /home/marcos/Documentos/E5/Ev20/EV20/Waveform.vwf...
+Reading C:/Users/Manuel/Documents/GitHub/EV20/Waveform4.vwf...
 
-Reading /home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/TP2_E5.msim.vcd...
+Reading C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/TP2_E5.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to /home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/TP2_E5_20200528201108.sim.vwf
+Writing the resulting VWF to C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/TP2_E5_20200528233947.sim.vwf
 
 Finished VCD to VWF conversion.
 

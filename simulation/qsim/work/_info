@@ -7,23 +7,23 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim
+Z0 dC:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim
 vTP2_E5
-Z0 !s110 1590707468
+Z1 !s110 1590719985
 !i10b 1
-!s100 iiK4TnP2S_USZ^4B^?zf_2
-Iz:^U1EU9=_amKICHCJ[AA0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 d/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim
-w1590707466
+!s100 =gblHYFaKYSSnd8<A5j8m3
+IMLMWViPE5FU_Zl0YF0`]c1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1590719982
 8TP2_E5.vo
 FTP2_E5.vo
-L0 32
+L0 31
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1590707467.000000
+!s108 1590719984.000000
 !s107 TP2_E5.vo|
 !s90 -work|work|TP2_E5.vo|
 !i113 1
@@ -31,23 +31,23 @@ Z4 o-work work
 Z5 tCvgOpt 0
 n@t@p2_@e5
 vTP2_E5_vlg_vec_tst
-R0
-!i10b 1
-!s100 Z:d8eT0TZ2ASHDJ1PXegH3
-I7WX5k=P4_Qf2N26faneUV3
 R1
+!i10b 1
+!s100 B1UdB>=[K5ng7K7CS<[9R0
+I1]beSZ<VJBQ7C6SZW6kY<1
 R2
-w1590707465
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-L0 30
+R0
+w1590719978
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+L0 29
 R3
 r1
 !s85 0
 31
-!s108 1590707468.000000
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+!s108 1590719985.000000
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
 !i113 1
 R4
 R5

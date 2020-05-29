@@ -853,11 +853,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 328 488)
-	(pt 648 488)
-	(bus)
-)
-(connector
 	(pt 304 344)
 	(pt 360 344)
 	(bus)
@@ -889,8 +884,13 @@ refer to the applicable agreement for further details.
 	(pt 336 720)
 )
 (connector
-	(pt 336 720)
 	(pt 336 424)
+	(pt 336 720)
+)
+(connector
+	(pt 328 488)
+	(pt 648 488)
+	(bus)
 )
 (junction (pt 792 344))
 (junction (pt 784 344))
