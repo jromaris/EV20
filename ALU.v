@@ -45,7 +45,7 @@ module alu(
     begin
         case(ALU_Sel)
         4'b0000: // Salida es A
-           ALU_Result = A + B ; 
+           ALU_Result = A ; 
         4'b0001: // Salida es B
            ALU_Result = B ;
         4'b0010: // not(A)

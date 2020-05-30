@@ -8213,22 +8213,6 @@ refer to the applicable agreement for further details.
 	(pt 824 1544)
 )
 (connector
-	(pt 1856 1000)
-	(pt 1856 1256)
-)
-(connector
-	(pt 1784 1000)
-	(pt 1856 1000)
-)
-(connector
-	(pt 1856 1000)
-	(pt 1864 1000)
-)
-(connector
-	(pt 1656 1000)
-	(pt 1720 1000)
-)
-(connector
 	(pt 1720 1016)
 	(pt 1712 1016)
 )
@@ -8332,6 +8316,22 @@ refer to the applicable agreement for further details.
 	(pt 840 1080)
 	(pt 1496 1080)
 	(bus)
+)
+(connector
+	(pt 1856 1000)
+	(pt 1856 1256)
+)
+(connector
+	(pt 1656 1000)
+	(pt 1720 1000)
+)
+(connector
+	(pt 1784 1000)
+	(pt 1856 1000)
+)
+(connector
+	(pt 1856 1000)
+	(pt 1864 1000)
 )
 (junction (pt 456 1376))
 (junction (pt 456 1480))

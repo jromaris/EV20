@@ -16,6 +16,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "CARRY_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "W_ENABLE",
+					"strict" : false
+				},
+				{
 					"name" : "A_ALU_IN[15]",
 					"strict" : false
 				},
@@ -77,6 +85,70 @@
 				},
 				{
 					"name" : "A_ALU_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_OUT[0]",
 					"strict" : false
 				},
 				{
@@ -873,6 +945,70 @@
 				},
 				{
 					"name" : "W_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[15]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[14]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[13]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[12]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[11]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[10]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[9]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[8]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[7]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "W_REAL[0]",
 					"strict" : false
 				},
 				{
