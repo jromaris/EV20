@@ -24,67 +24,131 @@
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[15]",
+					"name" : "A_ALUN_IN[15]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[14]",
+					"name" : "A_ALUN_IN[14]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[13]",
+					"name" : "A_ALUN_IN[13]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[12]",
+					"name" : "A_ALUN_IN[12]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[11]",
+					"name" : "A_ALUN_IN[11]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[10]",
+					"name" : "A_ALUN_IN[10]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[9]",
+					"name" : "A_ALUN_IN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[8]",
+					"name" : "A_ALUN_IN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[7]",
+					"name" : "A_ALUN_IN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[6]",
+					"name" : "A_ALUN_IN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[5]",
+					"name" : "A_ALUN_IN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[4]",
+					"name" : "A_ALUN_IN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[3]",
+					"name" : "A_ALUN_IN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[2]",
+					"name" : "A_ALUN_IN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[1]",
+					"name" : "A_ALUN_IN[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A_ALU_IN[0]",
+					"name" : "A_ALUN_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[14]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_LATCH[0]",
 					"strict" : false
 				},
 				{
@@ -213,6 +277,70 @@
 				},
 				{
 					"name" : "B_ALU_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[15]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[14]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[13]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[12]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[11]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[10]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[9]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[8]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_LATCH[0]",
 					"strict" : false
 				},
 				{
