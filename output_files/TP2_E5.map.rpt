@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Sat May 30 14:50:29 2020
+Sat May 30 17:08:55 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 30 14:50:29 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat May 30 17:08:55 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
@@ -246,7 +246,7 @@ refer to the applicable agreement for further details.
 ; mir.mif                          ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/mir.mif                                ;         ;
 ; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf                         ;         ;
 ; db/altsyncram_r7b1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_r7b1.tdf                 ;         ;
-; Program_Mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.mif                        ;         ;
+; program_mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/program_mem.mif                        ;         ;
 ; registerbank.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/registerbank.bdf                       ;         ;
 ; block2.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/block2.bdf                             ;         ;
 ; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf        ;         ;
@@ -1013,7 +1013,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 30 14:49:50 2020
+    Info: Processing started: Sat May 30 17:08:14 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1293,9 +1293,9 @@ Info (21057): Implemented 1956 device resources after synthesis - the final reso
     Info (21061): Implemented 1605 logic cells
     Info (21064): Implemented 50 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 77 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Sat May 30 14:50:29 2020
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Sat May 30 17:08:55 2020
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:00:52
 
 

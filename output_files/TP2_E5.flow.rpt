@@ -1,5 +1,5 @@
 Flow report for TP2_E5
-Sat May 30 14:51:09 2020
+Sat May 30 17:09:33 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 30 14:51:09 2020       ;
+; Flow Status                        ; Successful - Sat May 30 17:09:33 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/30/2020 14:49:52 ;
+; Start date & time ; 05/30/2020 17:08:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TP2_E5              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 134660529595215.159086099102332        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 134660529595215.159086929506112        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.bsf                                ; --            ; --          ; --         ;
@@ -103,10 +103,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:37     ; 1.0                     ; 4806 MB             ; 00:00:46                           ;
+; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 4811 MB             ; 00:00:51                           ;
 ; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4642 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4648 MB             ; 00:00:04                           ;
-; Total                ; 00:00:45     ; --                      ; --                  ; 00:00:53                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4647 MB             ; 00:00:04                           ;
+; Total                ; 00:00:47     ; --                      ; --                  ; 00:00:58                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -125,7 +125,7 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/Manuel/Documents/GitHub/EV20/Waveform5.vwf --testbench_file=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/Waveform5.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/Manuel/Documents/GitHub/EV20/Waveform10.vwf --testbench_file=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/Waveform10.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
 
 

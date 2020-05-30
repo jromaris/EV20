@@ -26,3 +26,4 @@ Código Binario de Instrucción EV16 Nemónico Instrucción Significado
 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CLR CY Clear Carry CY= 0
 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 SET CY Set Carry CY= 1
 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 RET Return From Subroutine PC= Latest Stored PC {+ 1}
+0 1 1 0 1 1 1 x x x x x x x x x x x x x x x NOP Las x son por don't care
