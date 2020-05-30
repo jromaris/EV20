@@ -5165,6 +5165,31 @@ refer to the applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 1632 1184 1680 1216)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst152" (rect 3 21 37 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 400 1376)
 	(pt 456 1376)
@@ -8129,46 +8154,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1112 640)
-	(pt 1112 1000)
-	(bus)
-)
-(connector
-	(pt 984 576)
-	(pt 984 1016)
-	(bus)
-)
-(connector
-	(pt 840 1512)
-	(pt 840 1032)
-	(bus)
-)
-(connector
-	(pt 1296 4024)
-	(pt 1296 1048)
-	(bus)
-)
-(connector
-	(pt 1304 4032)
-	(pt 1304 1080)
-	(bus)
-)
-(connector
-	(pt 1328 4048)
-	(pt 1328 1112)
-	(bus)
-)
-(connector
-	(pt 904 1704)
-	(pt 904 1064)
-	(bus)
-)
-(connector
-	(pt 928 1720)
-	(pt 928 1096)
-	(bus)
-)
-(connector
 	(pt 1056 1128)
 	(pt 1056 1776)
 	(bus)
@@ -8176,161 +8161,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1056 1776)
 	(pt 1056 1792)
-	(bus)
-)
-(connector
-	(pt 1328 1112)
-	(pt 1424 1112)
-	(bus)
-)
-(connector
-	(text "A_Addr_In [4..0]" (rect 1338 976 1413 993)(font "Intel Clear" ))
-	(pt 1472 1000)
-	(pt 1112 1000)
-	(bus)
-)
-(connector
-	(pt 984 1016)
-	(pt 1464 1016)
-	(bus)
-)
-(connector
-	(pt 840 1032)
-	(pt 1456 1032)
-	(bus)
-)
-(connector
-	(pt 1472 1000)
-	(pt 1472 1048)
-	(bus)
-)
-(connector
-	(pt 1464 1016)
-	(pt 1464 1064)
-	(bus)
-)
-(connector
-	(pt 1456 1032)
-	(pt 1456 1080)
-	(bus)
-)
-(connector
-	(pt 1472 1048)
-	(pt 1496 1048)
-	(bus)
-)
-(connector
-	(pt 1464 1064)
-	(pt 1496 1064)
-	(bus)
-)
-(connector
-	(pt 1456 1080)
-	(pt 1496 1080)
-	(bus)
-)
-(connector
-	(text "C3[5..0]" (rect 1314 1032 1350 1049)(font "Intel Clear" ))
-	(pt 1440 1048)
-	(pt 1296 1048)
-	(bus)
-)
-(connector
-	(pt 1440 1048)
-	(pt 1440 1040)
-	(bus)
-)
-(connector
-	(pt 1440 1040)
-	(pt 1488 1040)
-	(bus)
-)
-(connector
-	(pt 1496 1032)
-	(pt 1488 1032)
-	(bus)
-)
-(connector
-	(pt 1488 1032)
-	(pt 1488 1040)
-	(bus)
-)
-(connector
-	(pt 1496 1096)
-	(pt 1448 1096)
-	(bus)
-)
-(connector
-	(pt 1448 1096)
-	(pt 1448 1064)
-	(bus)
-)
-(connector
-	(text "T3[6..0]" (rect 922 1048 957 1065)(font "Intel Clear" ))
-	(pt 904 1064)
-	(pt 1448 1064)
-	(bus)
-)
-(connector
-	(pt 1496 1016)
-	(pt 1480 1016)
-	(bus)
-)
-(connector
-	(pt 1480 1016)
-	(pt 1480 1024)
-	(bus)
-)
-(connector
-	(pt 1480 1024)
-	(pt 1432 1024)
-	(bus)
-)
-(connector
-	(pt 1432 1024)
-	(pt 1432 1080)
-	(bus)
-)
-(connector
-	(text "C4[5..0]" (rect 1354 1064 1390 1081)(font "Intel Clear" ))
-	(pt 1304 1080)
-	(pt 1432 1080)
-	(bus)
-)
-(connector
-	(pt 1496 1112)
-	(pt 1440 1112)
-	(bus)
-)
-(connector
-	(pt 1440 1112)
-	(pt 1440 1096)
-	(bus)
-)
-(connector
-	(text "T4[6..0]" (rect 946 1080 981 1097)(font "Intel Clear" ))
-	(pt 928 1096)
-	(pt 1440 1096)
-	(bus)
-)
-(connector
-	(pt 1496 1000)
-	(pt 1480 1000)
-	(bus)
-)
-(connector
-	(pt 1480 1000)
-	(pt 1480 992)
-	(bus)
-)
-(connector
-	(pt 1480 992)
-	(pt 1424 992)
-	(bus)
-)
-(connector
-	(pt 1424 1112)
-	(pt 1424 992)
 	(bus)
 )
 (connector
@@ -8383,22 +8213,6 @@ refer to the applicable agreement for further details.
 	(pt 824 1544)
 )
 (connector
-	(pt 1592 1544)
-	(pt 1592 1200)
-)
-(connector
-	(pt 1720 1016)
-	(pt 1704 1016)
-)
-(connector
-	(pt 1704 1200)
-	(pt 1704 1016)
-)
-(connector
-	(pt 1704 1200)
-	(pt 1592 1200)
-)
-(connector
 	(pt 1856 1000)
 	(pt 1856 1256)
 )
@@ -8413,6 +8227,111 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1656 1000)
 	(pt 1720 1000)
+)
+(connector
+	(pt 1720 1016)
+	(pt 1712 1016)
+)
+(connector
+	(pt 1592 1544)
+	(pt 1592 1200)
+)
+(connector
+	(pt 1712 1016)
+	(pt 1712 1200)
+)
+(connector
+	(pt 1712 1200)
+	(pt 1680 1200)
+)
+(connector
+	(pt 1632 1200)
+	(pt 1592 1200)
+)
+(connector
+	(pt 1112 640)
+	(pt 1112 1048)
+	(bus)
+)
+(connector
+	(text "A_Addr_In [4..0]" (rect 1322 1024 1397 1041)(font "Intel Clear" ))
+	(pt 1112 1048)
+	(pt 1496 1048)
+	(bus)
+)
+(connector
+	(pt 984 576)
+	(pt 984 1064)
+	(bus)
+)
+(connector
+	(pt 984 1064)
+	(pt 1496 1064)
+	(bus)
+)
+(connector
+	(pt 904 1704)
+	(pt 904 1096)
+	(bus)
+)
+(connector
+	(text "T3[6..0]" (rect 922 1080 957 1097)(font "Intel Clear" ))
+	(pt 904 1096)
+	(pt 1496 1096)
+	(bus)
+)
+(connector
+	(pt 928 1720)
+	(pt 928 1112)
+	(bus)
+)
+(connector
+	(text "T4[6..0]" (rect 946 1096 981 1113)(font "Intel Clear" ))
+	(pt 928 1112)
+	(pt 1496 1112)
+	(bus)
+)
+(connector
+	(pt 1328 4048)
+	(pt 1328 1000)
+	(bus)
+)
+(connector
+	(pt 1328 1000)
+	(pt 1496 1000)
+	(bus)
+)
+(connector
+	(pt 1296 4024)
+	(pt 1296 1032)
+	(bus)
+)
+(connector
+	(text "C3[5..0]" (rect 1314 1016 1350 1033)(font "Intel Clear" ))
+	(pt 1296 1032)
+	(pt 1496 1032)
+	(bus)
+)
+(connector
+	(pt 1304 4032)
+	(pt 1304 1016)
+	(bus)
+)
+(connector
+	(text "C4[5..0]" (rect 1346 1000 1382 1017)(font "Intel Clear" ))
+	(pt 1304 1016)
+	(pt 1496 1016)
+	(bus)
+)
+(connector
+	(pt 840 1512)
+	(pt 840 1080)
+	(bus)
+)
+(connector
+	(pt 840 1080)
+	(pt 1496 1080)
+	(bus)
 )
 (junction (pt 456 1376))
 (junction (pt 456 1480))
