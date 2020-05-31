@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/30/2020 14:51:04"
+// Generated on "05/30/2020 20:15:18"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -38,7 +38,7 @@ wire [15:0] ALU_OUT;
 wire [15:0] B_ALU_IN;
 wire [15:0] B_LATCH;
 wire [15:0] C_To_RGank;
-wire CARRY_OUT;
+wire CARRY_IN;
 wire [9:0] DEC_A_Addr;
 wire [5:0] DEC_ALU_SH;
 wire [5:0] DEC_B;
@@ -74,7 +74,7 @@ TP2_E5 i1 (
 	.B_ALU_IN(B_ALU_IN),
 	.B_LATCH(B_LATCH),
 	.C_To_RGank(C_To_RGank),
-	.CARRY_OUT(CARRY_OUT),
+	.CARRY_IN(CARRY_IN),
 	.Clock(Clock),
 	.DEC_A_Addr(DEC_A_Addr),
 	.DEC_ALU_SH(DEC_ALU_SH),
@@ -107,16 +107,11 @@ begin
 end 
 
 // Clock
-initial
+always
 begin
-	repeat(28)
-	begin
-		Clock = 1'b0;
-		Clock = #17500 1'b1;
-		# 17500;
-	end
 	Clock = 1'b0;
-	Clock = #17500 1'b1;
+	Clock = #10000 1'b1;
+	#10000;
 end 
 // FromToW[ 15 ]
 initial

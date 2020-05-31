@@ -1,0 +1,35 @@
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+                                    
+
+-- single-line comment
+
+ 
+
+DEPTH = 2048;                  -- Tengo 2048 direcciones de memoria
+WIDTH = 22;                   -- Tamaño de palabra en bits es 32
+ADDRESS_RADIX = HEX;          -- Las direcciones las escribo en Hexadecimal
+DATA_RADIX = BIN;             -- Las palabras las escribo en binario
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+
+-- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus 
+-- MOK W,#K (cargo un 8000 en W)
+000 : 0001000000000000000000;                -- memory address : data
+-- JNE X 
+001 : 1100010000000000000000;
+-- SET CY
+002 : 0000010000000000000000;
+-- MOK W,#K
+003 : 0001000000000000001111;
+-- CLR CY
+004 : 0000001000000000000000;
+-- CPL
+005 : 0000000000000000000000;
+-- SET CY
+[006..0FF] : 0000010000000000000000;
+-- CPL
+[100..7FF] :0000000000000000000000;
+END;

@@ -1,7 +1,7 @@
 Código Binario de Instrucción EV16 Nemónico Instrucción Significado
 1 0 0 x x x x x x x x x x x 0 0 0 0 0 0 0 0 JMP X Unconditional Jump PC = X
 1 0 1 x x x x x x x x x x x 0 0 0 0 0 0 0 0 JZE X Jump if Working Register is Zero IF W=0 THEN PC=X
-1 1 0 x x x x x x x x x x x 0 0 0 0 0 0 0 0 JNE X Jump if Working Register is Negative IF W15=0 THEN PC=X
+1 1 0 x x x x x x x x x x x 0 0 0 0 0 0 0 0 JNE X Jump if Working Register is Negative IF W15=1 THEN PC=X
 1 1 1 x x x x x x x x x x x 0 0 0 0 0 0 0 0 JCY X Jump if Carry IF CY THEN PC=X
 0 1 0 0 y y y y y y y y y y 0 0 0 0 0 0 0 0 MOM Y,W Move Working Register to Memory M(Y) = W
 0 1 0 1 y y y y y y y y y y 0 0 0 0 0 0 0 0 MOM W,Y Move Memory to Working Register W = M(Y)
