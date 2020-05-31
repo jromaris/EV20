@@ -1,5 +1,5 @@
 EDA Netlist Writer report for TP2_E5
-Sat May 30 23:57:47 2020
+Sun May 31 15:20:41 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat May 30 23:57:47 2020 ;
+; EDA Netlist Writer Status ; Successful - Sun May 31 15:20:41 2020 ;
 ; Revision Name             ; TP2_E5                                ;
 ; Top-level Entity Name     ; TP2_E5                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -95,7 +95,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat May 30 23:57:46 2020
+    Info: Processing started: Sun May 31 15:20:40 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
 Warning (125092): Tcl Script File PROGRAM_MEM.qip not found
     Info (125063): set_global_assignment -name QIP_FILE PROGRAM_MEM.qip
@@ -104,7 +104,7 @@ Warning (18236): Number of processors has not been specified which may cause ove
 Info (204019): Generated file TP2_E5.vo in folder "/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 1037 megabytes
-    Info: Processing ended: Sat May 30 23:57:47 2020
+    Info: Processing ended: Sun May 31 15:20:41 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

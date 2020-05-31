@@ -1,5 +1,5 @@
 Flow report for TP2_E5
-Sat May 30 23:57:47 2020
+Sun May 31 15:20:41 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 30 23:57:47 2020       ;
+; Flow Status                        ; Successful - Sun May 31 15:20:41 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/30/2020 23:57:15 ;
+; Start date & time ; 05/31/2020 15:19:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TP2_E5              ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 22095319291702.159089383553411         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 48853206116782.159094919706892         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.bsf                                ; --            ; --          ; --         ;
@@ -99,10 +99,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 920 MB              ; 00:00:35                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 924 MB              ; 00:00:32                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1029 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1037 MB             ; 00:00:01                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:37                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,7 +121,7 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=/home/marcos/Documentos/E5/Ev20/EV20/Waveform12.vwf --testbench_file=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/Waveform12.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=/home/marcos/Documentos/E5/Ev20/EV20/Waveform13.vwf --testbench_file=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/Waveform13.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
 
 
