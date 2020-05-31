@@ -1,6 +1,6 @@
 Flow report for TP2_E5
-Sat May 30 21:07:01 2020
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sat May 30 23:57:47 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,24 +33,25 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 30 21:07:01 2020       ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Flow Status                        ; Successful - Sat May 30 23:57:47 2020       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,551                                       ;
-;     Total combinational functions  ; 993                                         ;
-;     Dedicated logic registers      ; 672                                         ;
-; Total registers                    ; 672                                         ;
+; Total logic elements               ; 1,559                                       ;
+;     Total combinational functions  ; 1,014                                       ;
+;     Dedicated logic registers      ; 674                                         ;
+; Total registers                    ; 674                                         ;
 ; Total pins                         ; 302                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 48,640                                      ;
@@ -64,7 +65,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/30/2020 21:04:40 ;
+; Start date & time ; 05/30/2020 23:57:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TP2_E5              ;
 +-------------------+---------------------+
@@ -75,7 +76,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 134660529595215.159088347901828        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 22095319291702.159089383553411         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.bsf                                ; --            ; --          ; --         ;
@@ -83,11 +84,6 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                           ; MIR_bb.v                               ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.inc                                ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.cmp                                ; --            ; --          ; --         ;
-; MISC_FILE                           ; Program_Mem.bsf                        ; --            ; --          ; --         ;
-; MISC_FILE                           ; Program_Mem_inst.v                     ; --            ; --          ; --         ;
-; MISC_FILE                           ; Program_Mem_bb.v                       ; --            ; --          ; --         ;
-; MISC_FILE                           ; Program_Mem.inc                        ; --            ; --          ; --         ;
-; MISC_FILE                           ; Program_Mem.cmp                        ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -103,30 +99,30 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:56     ; 1.0                     ; 4807 MB             ; 00:01:00                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4642 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4650 MB             ; 00:00:04                           ;
-; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:07                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 920 MB              ; 00:00:35                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1029 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1037 MB             ; 00:00:01                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-135JCEO  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-135JCEO  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-135JCEO  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++----------------------+------------------+---------------+---------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name       ; OS Version    ; Processor type ;
++----------------------+------------------+---------------+---------------+----------------+
+; Analysis & Synthesis ; marcos-pc        ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; EDA Netlist Writer   ; marcos-pc        ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; EDA Netlist Writer   ; marcos-pc        ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
++----------------------+------------------+---------------+---------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/Manuel/Documents/GitHub/EV20/Waveform11.vwf --testbench_file=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/Waveform11.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=/home/marcos/Documentos/E5/Ev20/EV20/Waveform12.vwf --testbench_file=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/Waveform12.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
 
 
 
