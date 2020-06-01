@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "PreLoad",
-					"strict" : false
-				},
-				{
 					"name" : "Pipe_Hold",
 					"strict" : false
 				},
@@ -24,7 +20,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "Carry_OUT",
+					"name" : "Jump_Flag",
+					"strict" : false
+				},
+				{
+					"name" : "RET",
+					"strict" : false
+				},
+				{
+					"name" : "BSR",
+					"strict" : false
+				},
+				{
+					"name" : "PL",
 					"strict" : false
 				},
 				{
@@ -757,50 +765,6 @@
 				},
 				{
 					"name" : "Mem_Out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[10]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[9]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[8]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[7]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[6]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[5]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[4]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[3]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[2]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[1]",
-					"strict" : false
-				},
-				{
-					"name" : "New_PC[0]",
 					"strict" : false
 				},
 				{

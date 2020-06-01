@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/30/2020 17:25:27"
+// Generated on "05/31/2020 18:32:04"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -39,6 +39,7 @@ wire [15:0] B_ALU_IN;
 wire [15:0] B_LATCH;
 wire [15:0] C_To_RGank;
 wire CARRY_IN;
+wire Carry_OUT;
 wire [9:0] DEC_A_Addr;
 wire [5:0] DEC_ALU_SH;
 wire [5:0] DEC_B;
@@ -49,7 +50,6 @@ wire [15:0] DEC_K_VAL;
 wire [6:0] DEC_TYPE;
 wire [15:0] FromToW;
 wire [21:0] Mem_Out;
-wire [10:0] New_PC;
 wire [9:0] Pipe_A_Addr;
 wire [5:0] Pipe_ALU_SH;
 wire [5:0] Pipe_B_Reg;
@@ -58,7 +58,6 @@ wire Pipe_Hold;
 wire Pipe_K_Reg;
 wire [1:0] Pipe_Mem_Reg;
 wire [6:0] Pipe_Type_Reg;
-wire PreLoad;
 wire [15:0] Shft_Out;
 wire W_ENABLE;
 wire [15:0] W_OUT;
@@ -75,6 +74,7 @@ TP2_E5 i1 (
 	.B_LATCH(B_LATCH),
 	.C_To_RGank(C_To_RGank),
 	.CARRY_IN(CARRY_IN),
+	.Carry_OUT(Carry_OUT),
 	.Clock(Clock),
 	.DEC_A_Addr(DEC_A_Addr),
 	.DEC_ALU_SH(DEC_ALU_SH),
@@ -86,7 +86,6 @@ TP2_E5 i1 (
 	.DEC_TYPE(DEC_TYPE),
 	.FromToW(FromToW),
 	.Mem_Out(Mem_Out),
-	.New_PC(New_PC),
 	.Pipe_A_Addr(Pipe_A_Addr),
 	.Pipe_ALU_SH(Pipe_ALU_SH),
 	.Pipe_B_Reg(Pipe_B_Reg),
@@ -95,7 +94,6 @@ TP2_E5 i1 (
 	.Pipe_K_Reg(Pipe_K_Reg),
 	.Pipe_Mem_Reg(Pipe_Mem_Reg),
 	.Pipe_Type_Reg(Pipe_Type_Reg),
-	.PreLoad(PreLoad),
 	.Shft_Out(Shft_Out),
 	.W_ENABLE(W_ENABLE),
 	.W_OUT(W_OUT),

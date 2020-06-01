@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/30/2020 19:24:34"
+// Generated on "05/31/2020 18:52:49"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -58,7 +58,6 @@ wire Pipe_Hold;
 wire Pipe_K_Reg;
 wire [1:0] Pipe_Mem_Reg;
 wire [6:0] Pipe_Type_Reg;
-wire PreLoad;
 wire [15:0] Shft_Out;
 wire W_ENABLE;
 wire [15:0] W_OUT;
@@ -95,7 +94,6 @@ TP2_E5 i1 (
 	.Pipe_K_Reg(Pipe_K_Reg),
 	.Pipe_Mem_Reg(Pipe_Mem_Reg),
 	.Pipe_Type_Reg(Pipe_Type_Reg),
-	.PreLoad(PreLoad),
 	.Shft_Out(Shft_Out),
 	.W_ENABLE(W_ENABLE),
 	.W_OUT(W_OUT),

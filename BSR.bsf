@@ -26,8 +26,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "enable" (rect 0 0 24 12)(font "Arial" ))
-		(text "enable" (rect 21 27 45 39)(font "Arial" ))
+		(text "hold" (rect 0 0 15 12)(font "Arial" ))
+		(text "hold" (rect 21 27 36 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
@@ -47,8 +47,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "return" (rect 0 0 23 12)(font "Arial" ))
-		(text "return" (rect 21 75 44 87)(font "Arial" ))
+		(text "ret" (rect 0 0 10 12)(font "Arial" ))
+		(text "ret" (rect 21 75 31 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
