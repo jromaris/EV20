@@ -1,6 +1,6 @@
-// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
+// and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
@@ -10,7 +10,8 @@
 // agreement, including, without limitation, that your use is for
 // the sole purpose of programming logic devices manufactured by
 // Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details.
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
 
 // *****************************************************************************
 // This file contains a Verilog test bench with test vectors .The test vectors  
@@ -18,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/31/2020 19:56:25"
+// Generated on "06/01/2020 22:59:00"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -113,11 +114,16 @@ begin
 end 
 
 // Clock
-always
+initial
 begin
+	repeat(28)
+	begin
+		Clock = 1'b0;
+		Clock = #17500 1'b1;
+		# 17500;
+	end
 	Clock = 1'b0;
-	Clock = #10000 1'b1;
-	#10000;
+	Clock = #17500 1'b1;
 end 
 // FromToW[ 15 ]
 initial
