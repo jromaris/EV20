@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Mon Jun 01 00:40:46 2020
+Mon Jun 01 22:38:41 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -20,34 +20,36 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated
  14. Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated
- 15. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5
- 17. Parameter Settings for User Entity Instance: Program_Mem:inst14|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2
- 19. Parameter Settings for User Entity Instance: Kmux:inst|BUSMUX:inst2
- 20. Parameter Settings for User Entity Instance: RegisterBank:inst6|block2:inst70|LPM_DECODE:inst
- 21. Parameter Settings for User Entity Instance: RegisterBank:inst6|block3:inst71|LPM_DECODE:inst74
- 22. Parameter Settings for User Entity Instance: RegisterBank:inst6|block3:inst71|LPM_DECODE:inst73
- 23. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst
- 24. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst1
- 25. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst2
- 26. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst3
- 27. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst4
- 28. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst5
- 29. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst6
- 30. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst7
- 31. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst8
- 32. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst9
- 33. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst10
- 34. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst11
- 35. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst12
- 36. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst13
- 37. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst14
- 38. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst15
- 39. altsyncram Parameter Settings by Entity Instance
- 40. Post-Synthesis Netlist Statistics for Top Partition
- 41. Elapsed Time Per Partition
- 42. Analysis & Synthesis Messages
+ 15. Source assignments for DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated
+ 16. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5
+ 18. Parameter Settings for User Entity Instance: Program_Mem:inst14|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2
+ 20. Parameter Settings for User Entity Instance: Kmux:inst|BUSMUX:inst2
+ 21. Parameter Settings for User Entity Instance: RegisterBank:inst6|block2:inst70|LPM_DECODE:inst
+ 22. Parameter Settings for User Entity Instance: RegisterBank:inst6|block3:inst71|LPM_DECODE:inst74
+ 23. Parameter Settings for User Entity Instance: RegisterBank:inst6|block3:inst71|LPM_DECODE:inst73
+ 24. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst
+ 25. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst1
+ 26. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst2
+ 27. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst3
+ 28. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst4
+ 29. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst5
+ 30. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst6
+ 31. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst7
+ 32. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst8
+ 33. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst9
+ 34. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst10
+ 35. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst11
+ 36. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst12
+ 37. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst13
+ 38. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst14
+ 39. Parameter Settings for User Entity Instance: Shifter:inst4|MUX:inst15
+ 40. Parameter Settings for User Entity Instance: DATA_Mem:inst2|altsyncram:altsyncram_component
+ 41. altsyncram Parameter Settings by Entity Instance
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -73,18 +75,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 01 00:40:46 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 01 22:38:41 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,676                                       ;
-;     Total combinational functions  ; 1,127                                       ;
+; Total logic elements               ; 1,702                                       ;
+;     Total combinational functions  ; 1,153                                       ;
 ;     Dedicated logic registers      ; 726                                         ;
 ; Total registers                    ; 726                                         ;
 ; Total pins                         ; 304                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 48,640                                      ;
+; Total memory bits                  ; 65,024                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -234,6 +236,7 @@ refer to the applicable agreement for further details.
 ; Jump_Module.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Jump_Module.bdf                        ;         ;
 ; FFD7bits.v                       ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel/Documents/GitHub/EV20/FFD7bits.v                             ;         ;
 ; Pre_Load_Retain.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Pre_Load_Retain.bdf                    ;         ;
+; DATA_Mem.v                       ; yes             ; User Wizard-Generated File               ; C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v                             ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -252,7 +255,7 @@ refer to the applicable agreement for further details.
 ; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
 ; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf                         ;         ;
 ; db/altsyncram_r7b1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_r7b1.tdf                 ;         ;
-; program_mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/program_mem.mif                        ;         ;
+; Program_Mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.mif                        ;         ;
 ; mux.tdf                          ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
 ; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_arc.tdf                         ;         ;
 ; 16bitreg.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/16bitreg.bdf                           ;         ;
@@ -267,6 +270,7 @@ refer to the applicable agreement for further details.
 ; tri16.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/tri16.bdf                              ;         ;
 ; block3.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/block3.bdf                             ;         ;
 ; db/mux_9rc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_9rc.tdf                         ;         ;
+; db/altsyncram_dkh1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_dkh1.tdf                 ;         ;
 +----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -275,16 +279,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,676       ;
+; Estimated Total logic elements              ; 1,702       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1127        ;
+; Total combinational functions               ; 1153        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 874         ;
-;     -- 3 input functions                    ; 135         ;
-;     -- <=2 input functions                  ; 118         ;
+;     -- 4 input functions                    ; 898         ;
+;     -- 3 input functions                    ; 136         ;
+;     -- <=2 input functions                  ; 119         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1047        ;
+;     -- normal mode                          ; 1073        ;
 ;     -- arithmetic mode                      ; 80          ;
 ;                                             ;             ;
 ; Total registers                             ; 726         ;
@@ -292,14 +296,14 @@ refer to the applicable agreement for further details.
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 304         ;
-; Total memory bits                           ; 48640       ;
+; Total memory bits                           ; 65024       ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 739         ;
-; Total fan-out                               ; 7469        ;
-; Average fan-out                             ; 2.96        ;
+; Maximum fan-out                             ; 755         ;
+; Total fan-out                               ; 7794        ;
+; Average fan-out                             ; 3.03        ;
 +---------------------------------------------+-------------+
 
 
@@ -308,7 +312,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TP2_E5                                         ; 1127 (0)            ; 726 (0)                   ; 48640       ; 0            ; 0       ; 0         ; 304  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
+; |TP2_E5                                         ; 1153 (0)            ; 726 (0)                   ; 65024       ; 0            ; 0       ; 0         ; 304  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
 ;    |16bitReg:inst11|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst11                                                                                             ; 16bitReg               ; work         ;
 ;    |16bitReg:inst1|                             ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst1                                                                                              ; 16bitReg               ; work         ;
 ;    |Carry_Block:inst5|                          ; 1 (1)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5                                                                                           ; Carry_Block            ; work         ;
@@ -319,6 +323,9 @@ refer to the applicable agreement for further details.
 ;       |T_jump:inst163|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|T_jump:inst163                                                                ; T_jump                 ; work         ;
 ;       |UC-1:inst151|                            ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-1:inst151                                                                  ; UC-1                   ; work         ;
 ;       |UC-2:inst146|                            ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-2:inst146                                                                  ; UC-2                   ; work         ;
+;    |DATA_Mem:inst2|                             ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2                                                                                              ; DATA_Mem               ; work         ;
+;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component                                                              ; altsyncram             ; work         ;
+;          |altsyncram_dkh1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated                               ; altsyncram_dkh1        ; work         ;
 ;    |Decode_Unit:inst21|                         ; 8 (0)               ; 23 (0)                    ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
 ;       |FFD7bits:inst6|                          ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|FFD7bits:inst6                                                                           ; FFD7bits               ; work         ;
 ;       |Instr_Separator:inst|                    ; 0 (0)               ; 15 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst                                                                     ; Instr_Separator        ; work         ;
@@ -330,8 +337,8 @@ refer to the applicable agreement for further details.
 ;          |busmux:inst5|                         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5                                                            ; busmux                 ; work         ;
 ;             |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000                                             ; lpm_mux                ; work         ;
 ;                |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000|mux_crc:auto_generated                      ; mux_crc                ; work         ;
-;    |Jump_Module:inst13|                         ; 140 (1)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13                                                                                          ; Jump_Module            ; work         ;
-;       |PC_COUNTER:inst2|                        ; 117 (117)           ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2                                                                         ; PC_COUNTER             ; work         ;
+;    |Jump_Module:inst13|                         ; 137 (1)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13                                                                                          ; Jump_Module            ; work         ;
+;       |PC_COUNTER:inst2|                        ; 114 (114)           ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2                                                                         ; PC_COUNTER             ; work         ;
 ;       |Pre_Load_Block:inst10|                   ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10                                                                    ; Pre_Load_Block         ; work         ;
 ;          |mux:inst2|                            ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2                                                          ; mux                    ; work         ;
 ;             |lpm_mux:$00001|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2|lpm_mux:$00001                                           ; lpm_mux                ; work         ;
@@ -348,7 +355,7 @@ refer to the applicable agreement for further details.
 ;    |Program_Mem:inst14|                         ; 1 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14                                                                                          ; Program_Mem            ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 1 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component                                                          ; altsyncram             ; work         ;
 ;          |altsyncram_r7b1:auto_generated|       ; 1 (1)               ; 1 (1)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated                           ; altsyncram_r7b1        ; work         ;
-;    |RegisterBank:inst6|                         ; 462 (0)             ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6                                                                                          ; RegisterBank           ; work         ;
+;    |RegisterBank:inst6|                         ; 474 (0)             ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6                                                                                          ; RegisterBank           ; work         ;
 ;       |16bitRegEn:inst12|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst12                                                                        ; 16bitRegEn             ; work         ;
 ;       |16bitRegEn:inst13|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst13                                                                        ; 16bitRegEn             ; work         ;
 ;       |16bitRegEn:inst1|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst1                                                                         ; 16bitRegEn             ; work         ;
@@ -384,11 +391,14 @@ refer to the applicable agreement for further details.
 ;          |lpm_decode:inst|                      ; 37 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|lpm_decode:inst                                                            ; lpm_decode             ; work         ;
 ;             |decode_3df:auto_generated|         ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|lpm_decode:inst|decode_3df:auto_generated                                  ; decode_3df             ; work         ;
 ;          |multiplexer16b:inst1|                 ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|multiplexer16b:inst1                                                       ; multiplexer16b         ; work         ;
-;       |block3:inst71|                           ; 408 (14)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71                                                                            ; block3                 ; work         ;
-;          |TRI16:inst10|                         ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst10                                                               ; TRI16                  ; work         ;
-;          |TRI16:inst44|                         ; 339 (339)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst44                                                               ; TRI16                  ; work         ;
-;          |lpm_decode:inst73|                    ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73                                                          ; lpm_decode             ; work         ;
-;             |decode_3df:auto_generated|         ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                                ; decode_3df             ; work         ;
+;       |block3:inst71|                           ; 420 (14)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71                                                                            ; block3                 ; work         ;
+;          |TRI16:inst10|                         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst10                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst12|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst12                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst14|                         ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst14                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst42|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst42                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst44|                         ; 344 (344)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst44                                                               ; TRI16                  ; work         ;
+;          |lpm_decode:inst73|                    ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73                                                          ; lpm_decode             ; work         ;
+;             |decode_3df:auto_generated|         ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                                ; decode_3df             ; work         ;
 ;    |Shifter:inst4|                              ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4                                                                                               ; Shifter                ; work         ;
 ;       |mux:inst10|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10                                                                                    ; mux                    ; work         ;
 ;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
@@ -438,19 +448,21 @@ refer to the applicable agreement for further details.
 ;       |mux:inst|                                ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst                                                                                      ; mux                    ; work         ;
 ;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001                                                                       ; lpm_mux                ; work         ;
 ;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001|mux_9rc:auto_generated                                                ; mux_9rc                ; work         ;
+;    |TRI16:inst8|                                ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|TRI16:inst8                                                                                                 ; TRI16                  ; work         ;
 ;    |alu:inst3|                                  ; 131 (131)           ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|alu:inst3                                                                                                   ; alu                    ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                           ;
-+------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------------+
-; Name                                                                                                                   ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF             ;
-+------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------------+
-; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 128          ; 28           ; --           ; --           ; 3584  ; MIR.mif         ;
-; Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM  ; 2048         ; 22           ; --           ; --           ; 45056 ; Program_Mem.mif ;
-+------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                  ;
++------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
+; Name                                                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF             ;
++------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
+; DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated|ALTSYNCRAM                               ; AUTO ; Single Port ; 1024         ; 16           ; --           ; --           ; 16384 ; None            ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 128          ; 28           ; --           ; --           ; 3584  ; MIR.mif         ;
+; Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM         ; 2048         ; 22           ; --           ; --           ; 45056 ; Program_Mem.mif ;
++------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -458,6 +470,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                      ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-----------------+
+; Altera ; RAM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TP2_E5|DATA_Mem:inst2                               ; DATA_Mem.v      ;
 ; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TP2_E5|Program_Mem:inst14                           ; Program_Mem.v   ;
 ; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst ; MIR.v           ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-----------------+
@@ -585,6 +598,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
 +---------------------------------+--------------------+------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Source assignments for DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                     ;
++---------------------------------+--------------------+------+----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
++---------------------------------+--------------------+------+----------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -973,12 +995,73 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATA_Mem:inst2|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------+
+; Parameter Name                     ; Value                ; Type                            ;
++------------------------------------+----------------------+---------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                         ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                  ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                         ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                         ;
+; WIDTH_A                            ; 16                   ; Signed Integer                  ;
+; WIDTHAD_A                          ; 10                   ; Signed Integer                  ;
+; NUMWORDS_A                         ; 1024                 ; Signed Integer                  ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                         ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                         ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                         ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                         ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                         ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                         ;
+; WIDTH_B                            ; 1                    ; Untyped                         ;
+; WIDTHAD_B                          ; 1                    ; Untyped                         ;
+; NUMWORDS_B                         ; 1                    ; Untyped                         ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                         ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                         ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                         ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                         ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                         ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                         ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                         ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                         ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                         ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                         ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                         ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                         ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                  ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                         ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                         ;
+; BYTE_SIZE                          ; 8                    ; Untyped                         ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
+; INIT_FILE                          ; UNUSED               ; Untyped                         ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                         ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                         ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                         ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                         ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                         ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                         ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_dkh1      ; Untyped                         ;
++------------------------------------+----------------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                         ;
 +-------------------------------------------+------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                        ;
 +-------------------------------------------+------------------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                            ;
+; Number of entity instances                ; 3                                                                            ;
 ; Entity Instance                           ; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                                          ;
 ;     -- WIDTH_A                            ; 28                                                                           ;
@@ -1001,6 +1084,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                 ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                         ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                    ;
+; Entity Instance                           ; DATA_Mem:inst2|altsyncram:altsyncram_component                               ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                  ;
+;     -- WIDTH_A                            ; 16                                                                           ;
+;     -- NUMWORDS_A                         ; 1024                                                                         ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                 ;
+;     -- WIDTH_B                            ; 1                                                                            ;
+;     -- NUMWORDS_B                         ; 1                                                                            ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                       ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                 ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                         ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                    ;
 +-------------------------------------------+------------------------------------------------------------------------------+
 
 
@@ -1015,20 +1109,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 26                          ;
 ;     plain             ; 119                         ;
 ; cycloneiii_io_obuf    ; 32                          ;
-; cycloneiii_lcell_comb ; 1129                        ;
+; cycloneiii_lcell_comb ; 1155                        ;
 ;     arith             ; 80                          ;
 ;         2 data inputs ; 53                          ;
 ;         3 data inputs ; 27                          ;
-;     normal            ; 1049                        ;
+;     normal            ; 1075                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 55                          ;
-;         3 data inputs ; 108                         ;
-;         4 data inputs ; 874                         ;
-; cycloneiii_ram_block  ; 50                          ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 109                         ;
+;         4 data inputs ; 898                         ;
+; cycloneiii_ram_block  ; 66                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.17                        ;
+; Average LUT depth     ; 4.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1037,7 +1131,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1047,7 +1141,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jun 01 00:39:09 2020
+    Info: Processing started: Mon Jun 01 22:37:44 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1137,8 +1231,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file ffd7bit
     Info (12023): Found entity 1: FFD7bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD7bits.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file pre_load_retain.bdf
     Info (12023): Found entity 1: Pre_Load_Retain
+Info (12021): Found 1 design units, including 1 entities, in source file data_mem.v
+    Info (12023): Found entity 1: DATA_Mem File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 39
+Warning (12019): Can't analyze file -- file bimux.v is missing
 Warning (10236): Verilog HDL Implicit Net warning at PC_counter.v(12): created implicit net for "level" File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 12
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
+Warning (275011): Block or symbol "registerbank" of instance "inst6" overlaps another block or symbol
+Warning (275011): Block or symbol "TRI16" of instance "inst8" overlaps another block or symbol
 Warning (275043): Pin "New_PC[10..0]" is missing source
 Info (12128): Elaborating entity "Control_Word_Register2" for hierarchy "Control_Word_Register2:inst15"
 Warning (275083): Bus "ALU_SH_In2[5..0]" found using same base name as "ALU_SH_In", which might lead to a name conflict.
@@ -1374,6 +1473,27 @@ Info (12130): Elaborated megafunction instantiation "Shifter:inst4|MUX:inst15"
 Info (12133): Instantiated megafunction "Shifter:inst4|MUX:inst15" with the following parameter:
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
+Info (12128): Elaborating entity "DATA_Mem" for hierarchy "DATA_Mem:inst2"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DATA_Mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 91
+Info (12130): Elaborated megafunction instantiation "DATA_Mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 91
+Info (12133): Instantiated megafunction "DATA_Mem:inst2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 91
+    Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "1024"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "TRUE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "10"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dkh1.tdf
+    Info (12023): Found entity 1: altsyncram_dkh1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_dkh1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_dkh1" for hierarchy "DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[15]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
     Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[14]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
@@ -1423,16 +1543,16 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2084 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2126 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 287 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 1730 logic cells
-    Info (21064): Implemented 50 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 148 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Mon Jun 01 00:40:47 2020
-    Info: Elapsed time: 00:01:38
-    Info: Total CPU time (on all processors): 00:01:00
+    Info (21061): Implemented 1756 logic cells
+    Info (21064): Implemented 66 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 151 warnings
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Mon Jun 01 22:38:41 2020
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:01:06
 
 
