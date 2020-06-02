@@ -768,6 +768,50 @@
 					"strict" : false
 				},
 				{
+					"name" : "New_PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "New_PC[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Pipe_A_Addr[9]",
 					"strict" : false
 				},

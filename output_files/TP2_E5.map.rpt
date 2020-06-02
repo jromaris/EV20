@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Mon Jun  1 22:58:49 2020
+Tue Jun  2 00:06:12 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -76,13 +76,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun  1 22:58:49 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun  2 00:06:11 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,688                                       ;
-;     Total combinational functions  ; 1,139                                       ;
+; Total logic elements               ; 1,697                                       ;
+;     Total combinational functions  ; 1,148                                       ;
 ;     Dedicated logic registers      ; 726                                         ;
 ; Total registers                    ; 726                                         ;
 ; Total pins                         ; 304                                         ;
@@ -278,16 +278,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,688       ;
+; Estimated Total logic elements              ; 1,697       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1139        ;
+; Total combinational functions               ; 1148        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 890         ;
-;     -- 3 input functions                    ; 132         ;
-;     -- <=2 input functions                  ; 117         ;
+;     -- 4 input functions                    ; 896         ;
+;     -- 3 input functions                    ; 130         ;
+;     -- <=2 input functions                  ; 122         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1059        ;
+;     -- normal mode                          ; 1068        ;
 ;     -- arithmetic mode                      ; 80          ;
 ;                                             ;             ;
 ; Total registers                             ; 726         ;
@@ -301,8 +301,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
 ; Maximum fan-out                             ; 755         ;
-; Total fan-out                               ; 7746        ;
-; Average fan-out                             ; 3.03        ;
+; Total fan-out                               ; 7785        ;
+; Average fan-out                             ; 3.04        ;
 +---------------------------------------------+-------------+
 
 
@@ -311,17 +311,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TP2_E5                                         ; 1139 (0)            ; 726 (0)                   ; 65024       ; 0            ; 0       ; 0         ; 304  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
+; |TP2_E5                                         ; 1148 (0)            ; 726 (0)                   ; 65024       ; 0            ; 0       ; 0         ; 304  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
 ;    |16bitReg:inst11|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst11                                                                                             ; 16bitReg               ; work         ;
 ;    |16bitReg:inst1|                             ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst1                                                                                              ; 16bitReg               ; work         ;
 ;    |Carry_Block:inst5|                          ; 1 (1)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5                                                                                           ; Carry_Block            ; work         ;
 ;       |FFD4bits:inst6|                          ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5|FFD4bits:inst6                                                                            ; FFD4bits               ; work         ;
-;    |Control_Word_Register2:inst15|              ; 51 (1)              ; 73 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15                                                                               ; Control_Word_Register2 ; work         ;
+;    |Control_Word_Register2:inst15|              ; 53 (1)              ; 73 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15                                                                               ; Control_Word_Register2 ; work         ;
 ;       |Alu_jump:inst161|                        ; 7 (7)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|Alu_jump:inst161                                                              ; Alu_jump               ; work         ;
 ;       |C_Jump:inst162|                          ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|C_Jump:inst162                                                                ; C_Jump                 ; work         ;
 ;       |T_jump:inst163|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|T_jump:inst163                                                                ; T_jump                 ; work         ;
 ;       |UC-1:inst151|                            ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-1:inst151                                                                  ; UC-1                   ; work         ;
-;       |UC-2:inst146|                            ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-2:inst146                                                                  ; UC-2                   ; work         ;
+;       |UC-2:inst146|                            ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-2:inst146                                                                  ; UC-2                   ; work         ;
 ;    |DATA_Mem:inst2|                             ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2                                                                                              ; DATA_Mem               ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component                                                              ; altsyncram             ; work         ;
 ;          |altsyncram_dkh1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated                               ; altsyncram_dkh1        ; work         ;
@@ -336,8 +336,8 @@ https://fpgasoftware.intel.com/eula.
 ;          |busmux:inst5|                         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5                                                            ; busmux                 ; work         ;
 ;             |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000                                             ; lpm_mux                ; work         ;
 ;                |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000|mux_crc:auto_generated                      ; mux_crc                ; work         ;
-;    |Jump_Module:inst13|                         ; 141 (1)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13                                                                                          ; Jump_Module            ; work         ;
-;       |PC_COUNTER:inst2|                        ; 118 (118)           ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2                                                                         ; PC_COUNTER             ; work         ;
+;    |Jump_Module:inst13|                         ; 139 (0)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13                                                                                          ; Jump_Module            ; work         ;
+;       |PC_COUNTER:inst2|                        ; 117 (117)           ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2                                                                         ; PC_COUNTER             ; work         ;
 ;       |Pre_Load_Block:inst10|                   ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10                                                                    ; Pre_Load_Block         ; work         ;
 ;          |mux:inst2|                            ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2                                                          ; mux                    ; work         ;
 ;             |lpm_mux:$00001|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2|lpm_mux:$00001                                           ; lpm_mux                ; work         ;
@@ -354,7 +354,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |Program_Mem:inst14|                         ; 1 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14                                                                                          ; Program_Mem            ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 1 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component                                                          ; altsyncram             ; work         ;
 ;          |altsyncram_r7b1:auto_generated|       ; 1 (1)               ; 1 (1)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated                           ; altsyncram_r7b1        ; work         ;
-;    |RegisterBank:inst6|                         ; 462 (0)             ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6                                                                                          ; RegisterBank           ; work         ;
+;    |RegisterBank:inst6|                         ; 466 (0)             ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6                                                                                          ; RegisterBank           ; work         ;
 ;       |16bitRegEn:inst12|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst12                                                                        ; 16bitRegEn             ; work         ;
 ;       |16bitRegEn:inst13|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst13                                                                        ; 16bitRegEn             ; work         ;
 ;       |16bitRegEn:inst1|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst1                                                                         ; 16bitRegEn             ; work         ;
@@ -390,11 +390,12 @@ https://fpgasoftware.intel.com/eula.
 ;          |lpm_decode:inst|                      ; 37 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|lpm_decode:inst                                                            ; lpm_decode             ; work         ;
 ;             |decode_3df:auto_generated|         ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|lpm_decode:inst|decode_3df:auto_generated                                  ; decode_3df             ; work         ;
 ;          |multiplexer16b:inst1|                 ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|multiplexer16b:inst1                                                       ; multiplexer16b         ; work         ;
-;       |block3:inst71|                           ; 408 (14)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71                                                                            ; block3                 ; work         ;
-;          |TRI16:inst38|                         ; 339 (339)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst38                                                               ; TRI16                  ; work         ;
-;          |TRI16:inst50|                         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst50                                                               ; TRI16                  ; work         ;
-;          |lpm_decode:inst73|                    ; 39 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73                                                          ; lpm_decode             ; work         ;
-;             |decode_3df:auto_generated|         ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                                ; decode_3df             ; work         ;
+;       |block3:inst71|                           ; 412 (14)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71                                                                            ; block3                 ; work         ;
+;          |TRI16:inst38|                         ; 342 (342)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst38                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst50|                         ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst50                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst54|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst54                                                               ; TRI16                  ; work         ;
+;          |lpm_decode:inst73|                    ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73                                                          ; lpm_decode             ; work         ;
+;             |decode_3df:auto_generated|         ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                                ; decode_3df             ; work         ;
 ;    |Shifter:inst4|                              ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4                                                                                               ; Shifter                ; work         ;
 ;       |mux:inst10|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10                                                                                    ; mux                    ; work         ;
 ;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
@@ -445,7 +446,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001                                                                       ; lpm_mux                ; work         ;
 ;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001|mux_9rc:auto_generated                                                ; mux_9rc                ; work         ;
 ;    |TRI16:inst8|                                ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|TRI16:inst8                                                                                                 ; TRI16                  ; work         ;
-;    |alu:inst3|                                  ; 124 (124)           ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|alu:inst3                                                                                                   ; alu                    ; work         ;
+;    |alu:inst3|                                  ; 129 (129)           ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|alu:inst3                                                                                                   ; alu                    ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -570,9 +571,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 ; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|SHFT0[0]                                  ;
 ; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|SHFT2[7]                                  ;
-; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|new_PC[4]                                 ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; Yes        ; |TP2_E5|alu:inst3|ALU_Result[13]                                                      ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst4|mux:inst14|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|new_PC[5]                                 ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; Yes        ; |TP2_E5|alu:inst3|ALU_Result[12]                                                      ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst4|mux:inst12|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
 ; 31:1               ; 16 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated|result_node[0]   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 
@@ -1104,20 +1105,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 26                          ;
 ;     plain             ; 119                         ;
 ; cycloneiii_io_obuf    ; 32                          ;
-; cycloneiii_lcell_comb ; 1141                        ;
+; cycloneiii_lcell_comb ; 1149                        ;
 ;     arith             ; 80                          ;
 ;         2 data inputs ; 53                          ;
 ;         3 data inputs ; 27                          ;
-;     normal            ; 1061                        ;
-;         0 data inputs ; 2                           ;
+;     normal            ; 1069                        ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 54                          ;
-;         3 data inputs ; 105                         ;
-;         4 data inputs ; 890                         ;
+;         2 data inputs ; 59                          ;
+;         3 data inputs ; 103                         ;
+;         4 data inputs ; 896                         ;
 ; cycloneiii_ram_block  ; 66                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.12                        ;
+; Average LUT depth     ; 4.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1126,7 +1127,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1136,7 +1137,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Jun  1 22:58:27 2020
+    Info: Processing started: Tue Jun  2 00:05:42 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (125092): Tcl Script File PROGRAM_MEM.qip not found
     Info (125063): set_global_assignment -name QIP_FILE PROGRAM_MEM.qip
@@ -1232,7 +1233,6 @@ Warning (10236): Verilog HDL Implicit Net warning at PC_counter.v(12): created i
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
 Warning (275011): Block or symbol "registerbank" of instance "inst6" overlaps another block or symbol
 Warning (275011): Block or symbol "TRI16" of instance "inst8" overlaps another block or symbol
-Warning (275043): Pin "New_PC[10..0]" is missing source
 Info (12128): Elaborating entity "Control_Word_Register2" for hierarchy "Control_Word_Register2:inst15"
 Warning (275083): Bus "ALU_SH_In2[5..0]" found using same base name as "ALU_SH_In", which might lead to a name conflict.
 Warning (275083): Bus "ALU_SH_In2[5]" found using same base name as "ALU_SH_In", which might lead to a name conflict.
@@ -1526,31 +1526,19 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst2" to the node "16bitReg:inst11|inst2" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst1" to the node "16bitReg:inst11|inst1" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst" to the node "16bitReg:inst11|inst" into an OR gate
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "New_PC[10]" is stuck at GND
-    Warning (13410): Pin "New_PC[9]" is stuck at GND
-    Warning (13410): Pin "New_PC[8]" is stuck at GND
-    Warning (13410): Pin "New_PC[7]" is stuck at GND
-    Warning (13410): Pin "New_PC[6]" is stuck at GND
-    Warning (13410): Pin "New_PC[5]" is stuck at GND
-    Warning (13410): Pin "New_PC[4]" is stuck at GND
-    Warning (13410): Pin "New_PC[3]" is stuck at GND
-    Warning (13410): Pin "New_PC[2]" is stuck at GND
-    Warning (13410): Pin "New_PC[1]" is stuck at GND
-    Warning (13410): Pin "New_PC[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2111 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 287 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 1741 logic cells
+    Info (21061): Implemented 1752 logic cells
     Info (21064): Implemented 66 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 156 warnings
-    Info: Peak virtual memory: 972 megabytes
-    Info: Processing ended: Mon Jun  1 22:58:49 2020
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:37
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
+    Info: Peak virtual memory: 975 megabytes
+    Info: Processing ended: Tue Jun  2 00:06:12 2020
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:36
 
 
