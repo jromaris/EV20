@@ -26,8 +26,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "In[6 .. 0]" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
-		(text "In[6 .. 0]" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
+		(text "In[5 .. 0]" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "In[5 .. 0]" (rect 21 27 69 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port

@@ -54,8 +54,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 312 32)
 		(output)
-		(text "Jmp_Opcode_Out[2 .. 0]" (rect 0 0 146 19)(font "Intel Clear" (font_size 8)))
-		(text "Jmp_Opcode_Out[2 .. 0]" (rect 145 27 291 46)(font "Intel Clear" (font_size 8)))
+		(text "Jmp_Opcode_Out[5 .. 0]" (rect 0 0 146 19)(font "Intel Clear" (font_size 8)))
+		(text "Jmp_Opcode_Out[5 .. 0]" (rect 145 27 291 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 312 32)(pt 296 32)(line_width 3))
 	)
 	(port
@@ -120,13 +120,6 @@ refer to the applicable agreement for further details.
 		(text "C_Reg_Out[5 .. 0]" (rect 0 0 103 19)(font "Intel Clear" (font_size 8)))
 		(text "C_Reg_Out[5 .. 0]" (rect 188 171 291 190)(font "Intel Clear" (font_size 8)))
 		(line (pt 312 176)(pt 296 176)(line_width 3))
-	)
-	(port
-		(pt 312 192)
-		(output)
-		(text "BSR_OR_RET[6 .. 0]" (rect 0 0 118 19)(font "Intel Clear" (font_size 8)))
-		(text "BSR_OR_RET[6 .. 0]" (rect 173 187 291 206)(font "Intel Clear" (font_size 8)))
-		(line (pt 312 192)(pt 296 192)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 296 208))

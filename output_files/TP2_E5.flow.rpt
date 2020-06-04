@@ -1,6 +1,6 @@
 Flow report for TP2_E5
-Tue Jun  2 00:07:50 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Wed Jun 03 22:36:31 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,28 +33,27 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun  2 00:07:50 2020       ;
-; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Flow Status                        ; Successful - Wed Jun 03 22:36:31 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,697                                       ;
-;     Total combinational functions  ; 1,148                                       ;
+; Total logic elements               ; 1,684                                       ;
+;     Total combinational functions  ; 1,135                                       ;
 ;     Dedicated logic registers      ; 726                                         ;
 ; Total registers                    ; 726                                         ;
-; Total pins                         ; 304                                         ;
+; Total pins                         ; 291                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 65,024                                      ;
+; Total memory bits                  ; 63,232                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -65,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/02/2020 00:05:44 ;
+; Start date & time ; 06/03/2020 22:32:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TP2_E5              ;
 +-------------------+---------------------+
@@ -76,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 183565329254349.159106714314810        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 134660529595215.159123434811660        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.bsf                                ; --            ; --          ; --         ;
@@ -84,6 +83,11 @@ https://fpgasoftware.intel.com/eula.
 ; MISC_FILE                           ; MIR_bb.v                               ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.inc                                ; --            ; --          ; --         ;
 ; MISC_FILE                           ; MIR.cmp                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; Program_Mem.bsf                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; Program_Mem_inst.v                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; Program_Mem_bb.v                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; Program_Mem.inc                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; Program_Mem.cmp                        ; --            ; --          ; --         ;
 ; MISC_FILE                           ; DATA_Mem.bsf                           ; --            ; --          ; --         ;
 ; MISC_FILE                           ; DATA_Mem_inst.v                        ; --            ; --          ; --         ;
 ; MISC_FILE                           ; DATA_Mem_bb.v                          ; --            ; --          ; --         ;
@@ -104,30 +108,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 926 MB              ; 00:00:36                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1029 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1036 MB             ; 00:00:01                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis ; 00:01:00     ; 1.0                     ; 4806 MB             ; 00:01:01                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4643 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4651 MB             ; 00:00:04                           ;
+; Total                ; 00:01:08     ; --                      ; --                  ; 00:01:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+----------------------+------------------+---------------+---------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name       ; OS Version    ; Processor type ;
-+----------------------+------------------+---------------+---------------+----------------+
-; Analysis & Synthesis ; marcos-pc        ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; EDA Netlist Writer   ; marcos-pc        ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; EDA Netlist Writer   ; marcos-pc        ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-+----------------------+------------------+---------------+---------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-135JCEO  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-135JCEO  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-135JCEO  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=/home/marcos/Documentos/E5/Ev20/EV20/Waveform10.vwf --testbench_file=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/Waveform10.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/marcos/Documentos/E5/Ev20/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/Manuel/Documents/GitHub/EV20/Waveform1.vwf --testbench_file=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Manuel/Documents/GitHub/EV20/simulation/qsim/ TP2_E5 -c TP2_E5
 
 
 

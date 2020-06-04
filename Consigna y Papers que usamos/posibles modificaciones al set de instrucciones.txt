@@ -1,0 +1,88 @@
+Código Binario de Instrucción EV16 Nemónico Instrucción Significado
+Hex:10/  0 1 0 0 0 0 0 0 0 0 0 x x x x x x x x x x x JMP X Unconditional Jump PC = X
+Hex:11/  0 1 0 0 0 1 0 0 0 0 0 x x x x x x x x x x x JZE X Jump if Working Register is Zero IF W=0 THEN PC=X
+Hex:12/  0 1 0 0 1 0 0 0 0 0 0 x x x x x x x x x x x JNE X Jump if Working Register is Negative IF W15=1 THEN PC=X
+Hex:13/  0 1 0 0 1 1 0 0 0 0 0 x x x x x x x x x x x JCY X Jump if Carry IF CY THEN PC=X
+Hex:14/  0 1 0 1 0 0 0 0 0 0 0 0 s s s s s s s s s s BSR S Unconditional Branch (Relative) to Subroutine S Save PC; PC= PC + S
+Hex:15/  0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 RET Return From Subroutine PC= Latest Stored PC {+ 1}
+
+Hex:00/  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 NOP No operation Done		   
+
+Hex:01/  0 0 0 0 0 1 0 0 0 0 0 0 y y y y y y y y y y MOM Y,W Move Working Register to Memory M(Y) = W
+Hex:02/  0 0 0 0 1 0 0 0 0 0 0 0 y y y y y y y y y y MOM W,Y Move Memory to Working Register W = M(Y)
+
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 i i i i i j j j j j MOV Ri,Rj Move Register J to Register I {Ri, Rj: 0 a 27} Ri = Rj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 i j j j j j MOV POi,Rj Move Register J to Output Port i POi = Rj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 i i i i i 1 1 1 0 j MOV Ri,PIj Move Input Port j to Register I Ri = PIj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 i 1 1 1 0 j MOV POi,PIj Move Input Port J to Output Port I POi = PIj
+Hex:09/  0 0 1 0 0 1 0 0 0 0 0 0 i i i i i 0 0 0 0 0 MOV Ri,W Move Working Register to Register I Ri = W
+Hex:09/  0 0 1 0 0 1 0 0 0 0 0 0 1 1 1 1 i 0 0 0 0 0 MOV POi,W Move Working Register to Output Port I POi = W
+Hex:0A/  0 0 1 0 1 0 0 0 0 0 0 0 i i i i i j j j j j ADW Ri,Rj Add with Carry Reg. J with Working Reg. to Reg. I Ri= W + Rj + CY
+
+Hex:20/  1 0 0 0 0 0 k k k k k k k k k k k k k k k k MOK W,#K Move Constant to Working Register W = K
+Hex:21/  1 0 0 0 0 1 k k k k k k k k k k k k k k k k ANK W,#K AND Constant with Working Register W= W & K
+Hex:22/  1 0 0 0 1 0 k k k k k k k k k k k k k k k k ORK W,#K OR Constant with Working Register W= W OR K
+Hex:23/  1 0 0 0 1 1 k k k k k k k k k k k k k k k k ADK W,#K ADD with Carry Constant with Working Register W= W + K + CY
+Hex:24/  1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 j j j j j MOV W,Rj Move Register J to Working Register W= Rj
+Hex:24/  1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 j MOV W,PIj Move Input Port J to Working Register W= PIj
+Hex:25/  1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 j j j j j ANR W,Rj AND Register J with Working Register W= W & Rj
+Hex:26/  1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 j j j j j ORR W,Rj OR Register J with Working Register W= W OR Rj
+Hex:27/  1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 j j j j j ADR W,Rj ADD with Carry Register J with Working Register W= W + Rj + CY
+Hex:28/  1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CPL W Complement Working Register W= /W
+Hex:29/  1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CLR CY Clear Carry CY= 0
+Hex:2A/  1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 SET CY Set Carry CY= 1
+
+
+Primeros 6 bits son direcciones de la MIR
+
+Ultimos 16 bits son constante K
+
+Ultimos 11 bits dicen a donde se hace el salto (excepto con el RET que es todo 0)
+
+Ultimos 10 bits indican Address de memoria
+
+Ultimos 5 bits dicen bus A en caso de que sea necesario
+
+Los 5 bits posteriores indican bus C en caso de que se lea este valor del control store
+(si los primeros 3 bits no son 001 se saca el valor de la control Store)
+(si los primeros 3 bits de la instrucción son 001 se saca el valor de C de la instrucción)
+
+Si el 1er bit es 0 y el 2do es 1 es un jump 
+
+
+
+Qué codifica cada instrucción al MIR
+
+-- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type -
+
+NOP         : 0000000000000001000110000000;
+JMP X       : 0000000000000001000000100011;
+JZE X       : 0000000000000001000001100011;
+JNE X       : 0000000000000001000001100011;
+JCY X       : 0000000000000001010000100011;
+BSR S       : 0000000000000001000000100011;
+RET         : 0000000000000001000000100011;
+ 
+MOM Y,W     : 0000000010000000000001100011;
+MOM W,Y     : 0000000100000000000010100011;
+   
+MOV Ri,Rj   : 0000000000000000001100000000;
+MOV POi,Rj  : 0000000000000000001100000000;
+MOV Ri,PIj  : 0000000000000000001100000000;
+MOV POi,PIj : 0000000000000000001100000000;
+MOV Ri,W    : 0001000001000100001001000000;
+MOV POi,W   : 0001000001000100001001000000;
+ADW Ri,Rj   : 0101000001000100111101000000;
+
+MOK W,#K    : 0000001000000000000010100010;
+ANK W,#K    : 0111001001000100000011100010;
+ORK W,#K    : 0110001001000100000011100010;
+ADK W,#K    : 0101001001000100110011100010;
+MOV W,Rj    : 0000000000000000000110100010;
+MOV W,PIj   : 0000000000000000000110100010;
+ANR W,Rj    : 0111000001000100000111100010;
+ORR W,Rj    : 0110000001000100000111100010;
+ADR W,Rj    : 0101000001000100110111100010;
+CPL W       : 0011000001000100000011100010;
+CLR CY      : 1011000000000000100000100011;
+SET CY      : 1100000000000000100000100011;

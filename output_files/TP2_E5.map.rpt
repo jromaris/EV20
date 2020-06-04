@@ -1,6 +1,6 @@
 Analysis & Synthesis report for TP2_E5
-Tue Jun  2 00:06:12 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Wed Jun 03 22:33:27 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -18,7 +18,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated
+ 13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated
  14. Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated
  15. Source assignments for DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated
  16. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component
@@ -56,9 +56,9 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -68,26 +68,25 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun  2 00:06:11 2020       ;
-; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 03 22:33:27 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,697                                       ;
-;     Total combinational functions  ; 1,148                                       ;
+; Total logic elements               ; 1,684                                       ;
+;     Total combinational functions  ; 1,135                                       ;
 ;     Dedicated logic registers      ; 726                                         ;
 ; Total registers                    ; 726                                         ;
-; Total pins                         ; 304                                         ;
+; Total pins                         ; 291                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 65,024                                      ;
+; Total memory bits                  ; 63,232                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -185,92 +184,89 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                           ; Library ;
-+----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------+---------+
-; RegisterBank.bdf                 ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/RegisterBank.bdf                                  ;         ;
-; UC-1.bdf                         ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/UC-1.bdf                                          ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/ALU.v                                             ;         ;
-; TP2_E5.bdf                       ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/TP2_E5.bdf                                        ;         ;
-; MIR.v                            ; yes             ; User Wizard-Generated File               ; /home/marcos/Documentos/E5/Ev20/EV20/MIR.v                                             ;         ;
-; Decode_Unit.bdf                  ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Decode_Unit.bdf                                   ;         ;
-; 5B_to_6B.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/5B_to_6B.bdf                                      ;         ;
-; Pre_Load_Block.bdf               ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Pre_Load_Block.bdf                                ;         ;
-; Carry_Block.bdf                  ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Carry_Block.bdf                                   ;         ;
-; ON_When_16_Zeros.bdf             ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/ON_When_16_Zeros.bdf                              ;         ;
-; Instr_Separator.bdf              ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Instr_Separator.bdf                               ;         ;
-; Shifter.bdf                      ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Shifter.bdf                                       ;         ;
-; Kmux.bdf                         ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Kmux.bdf                                          ;         ;
-; Control_Word_Register2.bdf       ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Control_Word_Register2.bdf                        ;         ;
-; UC-2.bdf                         ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/UC-2.bdf                                          ;         ;
-; Reg_Comp.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Reg_Comp.bdf                                      ;         ;
-; FFD3bits.v                       ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD3bits.v                                        ;         ;
-; FFD16bits.v                      ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD16bits.v                                       ;         ;
-; FFD10bits.v                      ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD10bits.v                                       ;         ;
-; FFD11bits.v                      ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD11bits.v                                       ;         ;
-; FFD5bits.v                       ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD5bits.v                                        ;         ;
-; PC_counter.v                     ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v                                      ;         ;
-; MIR_DECODE.bdf                   ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/MIR_DECODE.bdf                                    ;         ;
-; 16bitRegEn.bdf                   ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/16bitRegEn.bdf                                    ;         ;
-; FFD4bits.v                       ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD4bits.v                                        ;         ;
-; C_Jump.bdf                       ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/C_Jump.bdf                                        ;         ;
-; T_jump.bdf                       ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/T_jump.bdf                                        ;         ;
-; Alu_jump.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Alu_jump.bdf                                      ;         ;
-; ON_4_BSR.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/ON_4_BSR.bdf                                      ;         ;
-; On_4_Ret.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/On_4_Ret.bdf                                      ;         ;
-; Jump_Module.bdf                  ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Jump_Module.bdf                                   ;         ;
-; FFD7bits.v                       ; yes             ; User Verilog HDL File                    ; /home/marcos/Documentos/E5/Ev20/EV20/FFD7bits.v                                        ;         ;
-; Pre_Load_Retain.bdf              ; yes             ; User Block Diagram/Schematic File        ; /home/marcos/Documentos/E5/Ev20/EV20/Pre_Load_Retain.bdf                               ;         ;
-; DATA_Mem.v                       ; yes             ; User Wizard-Generated File               ; /home/marcos/Documentos/E5/Ev20/EV20/DATA_Mem.v                                        ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal191.inc                   ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_laa1.tdf           ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_laa1.tdf                            ;         ;
-; MIR.mif                          ; yes             ; Auto-Found Memory Initialization File    ; /home/marcos/Documentos/E5/Ev20/EV20/MIR.mif                                           ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/mux_crc.tdf                                    ;         ;
-; Program_Mem.v                    ; yes             ; Auto-Found Wizard-Generated File         ; /home/marcos/Documentos/E5/Ev20/EV20/Program_Mem.v                                     ;         ;
-; db/altsyncram_r7b1.tdf           ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_r7b1.tdf                            ;         ;
-; Program_Mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; /home/marcos/Documentos/E5/Ev20/EV20/Program_Mem.mif                                   ;         ;
-; mux.tdf                          ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
-; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/mux_arc.tdf                                    ;         ;
-; 16bitReg.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/marcos/Documentos/E5/Ev20/EV20/16bitReg.bdf                                      ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf                                    ;         ;
-; block2.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/marcos/Documentos/E5/Ev20/EV20/block2.bdf                                        ;         ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_decode.tdf        ;         ;
-; declut.inc                       ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/declut.inc            ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_compare.inc       ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                             ; /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
-; db/decode_3df.tdf                ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/decode_3df.tdf                                 ;         ;
-; multiplexer16b.v                 ; yes             ; Auto-Found Verilog HDL File              ; /home/marcos/Documentos/E5/Ev20/EV20/multiplexer16b.v                                  ;         ;
-; TRI16.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/marcos/Documentos/E5/Ev20/EV20/TRI16.bdf                                         ;         ;
-; block3.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/marcos/Documentos/E5/Ev20/EV20/block3.bdf                                        ;         ;
-; db/mux_9rc.tdf                   ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/mux_9rc.tdf                                    ;         ;
-; db/altsyncram_dkh1.tdf           ; yes             ; Auto-Generated Megafunction              ; /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_dkh1.tdf                            ;         ;
-+----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
+; RegisterBank.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/RegisterBank.bdf                       ;         ;
+; UC-1.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/UC-1.bdf                               ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel/Documents/GitHub/EV20/ALU.v                                  ;         ;
+; TP2_E5.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/TP2_E5.bdf                             ;         ;
+; MIR.v                            ; yes             ; User Wizard-Generated File               ; C:/Users/Manuel/Documents/GitHub/EV20/MIR.v                                  ;         ;
+; Decode_Unit.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Decode_Unit.bdf                        ;         ;
+; 5B_to_6B.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/5B_to_6B.bdf                           ;         ;
+; Pre_Load_Block.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Pre_Load_Block.bdf                     ;         ;
+; Carry_Block.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Carry_Block.bdf                        ;         ;
+; ON_When_16_Zeros.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/ON_When_16_Zeros.bdf                   ;         ;
+; Instr_Separator.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Instr_Separator.bdf                    ;         ;
+; Shifter.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Shifter.bdf                            ;         ;
+; Kmux.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Kmux.bdf                               ;         ;
+; Control_Word_Register2.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Control_Word_Register2.bdf             ;         ;
+; UC-2.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/UC-2.bdf                               ;         ;
+; Reg_Comp.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Reg_Comp.bdf                           ;         ;
+; Program_Mem.v                    ; yes             ; User Wizard-Generated File               ; C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v                          ;         ;
+; PC_counter.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v                           ;         ;
+; MIR_DECODE.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/MIR_DECODE.bdf                         ;         ;
+; 16bitRegEn.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/16bitRegEn.bdf                         ;         ;
+; FFD4bits.v                       ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel/Documents/GitHub/EV20/FFD4bits.v                             ;         ;
+; C_Jump.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/C_Jump.bdf                             ;         ;
+; T_jump.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/T_jump.bdf                             ;         ;
+; Alu_jump.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Alu_jump.bdf                           ;         ;
+; ON_4_BSR.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/ON_4_BSR.bdf                           ;         ;
+; On_4_Ret.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/On_4_Ret.bdf                           ;         ;
+; Jump_Module.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Jump_Module.bdf                        ;         ;
+; Pre_Load_Retain.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel/Documents/GitHub/EV20/Pre_Load_Retain.bdf                    ;         ;
+; DATA_Mem.v                       ; yes             ; User Wizard-Generated File               ; C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v                             ;         ;
+; FFD22bits.v                      ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel/Documents/GitHub/EV20/FFD22bits.v                            ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_39a1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_39a1.tdf                 ;         ;
+; mir.mif                          ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/mir.mif                                ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf                         ;         ;
+; db/altsyncram_r7b1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_r7b1.tdf                 ;         ;
+; program_mem.mif                  ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/program_mem.mif                        ;         ;
+; mux.tdf                          ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf               ;         ;
+; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_arc.tdf                         ;         ;
+; 16bitreg.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/16bitreg.bdf                           ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf                         ;         ;
+; block2.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/block2.bdf                             ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf        ;         ;
+; declut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc            ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc       ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
+; db/decode_3df.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/decode_3df.tdf                      ;         ;
+; multiplexer16b.v                 ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/Manuel/Documents/GitHub/EV20/multiplexer16b.v                       ;         ;
+; tri16.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/tri16.bdf                              ;         ;
+; block3.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel/Documents/GitHub/EV20/block3.bdf                             ;         ;
+; db/mux_9rc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/mux_9rc.tdf                         ;         ;
+; db/altsyncram_dkh1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_dkh1.tdf                 ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -278,31 +274,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,697       ;
+; Estimated Total logic elements              ; 1,684       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1148        ;
+; Total combinational functions               ; 1135        ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 896         ;
-;     -- 3 input functions                    ; 130         ;
-;     -- <=2 input functions                  ; 122         ;
+;     -- 3 input functions                    ; 120         ;
+;     -- <=2 input functions                  ; 119         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1068        ;
+;     -- normal mode                          ; 1055        ;
 ;     -- arithmetic mode                      ; 80          ;
 ;                                             ;             ;
 ; Total registers                             ; 726         ;
 ;     -- Dedicated logic registers            ; 726         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 304         ;
-; Total memory bits                           ; 65024       ;
+; I/O pins                                    ; 291         ;
+; Total memory bits                           ; 63232       ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
 ; Maximum fan-out                             ; 755         ;
-; Total fan-out                               ; 7785        ;
-; Average fan-out                             ; 3.04        ;
+; Total fan-out                               ; 7695        ;
+; Average fan-out                             ; 3.05        ;
 +---------------------------------------------+-------------+
 
 
@@ -311,49 +307,48 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TP2_E5                                         ; 1148 (0)            ; 726 (0)                   ; 65024       ; 0            ; 0       ; 0         ; 304  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
+; |TP2_E5                                         ; 1135 (0)            ; 726 (0)                   ; 63232       ; 0            ; 0       ; 0         ; 291  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
 ;    |16bitReg:inst11|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst11                                                                                             ; 16bitReg               ; work         ;
 ;    |16bitReg:inst1|                             ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst1                                                                                              ; 16bitReg               ; work         ;
 ;    |Carry_Block:inst5|                          ; 1 (1)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5                                                                                           ; Carry_Block            ; work         ;
 ;       |FFD4bits:inst6|                          ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5|FFD4bits:inst6                                                                            ; FFD4bits               ; work         ;
-;    |Control_Word_Register2:inst15|              ; 53 (1)              ; 73 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15                                                                               ; Control_Word_Register2 ; work         ;
+;    |Control_Word_Register2:inst15|              ; 50 (1)              ; 73 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15                                                                               ; Control_Word_Register2 ; work         ;
 ;       |Alu_jump:inst161|                        ; 7 (7)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|Alu_jump:inst161                                                              ; Alu_jump               ; work         ;
 ;       |C_Jump:inst162|                          ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|C_Jump:inst162                                                                ; C_Jump                 ; work         ;
 ;       |T_jump:inst163|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|T_jump:inst163                                                                ; T_jump                 ; work         ;
 ;       |UC-1:inst151|                            ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-1:inst151                                                                  ; UC-1                   ; work         ;
-;       |UC-2:inst146|                            ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-2:inst146                                                                  ; UC-2                   ; work         ;
+;       |UC-2:inst146|                            ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Control_Word_Register2:inst15|UC-2:inst146                                                                  ; UC-2                   ; work         ;
 ;    |DATA_Mem:inst2|                             ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2                                                                                              ; DATA_Mem               ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component                                                              ; altsyncram             ; work         ;
 ;          |altsyncram_dkh1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated                               ; altsyncram_dkh1        ; work         ;
-;    |Decode_Unit:inst21|                         ; 8 (0)               ; 23 (0)                    ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
-;       |FFD7bits:inst6|                          ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|FFD7bits:inst6                                                                           ; FFD7bits               ; work         ;
-;       |Instr_Separator:inst|                    ; 0 (0)               ; 15 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst                                                                     ; Instr_Separator        ; work         ;
-;          |FFD16bits:inst1|                      ; 0 (0)               ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1                                                     ; FFD16bits              ; work         ;
-;       |MIR_DECODE:inst3|                        ; 8 (1)               ; 1 (1)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3                                                                         ; MIR_DECODE             ; work         ;
-;          |MIR:inst|                             ; 1 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst                                                                ; MIR                    ; work         ;
-;             |altsyncram:altsyncram_component|   ; 1 (0)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
-;                |altsyncram_laa1:auto_generated| ; 1 (1)               ; 0 (0)                     ; 3584        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated ; altsyncram_laa1        ; work         ;
+;    |Decode_Unit:inst21|                         ; 7 (0)               ; 23 (0)                    ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
+;       |Instr_Separator:inst|                    ; 0 (0)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst                                                                     ; Instr_Separator        ; work         ;
+;          |FFD22bits:inst|                       ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst|FFD22bits:inst                                                      ; FFD22bits              ; work         ;
+;       |MIR_DECODE:inst3|                        ; 7 (1)               ; 1 (1)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3                                                                         ; MIR_DECODE             ; work         ;
+;          |MIR:inst|                             ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst                                                                ; MIR                    ; work         ;
+;             |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
+;                |altsyncram_39a1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated ; altsyncram_39a1        ; work         ;
 ;          |busmux:inst5|                         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5                                                            ; busmux                 ; work         ;
 ;             |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000                                             ; lpm_mux                ; work         ;
 ;                |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000|mux_crc:auto_generated                      ; mux_crc                ; work         ;
-;    |Jump_Module:inst13|                         ; 139 (0)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13                                                                                          ; Jump_Module            ; work         ;
-;       |PC_COUNTER:inst2|                        ; 117 (117)           ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2                                                                         ; PC_COUNTER             ; work         ;
+;    |Jump_Module:inst13|                         ; 133 (0)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13                                                                                          ; Jump_Module            ; work         ;
+;       |PC_COUNTER:inst2|                        ; 113 (113)           ; 55 (55)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2                                                                         ; PC_COUNTER             ; work         ;
 ;       |Pre_Load_Block:inst10|                   ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10                                                                    ; Pre_Load_Block         ; work         ;
 ;          |mux:inst2|                            ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2                                                          ; mux                    ; work         ;
 ;             |lpm_mux:$00001|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2|lpm_mux:$00001                                           ; lpm_mux                ; work         ;
 ;                |mux_arc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Block:inst10|mux:inst2|lpm_mux:$00001|mux_arc:auto_generated                    ; mux_arc                ; work         ;
-;       |Pre_Load_Retain:inst1|                   ; 4 (4)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst1                                                                    ; Pre_Load_Retain        ; work         ;
-;       |Pre_Load_Retain:inst5|                   ; 4 (4)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst5                                                                    ; Pre_Load_Retain        ; work         ;
-;       |Pre_Load_Retain:inst6|                   ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst6                                                                    ; Pre_Load_Retain        ; work         ;
+;       |Pre_Load_Retain:inst1|                   ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst1                                                                    ; Pre_Load_Retain        ; work         ;
+;       |Pre_Load_Retain:inst5|                   ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst5                                                                    ; Pre_Load_Retain        ; work         ;
+;       |Pre_Load_Retain:inst6|                   ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst6                                                                    ; Pre_Load_Retain        ; work         ;
 ;       |Pre_Load_Retain:inst7|                   ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Jump_Module:inst13|Pre_Load_Retain:inst7                                                                    ; Pre_Load_Retain        ; work         ;
 ;    |Kmux:inst|                                  ; 304 (0)             ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst                                                                                                   ; Kmux                   ; work         ;
 ;       |16bitRegEn:inst|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|16bitRegEn:inst                                                                                   ; 16bitRegEn             ; work         ;
 ;       |busmux:inst2|                            ; 304 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2                                                                                      ; busmux                 ; work         ;
 ;          |lpm_mux:$00000|                       ; 304 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000                                                                       ; lpm_mux                ; work         ;
 ;             |mux_tsc:auto_generated|            ; 304 (304)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated                                                ; mux_tsc                ; work         ;
-;    |Program_Mem:inst14|                         ; 1 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14                                                                                          ; Program_Mem            ; work         ;
-;       |altsyncram:altsyncram_component|         ; 1 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component                                                          ; altsyncram             ; work         ;
-;          |altsyncram_r7b1:auto_generated|       ; 1 (1)               ; 1 (1)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated                           ; altsyncram_r7b1        ; work         ;
+;    |Program_Mem:inst14|                         ; 2 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14                                                                                          ; Program_Mem            ; work         ;
+;       |altsyncram:altsyncram_component|         ; 2 (0)               ; 1 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component                                                          ; altsyncram             ; work         ;
+;          |altsyncram_r7b1:auto_generated|       ; 2 (2)               ; 1 (1)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated                           ; altsyncram_r7b1        ; work         ;
 ;    |RegisterBank:inst6|                         ; 466 (0)             ; 496 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6                                                                                          ; RegisterBank           ; work         ;
 ;       |16bitRegEn:inst12|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst12                                                                        ; 16bitRegEn             ; work         ;
 ;       |16bitRegEn:inst13|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|16bitRegEn:inst13                                                                        ; 16bitRegEn             ; work         ;
@@ -391,11 +386,11 @@ https://fpgasoftware.intel.com/eula.
 ;             |decode_3df:auto_generated|         ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|lpm_decode:inst|decode_3df:auto_generated                                  ; decode_3df             ; work         ;
 ;          |multiplexer16b:inst1|                 ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block2:inst70|multiplexer16b:inst1                                                       ; multiplexer16b         ; work         ;
 ;       |block3:inst71|                           ; 412 (14)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71                                                                            ; block3                 ; work         ;
-;          |TRI16:inst38|                         ; 342 (342)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst38                                                               ; TRI16                  ; work         ;
-;          |TRI16:inst50|                         ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst50                                                               ; TRI16                  ; work         ;
-;          |TRI16:inst54|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst54                                                               ; TRI16                  ; work         ;
-;          |lpm_decode:inst73|                    ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73                                                          ; lpm_decode             ; work         ;
-;             |decode_3df:auto_generated|         ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                                ; decode_3df             ; work         ;
+;          |TRI16:inst10|                         ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst10                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst14|                         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst14                                                               ; TRI16                  ; work         ;
+;          |TRI16:inst44|                         ; 342 (342)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|TRI16:inst44                                                               ; TRI16                  ; work         ;
+;          |lpm_decode:inst73|                    ; 39 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73                                                          ; lpm_decode             ; work         ;
+;             |decode_3df:auto_generated|         ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|RegisterBank:inst6|block3:inst71|lpm_decode:inst73|decode_3df:auto_generated                                ; decode_3df             ; work         ;
 ;    |Shifter:inst4|                              ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4                                                                                               ; Shifter                ; work         ;
 ;       |mux:inst10|                              ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10                                                                                    ; mux                    ; work         ;
 ;          |lpm_mux:$00001|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst10|lpm_mux:$00001                                                                     ; lpm_mux                ; work         ;
@@ -446,7 +441,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |lpm_mux:$00001|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001                                                                       ; lpm_mux                ; work         ;
 ;             |mux_9rc:auto_generated|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Shifter:inst4|mux:inst|lpm_mux:$00001|mux_9rc:auto_generated                                                ; mux_9rc                ; work         ;
 ;    |TRI16:inst8|                                ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|TRI16:inst8                                                                                                 ; TRI16                  ; work         ;
-;    |alu:inst3|                                  ; 129 (129)           ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|alu:inst3                                                                                                   ; alu                    ; work         ;
+;    |alu:inst3|                                  ; 125 (125)           ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|alu:inst3                                                                                                   ; alu                    ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -457,7 +452,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF             ;
 +------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
 ; DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated|ALTSYNCRAM                               ; AUTO ; Single Port ; 1024         ; 16           ; --           ; --           ; 16384 ; None            ;
-; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 128          ; 28           ; --           ; --           ; 3584  ; MIR.mif         ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 64           ; 28           ; --           ; --           ; 1792  ; MIR.mif         ;
 ; Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM         ; 2048         ; 22           ; --           ; --           ; 45056 ; Program_Mem.mif ;
 +------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
 
@@ -468,6 +463,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                      ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-----------------+
 ; Altera ; RAM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TP2_E5|DATA_Mem:inst2                               ; DATA_Mem.v      ;
+; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TP2_E5|Program_Mem:inst14                           ; Program_Mem.v   ;
 ; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst ; MIR.v           ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------+-----------------+
 
@@ -510,42 +506,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RegisterBank:inst6|16bitRegEn:inst61|inst                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
 ; RegisterBank:inst6|16bitRegEn:inst61|inst23                                                                              ; Stuck at VCC due to stuck port data_in                                                                     ;
 ; Control_Word_Register2:inst15|UC-1:inst151|inst70                                                                        ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
-; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated|rden_a_store ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[8]                                                           ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[1]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[3]                                                            ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[1]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[8]                                                           ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[1]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[7]                                                           ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[0]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[2]                                                            ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[0]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[7]                                                           ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[0]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[15]                                                          ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[0]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[9]                                                           ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[2]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[4]                                                            ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[2]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[9]                                                           ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[2]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[10]                                                          ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[3]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD3bits:inst|out[0]                                                             ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[4]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD3bits:inst|out[1]                                                             ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[5]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD3bits:inst|out[2]                                                             ; Merged with Decode_Unit:inst21|FFD7bits:inst6|out[6]                                                       ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[0]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[8]                                 ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[0]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[8]                                 ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[1]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[9]                                 ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[1]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[9]                                 ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[2]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[10]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[2]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[10]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[3]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[11]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[3]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[11]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[4]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[12]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[4]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[12]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[5]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[0]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[5]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[13]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2|out[6]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4|out[1]                                                            ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14]                                ;
-; Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3|out[6]                                                           ; Merged with Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1|out[14]                                ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated|rden_a_store ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
 ; Control_Word_Register2:inst15|C_Jump:inst162|inst70                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst70                                          ;
 ; Control_Word_Register2:inst15|T_jump:inst163|inst70                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst70                                          ;
 ; Control_Word_Register2:inst15|C_Jump:inst162|inst71                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst71                                          ;
 ; Control_Word_Register2:inst15|T_jump:inst163|inst71                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst71                                          ;
-; Total Number of Removed Registers = 68                                                                                   ;                                                                                                            ;
+; Total Number of Removed Registers = 38                                                                                   ;                                                                                                            ;
 +--------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
@@ -569,17 +535,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|SHFT0[0]                                  ;
-; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|SHFT2[7]                                  ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|SHFT0[9]                                  ;
+; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|SHFT1[9]                                  ;
 ; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |TP2_E5|Jump_Module:inst13|PC_COUNTER:inst2|new_PC[5]                                 ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; Yes        ; |TP2_E5|alu:inst3|ALU_Result[12]                                                      ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; Yes        ; |TP2_E5|alu:inst3|ALU_Result[13]                                                      ;
 ; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TP2_E5|Shifter:inst4|mux:inst12|lpm_mux:$00001|mux_9rc:auto_generated|result_node[0] ;
-; 31:1               ; 16 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated|result_node[0]   ;
+; 31:1               ; 16 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |TP2_E5|Kmux:inst|busmux:inst2|lpm_mux:$00000|mux_tsc:auto_generated|result_node[1]   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated ;
+; Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -618,8 +584,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                       ;
 ; OPERATION_MODE                     ; ROM                  ; Untyped                                                       ;
 ; WIDTH_A                            ; 28                   ; Signed Integer                                                ;
-; WIDTHAD_A                          ; 7                    ; Signed Integer                                                ;
-; NUMWORDS_A                         ; 128                  ; Signed Integer                                                ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer                                                ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer                                                ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                       ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                       ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                       ;
@@ -661,7 +627,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_laa1      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_39a1      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1061,7 +1027,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                                          ;
 ;     -- WIDTH_A                            ; 28                                                                           ;
-;     -- NUMWORDS_A                         ; 128                                                                          ;
+;     -- NUMWORDS_A                         ; 64                                                                           ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                 ;
 ;     -- WIDTH_B                            ; 1                                                                            ;
 ;     -- NUMWORDS_B                         ; 1                                                                            ;
@@ -1099,26 +1065,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 304                         ;
+; boundary_port         ; 291                         ;
 ; cycloneiii_ff         ; 726                         ;
 ;     ENA               ; 581                         ;
 ;     ENA SLD           ; 26                          ;
 ;     plain             ; 119                         ;
 ; cycloneiii_io_obuf    ; 32                          ;
-; cycloneiii_lcell_comb ; 1149                        ;
+; cycloneiii_lcell_comb ; 1136                        ;
 ;     arith             ; 80                          ;
 ;         2 data inputs ; 53                          ;
 ;         3 data inputs ; 27                          ;
-;     normal            ; 1069                        ;
+;     normal            ; 1056                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 59                          ;
-;         3 data inputs ; 103                         ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 93                          ;
 ;         4 data inputs ; 896                         ;
 ; cycloneiii_ram_block  ; 66                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.14                        ;
+; Average LUT depth     ; 4.16                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1127,7 +1093,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1136,103 +1102,105 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Jun  2 00:05:42 2020
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Jun 03 22:32:24 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
-Warning (125092): Tcl Script File PROGRAM_MEM.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE PROGRAM_MEM.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file RegisterBank.bdf
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file registerbank.bdf
     Info (12023): Found entity 1: RegisterBank
-Info (12021): Found 1 design units, including 1 entities, in source file UC-1.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file uc-1.bdf
     Info (12023): Found entity 1: UC-1
-Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
-    Info (12023): Found entity 1: alu File: /home/marcos/Documentos/E5/Ev20/EV20/ALU.v Line: 32
-Info (12021): Found 1 design units, including 1 entities, in source file TP2_E5.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/Manuel/Documents/GitHub/EV20/ALU.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file tp2_e5.bdf
     Info (12023): Found entity 1: TP2_E5
-Info (12021): Found 1 design units, including 1 entities, in source file MIR.v
-    Info (12023): Found entity 1: MIR File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file Control_Word_Register.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mir.v
+    Info (12023): Found entity 1: MIR File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file control_word_register.bdf
     Info (12023): Found entity 1: Control_Word_Register
-Info (12021): Found 1 design units, including 1 entities, in source file Decode_Unit.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file decode_unit.bdf
     Info (12023): Found entity 1: Decode_Unit
 Warning (12019): Can't analyze file -- file Decode_Test.bdf is missing
-Info (12021): Found 1 design units, including 1 entities, in source file 5B_to_6B.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file 5b_to_6b.bdf
     Info (12023): Found entity 1: 5B_to_6B
-Info (12021): Found 1 design units, including 1 entities, in source file Pre_Load_Block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file pre_load_block.bdf
     Info (12023): Found entity 1: Pre_Load_Block
-Info (12021): Found 1 design units, including 1 entities, in source file Carry_Block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file carry_block.bdf
     Info (12023): Found entity 1: Carry_Block
-Info (12021): Found 1 design units, including 1 entities, in source file AND16.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file and16.bdf
     Info (12023): Found entity 1: AND16
-Info (12021): Found 1 design units, including 1 entities, in source file ON_When_16_Zeros.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file on_when_16_zeros.bdf
     Info (12023): Found entity 1: ON_When_16_Zeros
-Info (12021): Found 1 design units, including 1 entities, in source file Instruction_Reg.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_reg.bdf
     Info (12023): Found entity 1: Instruction_Reg
-Info (12021): Found 1 design units, including 1 entities, in source file Instr_Separator.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file instr_separator.bdf
     Info (12023): Found entity 1: Instr_Separator
-Info (12021): Found 1 design units, including 1 entities, in source file Shifter.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.bdf
     Info (12023): Found entity 1: Shifter
-Info (12021): Found 1 design units, including 1 entities, in source file Kmux.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file kmux.bdf
     Info (12023): Found entity 1: Kmux
-Info (12021): Found 1 design units, including 1 entities, in source file SubRoutine_Control_Block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file subroutine_control_block.bdf
     Info (12023): Found entity 1: SubRoutine_Control_Block
-Info (12021): Found 1 design units, including 1 entities, in source file Control_Word_Register2.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file control_word_register2.bdf
     Info (12023): Found entity 1: Control_Word_Register2
-Info (12021): Found 1 design units, including 1 entities, in source file UC-2.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file uc-2.bdf
     Info (12023): Found entity 1: UC-2
-Info (12021): Found 1 design units, including 1 entities, in source file Reg_Comp.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file reg_comp.bdf
     Info (12023): Found entity 1: Reg_Comp
-Info (12021): Found 1 design units, including 1 entities, in source file FFD3bits.v
-    Info (12023): Found entity 1: FFD3bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD3bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file FFD16bits.v
-    Info (12023): Found entity 1: FFD16bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD16bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file FFD10bits.v
-    Info (12023): Found entity 1: FFD10bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD10bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file FFD11bits.v
-    Info (12023): Found entity 1: FFD11bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD11bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file FFD5bits.v
-    Info (12023): Found entity 1: FFD5bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD5bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file PC_counter.v
-    Info (12023): Found entity 1: PC_COUNTER File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file MIR_DECODE.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file ffd3bits.v
+    Info (12023): Found entity 1: FFD3bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD3bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ffd16bits.v
+    Info (12023): Found entity 1: FFD16bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD16bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ffd10bits.v
+    Info (12023): Found entity 1: FFD10bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD10bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ffd11bits.v
+    Info (12023): Found entity 1: FFD11bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD11bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ffd5bits.v
+    Info (12023): Found entity 1: FFD5bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD5bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file program_mem.v
+    Info (12023): Found entity 1: Program_Mem File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file pc_counter.v
+    Info (12023): Found entity 1: PC_COUNTER File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mir_decode.bdf
     Info (12023): Found entity 1: MIR_DECODE
 Warning (12019): Can't analyze file -- file ../../../Desktop/TP2_E5.bdf is missing
 Warning (12019): Can't analyze file -- file ../../../Desktop/panchito.bdf is missing
 Warning (12019): Can't analyze file -- file ../../../Desktop/debug.bdf is missing
-Info (12021): Found 1 design units, including 1 entities, in source file 16bitRegEn.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file 16bitregen.bdf
     Info (12023): Found entity 1: 16bitRegEn
-Warning (12019): Can't analyze file -- file ../../../Desktop/EL_POSTA.bdf is missing
-Info (12021): Found 1 design units, including 1 entities, in source file FFD4bits.v
-    Info (12023): Found entity 1: FFD4bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD4bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file C_Jump.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/manuel/desktop/el_posta.bdf
+    Info (12023): Found entity 1: EL_POSTA
+Info (12021): Found 1 design units, including 1 entities, in source file ffd4bits.v
+    Info (12023): Found entity 1: FFD4bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD4bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file c_jump.bdf
     Info (12023): Found entity 1: C_Jump
-Info (12021): Found 1 design units, including 1 entities, in source file T_jump.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file t_jump.bdf
     Info (12023): Found entity 1: T_jump
-Info (12021): Found 1 design units, including 1 entities, in source file Alu_jump.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file alu_jump.bdf
     Info (12023): Found entity 1: Alu_jump
-Info (12021): Found 1 design units, including 1 entities, in source file On_solo_first_bit_on.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file on_solo_first_bit_on.bdf
     Info (12023): Found entity 1: On_solo_first_bit_on
-Info (12021): Found 1 design units, including 1 entities, in source file ON_4_BSR.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file on_4_bsr.bdf
     Info (12023): Found entity 1: ON_4_BSR
-Info (12021): Found 1 design units, including 1 entities, in source file On_4_Ret.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file on_4_ret.bdf
     Info (12023): Found entity 1: On_4_Ret
-Info (12021): Found 1 design units, including 1 entities, in source file BSR.v
-    Info (12023): Found entity 1: BSR File: /home/marcos/Documentos/E5/Ev20/EV20/BSR.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file Jump_Module.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file bsr.v
+    Info (12023): Found entity 1: BSR File: C:/Users/Manuel/Documents/GitHub/EV20/BSR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jump_module.bdf
     Info (12023): Found entity 1: Jump_Module
-Info (12021): Found 1 design units, including 1 entities, in source file FFD7bits.v
-    Info (12023): Found entity 1: FFD7bits File: /home/marcos/Documentos/E5/Ev20/EV20/FFD7bits.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file Pre_Load_Retain.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file ffd7bits.v
+    Info (12023): Found entity 1: FFD7bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD7bits.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file pre_load_retain.bdf
     Info (12023): Found entity 1: Pre_Load_Retain
-Info (12021): Found 1 design units, including 1 entities, in source file DATA_Mem.v
-    Info (12023): Found entity 1: DATA_Mem File: /home/marcos/Documentos/E5/Ev20/EV20/DATA_Mem.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file data_mem.v
+    Info (12023): Found entity 1: DATA_Mem File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 39
 Warning (12019): Can't analyze file -- file bimux.v is missing
-Warning (10236): Verilog HDL Implicit Net warning at PC_counter.v(12): created implicit net for "level" File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file ffd22bits.v
+    Info (12023): Found entity 1: FFD22bits File: C:/Users/Manuel/Documents/GitHub/EV20/FFD22bits.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at PC_counter.v(12): created implicit net for "level" File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 12
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
 Warning (275011): Block or symbol "registerbank" of instance "inst6" overlaps another block or symbol
-Warning (275011): Block or symbol "TRI16" of instance "inst8" overlaps another block or symbol
 Info (12128): Elaborating entity "Control_Word_Register2" for hierarchy "Control_Word_Register2:inst15"
 Warning (275083): Bus "ALU_SH_In2[5..0]" found using same base name as "ALU_SH_In", which might lead to a name conflict.
 Warning (275083): Bus "ALU_SH_In2[5]" found using same base name as "ALU_SH_In", which might lead to a name conflict.
@@ -1301,9 +1269,9 @@ Info (12128): Elaborating entity "Alu_jump" for hierarchy "Control_Word_Register
 Info (12128): Elaborating entity "Decode_Unit" for hierarchy "Decode_Unit:inst21"
 Info (12128): Elaborating entity "MIR_DECODE" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3"
 Info (12128): Elaborating entity "MIR" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 84
-Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 84
-Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" with the following parameter: File: /home/marcos/Documentos/E5/Ev20/EV20/MIR.v Line: 84
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 84
+Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 84
+Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/MIR.v Line: 84
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1311,39 +1279,32 @@ Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "128"
+    Info (12134): Parameter "numwords_a" = "64"
     Info (12134): Parameter "operation_mode" = "ROM"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "widthad_a" = "7"
+    Info (12134): Parameter "widthad_a" = "6"
     Info (12134): Parameter "width_a" = "28"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_laa1.tdf
-    Info (12023): Found entity 1: altsyncram_laa1 File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_laa1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_laa1" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_laa1:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_39a1.tdf
+    Info (12023): Found entity 1: altsyncram_39a1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_39a1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_39a1" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5"
 Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5"
 Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5|lpm_mux:$00000" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
-    Info (12023): Found entity 1: mux_crc File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_crc.tdf Line: 23
-Info (12128): Elaborating entity "mux_crc" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5|lpm_mux:$00000|mux_crc:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_crc File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_crc.tdf Line: 22
+Info (12128): Elaborating entity "mux_crc" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "5B_to_6B" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|5B_to_6B:inst8"
 Info (12128): Elaborating entity "Instr_Separator" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst"
-Info (12128): Elaborating entity "FFD10bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD10bits:inst2"
-Info (12128): Elaborating entity "FFD5bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD5bits:inst4"
-Info (12128): Elaborating entity "FFD3bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD3bits:inst"
-Info (12128): Elaborating entity "FFD11bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD11bits:inst3"
-Info (12128): Elaborating entity "FFD16bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD16bits:inst1"
-Info (12128): Elaborating entity "FFD7bits" for hierarchy "Decode_Unit:inst21|FFD7bits:inst6"
-Warning (12125): Using design file Program_Mem.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Program_Mem File: /home/marcos/Documentos/E5/Ev20/EV20/Program_Mem.v Line: 39
+Info (12128): Elaborating entity "FFD22bits" for hierarchy "Decode_Unit:inst21|Instr_Separator:inst|FFD22bits:inst"
 Info (12128): Elaborating entity "Program_Mem" for hierarchy "Program_Mem:inst14"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/Program_Mem.v Line: 84
-Info (12130): Elaborated megafunction instantiation "Program_Mem:inst14|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/Program_Mem.v Line: 84
-Info (12133): Instantiated megafunction "Program_Mem:inst14|altsyncram:altsyncram_component" with the following parameter: File: /home/marcos/Documentos/E5/Ev20/EV20/Program_Mem.v Line: 84
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 84
+Info (12130): Elaborated megafunction instantiation "Program_Mem:inst14|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 84
+Info (12133): Instantiated megafunction "Program_Mem:inst14|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/Program_Mem.v Line: 84
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1359,8 +1320,8 @@ Info (12133): Instantiated megafunction "Program_Mem:inst14|altsyncram:altsyncra
     Info (12134): Parameter "width_a" = "22"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_r7b1.tdf
-    Info (12023): Found entity 1: altsyncram_r7b1 File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_r7b1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_r7b1" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_r7b1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_r7b1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_r7b1" for hierarchy "Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "Jump_Module" for hierarchy "Jump_Module:inst13"
 Info (12128): Elaborating entity "Pre_Load_Retain" for hierarchy "Jump_Module:inst13|Pre_Load_Retain:inst1"
 Info (12128): Elaborating entity "Pre_Load_Block" for hierarchy "Jump_Module:inst13|Pre_Load_Block:inst10"
@@ -1369,27 +1330,27 @@ Info (12130): Elaborated megafunction instantiation "Jump_Module:inst13|Pre_Load
 Info (12133): Instantiated megafunction "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2" with the following parameter:
     Info (12134): Parameter "WIDTH" = "4"
     Info (12134): Parameter "WIDTHS" = "2"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2|lpm_mux:$00001" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2|lpm_mux:$00001", which is child of megafunction instantiation "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2|lpm_mux:$00001", which is child of megafunction instantiation "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_arc.tdf
-    Info (12023): Found entity 1: mux_arc File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_arc.tdf Line: 23
-Info (12128): Elaborating entity "mux_arc" for hierarchy "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2|lpm_mux:$00001|mux_arc:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_arc File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_arc.tdf Line: 22
+Info (12128): Elaborating entity "mux_arc" for hierarchy "Jump_Module:inst13|Pre_Load_Block:inst10|MUX:inst2|lpm_mux:$00001|mux_arc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ON_When_16_Zeros" for hierarchy "Jump_Module:inst13|Pre_Load_Block:inst10|ON_When_16_Zeros:inst6"
 Info (12128): Elaborating entity "On_4_Ret" for hierarchy "Jump_Module:inst13|On_4_Ret:inst4"
 Info (12128): Elaborating entity "ON_4_BSR" for hierarchy "Jump_Module:inst13|ON_4_BSR:inst3"
 Info (12128): Elaborating entity "PC_COUNTER" for hierarchy "Jump_Module:inst13|PC_COUNTER:inst2"
-Warning (10036): Verilog HDL or VHDL warning at PC_counter.v(12): object "level" assigned a value but never read File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 12
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(12): truncated value with size 3 to match size of target (1) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 12
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(18): truncated value with size 32 to match size of target (3) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 18
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(22): truncated value with size 32 to match size of target (11) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 22
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(23): truncated value with size 32 to match size of target (11) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 23
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(27): truncated value with size 32 to match size of target (3) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 27
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(28): truncated value with size 32 to match size of target (11) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 28
-Warning (10230): Verilog HDL assignment warning at PC_counter.v(41): truncated value with size 32 to match size of target (11) File: /home/marcos/Documentos/E5/Ev20/EV20/PC_counter.v Line: 41
+Warning (10036): Verilog HDL or VHDL warning at PC_counter.v(12): object "level" assigned a value but never read File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 12
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(12): truncated value with size 3 to match size of target (1) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 12
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(18): truncated value with size 32 to match size of target (3) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 18
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(22): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 22
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(23): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 23
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(27): truncated value with size 32 to match size of target (3) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 27
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(28): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 28
+Warning (10230): Verilog HDL assignment warning at PC_counter.v(41): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel/Documents/GitHub/EV20/PC_counter.v Line: 41
 Info (12128): Elaborating entity "Carry_Block" for hierarchy "Carry_Block:inst5"
 Info (12128): Elaborating entity "FFD4bits" for hierarchy "Carry_Block:inst5|FFD4bits:inst6"
 Info (12128): Elaborating entity "alu" for hierarchy "alu:inst3"
-Warning (12125): Using design file 16bitReg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file 16bitreg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: 16bitReg
 Info (12128): Elaborating entity "16bitReg" for hierarchy "16bitReg:inst1"
 Info (12128): Elaborating entity "Kmux" for hierarchy "Kmux:inst"
@@ -1397,11 +1358,11 @@ Info (12128): Elaborating entity "BUSMUX" for hierarchy "Kmux:inst|BUSMUX:inst2"
 Info (12130): Elaborated megafunction instantiation "Kmux:inst|BUSMUX:inst2"
 Info (12133): Instantiated megafunction "Kmux:inst|BUSMUX:inst2" with the following parameter:
     Info (12134): Parameter "WIDTH" = "16"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Kmux:inst|BUSMUX:inst2|lpm_mux:$00000" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "Kmux:inst|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "Kmux:inst|BUSMUX:inst2" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Kmux:inst|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "Kmux:inst|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "Kmux:inst|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 23
-Info (12128): Elaborating entity "mux_tsc" for hierarchy "Kmux:inst|BUSMUX:inst2|lpm_mux:$00000|mux_tsc:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 22
+Info (12128): Elaborating entity "mux_tsc" for hierarchy "Kmux:inst|BUSMUX:inst2|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "16bitRegEn" for hierarchy "Kmux:inst|16bitRegEn:inst"
 Info (12128): Elaborating entity "RegisterBank" for hierarchy "RegisterBank:inst6"
 Warning (12125): Using design file block2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -1413,12 +1374,12 @@ Info (12133): Instantiated megafunction "RegisterBank:inst6|block2:inst70|LPM_DE
     Info (12134): Parameter "LPM_DECODES" = "64"
     Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3df.tdf
-    Info (12023): Found entity 1: decode_3df File: /home/marcos/Documentos/E5/Ev20/EV20/db/decode_3df.tdf Line: 23
-Info (12128): Elaborating entity "decode_3df" for hierarchy "RegisterBank:inst6|block2:inst70|LPM_DECODE:inst|decode_3df:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 77
+    Info (12023): Found entity 1: decode_3df File: C:/Users/Manuel/Documents/GitHub/EV20/db/decode_3df.tdf Line: 22
+Info (12128): Elaborating entity "decode_3df" for hierarchy "RegisterBank:inst6|block2:inst70|LPM_DECODE:inst|decode_3df:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
 Warning (12125): Using design file multiplexer16b.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: multiplexer16b File: /home/marcos/Documentos/E5/Ev20/EV20/multiplexer16b.v Line: 1
+    Info (12023): Found entity 1: multiplexer16b File: C:/Users/Manuel/Documents/GitHub/EV20/multiplexer16b.v Line: 1
 Info (12128): Elaborating entity "multiplexer16b" for hierarchy "RegisterBank:inst6|block2:inst70|multiplexer16b:inst1"
-Warning (12125): Using design file TRI16.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file tri16.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: TRI16
 Info (12128): Elaborating entity "TRI16" for hierarchy "RegisterBank:inst6|block2:inst70|TRI16:inst2"
 Warning (12125): Using design file block3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -1456,11 +1417,11 @@ Info (12130): Elaborated megafunction instantiation "Shifter:inst4|MUX:inst"
 Info (12133): Instantiated megafunction "Shifter:inst4|MUX:inst" with the following parameter:
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Shifter:inst4|MUX:inst|lpm_mux:$00001" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf Line: 44
-Info (12131): Elaborated megafunction instantiation "Shifter:inst4|MUX:inst|lpm_mux:$00001", which is child of megafunction instantiation "Shifter:inst4|MUX:inst" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/mux.tdf Line: 44
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Shifter:inst4|MUX:inst|lpm_mux:$00001" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "Shifter:inst4|MUX:inst|lpm_mux:$00001", which is child of megafunction instantiation "Shifter:inst4|MUX:inst" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/mux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9rc.tdf
-    Info (12023): Found entity 1: mux_9rc File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_9rc.tdf Line: 23
-Info (12128): Elaborating entity "mux_9rc" for hierarchy "Shifter:inst4|MUX:inst|lpm_mux:$00001|mux_9rc:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+    Info (12023): Found entity 1: mux_9rc File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_9rc.tdf Line: 22
+Info (12128): Elaborating entity "mux_9rc" for hierarchy "Shifter:inst4|MUX:inst|lpm_mux:$00001|mux_9rc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "MUX" for hierarchy "Shifter:inst4|MUX:inst1"
 Info (12130): Elaborated megafunction instantiation "Shifter:inst4|MUX:inst1"
 Info (12133): Instantiated megafunction "Shifter:inst4|MUX:inst1" with the following parameter:
@@ -1472,9 +1433,9 @@ Info (12133): Instantiated megafunction "Shifter:inst4|MUX:inst15" with the foll
     Info (12134): Parameter "WIDTH" = "3"
     Info (12134): Parameter "WIDTHS" = "2"
 Info (12128): Elaborating entity "DATA_Mem" for hierarchy "DATA_Mem:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "DATA_Mem:inst2|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/DATA_Mem.v Line: 91
-Info (12130): Elaborated megafunction instantiation "DATA_Mem:inst2|altsyncram:altsyncram_component" File: /home/marcos/Documentos/E5/Ev20/EV20/DATA_Mem.v Line: 91
-Info (12133): Instantiated megafunction "DATA_Mem:inst2|altsyncram:altsyncram_component" with the following parameter: File: /home/marcos/Documentos/E5/Ev20/EV20/DATA_Mem.v Line: 91
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DATA_Mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 91
+Info (12130): Elaborated megafunction instantiation "DATA_Mem:inst2|altsyncram:altsyncram_component" File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 91
+Info (12133): Instantiated megafunction "DATA_Mem:inst2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Manuel/Documents/GitHub/EV20/DATA_Mem.v Line: 91
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
@@ -1490,55 +1451,55 @@ Info (12133): Instantiated megafunction "DATA_Mem:inst2|altsyncram:altsyncram_co
     Info (12134): Parameter "width_a" = "16"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dkh1.tdf
-    Info (12023): Found entity 1: altsyncram_dkh1 File: /home/marcos/Documentos/E5/Ev20/EV20/db/altsyncram_dkh1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_dkh1" for hierarchy "DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated" File: /home/marcos/intelFPGA_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_dkh1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_dkh1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_dkh1" for hierarchy "DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[15]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[14]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[13]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[12]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[11]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[10]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[9]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[8]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[7]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[6]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[5]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[4]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[3]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[2]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[1]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
-    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[0]" into a selector File: /home/marcos/Documentos/E5/Ev20/EV20/db/mux_tsc.tdf Line: 30
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[15]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[14]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[13]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[12]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[11]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[10]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[9]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[8]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[7]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[6]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[5]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[4]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[3]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[2]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[1]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
+    Warning (13048): Converted tri-state node "RegisterBank:inst6|block3:inst71|to_BUS_A[0]" into a selector File: C:/Users/Manuel/Documents/GitHub/EV20/db/mux_tsc.tdf Line: 29
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst15" to the node "16bitReg:inst11|inst15" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst14" to the node "16bitReg:inst11|inst14" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst13" to the node "16bitReg:inst11|inst13" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst12" to the node "16bitReg:inst11|inst12" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst11" to the node "16bitReg:inst11|inst11" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst10" to the node "16bitReg:inst11|inst10" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst9" to the node "16bitReg:inst11|inst9_" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst8" to the node "16bitReg:inst11|inst8" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst7" to the node "16bitReg:inst11|inst7" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst6" to the node "16bitReg:inst11|inst6" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst5" to the node "16bitReg:inst11|inst5" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst4" to the node "16bitReg:inst11|inst4" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst3" to the node "16bitReg:inst11|inst3" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst2" to the node "16bitReg:inst11|inst2" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst1" to the node "16bitReg:inst11|inst1" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst38|inst" to the node "16bitReg:inst11|inst" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst15" to the node "16bitReg:inst11|inst15" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst14" to the node "16bitReg:inst11|inst14" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst13" to the node "16bitReg:inst11|inst13" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst12" to the node "16bitReg:inst11|inst12" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst11" to the node "16bitReg:inst11|inst11" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst10" to the node "16bitReg:inst11|inst10" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst9" to the node "16bitReg:inst11|inst9_" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst8" to the node "16bitReg:inst11|inst8" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst7" to the node "16bitReg:inst11|inst7" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst6" to the node "16bitReg:inst11|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst5" to the node "16bitReg:inst11|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst4" to the node "16bitReg:inst11|inst4" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst3" to the node "16bitReg:inst11|inst3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst2" to the node "16bitReg:inst11|inst2" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst1" to the node "16bitReg:inst11|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RegisterBank:inst6|block3:inst71|TRI16:inst44|inst" to the node "16bitReg:inst11|inst" into an OR gate
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2122 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2099 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 287 output pins
+    Info (21059): Implemented 274 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 1752 logic cells
+    Info (21061): Implemented 1742 logic cells
     Info (21064): Implemented 66 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
-    Info: Peak virtual memory: 975 megabytes
-    Info: Processing ended: Tue Jun  2 00:06:12 2020
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Wed Jun 03 22:33:27 2020
+    Info: Elapsed time: 00:01:03
+    Info: Total CPU time (on all processors): 00:01:02
 
 

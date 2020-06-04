@@ -15,7 +15,7 @@
 
 FUNCTION MIR 
 (
-	address[6..0],
+	address[5..0],
 	clock,
 	rden
 )

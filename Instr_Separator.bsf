@@ -47,15 +47,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 296 32)
 		(output)
-		(text "Jmp_Opcode[2 .. 0]" (rect 0 0 118 19)(font "Intel Clear" (font_size 8)))
-		(text "Jmp_Opcode[2 .. 0]" (rect 157 27 275 46)(font "Intel Clear" (font_size 8)))
+		(text "Jmp_Opcode[5 .. 0]" (rect 0 0 118 19)(font "Intel Clear" (font_size 8)))
+		(text "Jmp_Opcode[5 .. 0]" (rect 157 27 275 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 32)(pt 280 32)(line_width 3))
 	)
 	(port
 		(pt 296 48)
 		(output)
-		(text "Instr_Mem_Addr[6 .. 0]" (rect 0 0 136 19)(font "Intel Clear" (font_size 8)))
-		(text "Instr_Mem_Addr[6 .. 0]" (rect 139 43 275 62)(font "Intel Clear" (font_size 8)))
+		(text "Instr_Mem_Addr[5 .. 0]" (rect 0 0 136 19)(font "Intel Clear" (font_size 8)))
+		(text "Instr_Mem_Addr[5 .. 0]" (rect 139 43 275 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 48)(pt 280 48)(line_width 3))
 	)
 	(port
