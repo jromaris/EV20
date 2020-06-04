@@ -438,16 +438,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (connector
-	(pt -64 264)
-	(pt -64 272)
-	(bus)
-)
-(connector
-	(pt -72 392)
-	(pt -72 400)
-	(bus)
-)
-(connector
 	(pt -16 264)
 	(pt -40 264)
 	(bus)
@@ -455,11 +445,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -40 264)
 	(pt -56 264)
-	(bus)
-)
-(connector
-	(pt -56 264)
-	(pt -64 264)
 	(bus)
 )
 (connector
@@ -480,11 +465,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -8 392)
 	(pt -24 392)
-	(bus)
-)
-(connector
-	(pt 112 328)
-	(pt 120 328)
 	(bus)
 )
 (connector
@@ -1476,12 +1456,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "XORVAL[7..0]" (rect 122 136 188 153)(font "Intel Clear" ))
-	(pt 184 152)
-	(pt 112 152)
-	(bus)
-)
-(connector
 	(text "XORVAL[8..15]" (rect 74 8 145 25)(font "Intel Clear" ))
 	(pt 64 24)
 	(pt 120 24)
@@ -1506,12 +1480,6 @@ refer to the applicable agreement for further details.
 	(text "SHFT[8..15]" (rect 114 240 168 257)(font "Intel Clear" ))
 	(pt 104 256)
 	(pt 128 256)
-	(bus)
-)
-(connector
-	(text "SHFT[7..0]" (rect 122 376 170 393)(font "Intel Clear" ))
-	(pt 112 392)
-	(pt 152 392)
 	(bus)
 )
 (connector
@@ -1567,12 +1535,6 @@ refer to the applicable agreement for further details.
 	(pt 840 88)
 )
 (connector
-	(text "AT[7..0]" (rect 682 128 718 145)(font "Intel Clear" ))
-	(pt 672 144)
-	(pt 736 144)
-	(bus)
-)
-(connector
 	(text "AT[0]" (rect 720 109 737 134)(font "Intel Clear" )(vertical))
 	(pt 736 88)
 	(pt 736 144)
@@ -1619,7 +1581,7 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "XOROUT[8]" (rect 650 261 667 317)(font "Intel Clear" )(vertical))
+	(text "XOROUT[8]" (rect 649 260 666 316)(font "Intel Clear" )(vertical))
 	(pt 672 264)
 	(pt 672 328)
 )
@@ -1665,7 +1627,7 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "XOROUT[0]" (rect 669 328 686 384)(font "Intel Clear" )(vertical))
+	(text "XOROUT[0]" (rect 668 327 685 383)(font "Intel Clear" )(vertical))
 	(pt 688 328)
 	(pt 688 392)
 )
@@ -1704,18 +1666,34 @@ refer to the applicable agreement for further details.
 	(pt 880 328)
 	(pt 880 392)
 )
+(connector
+	(text "SHFT[0..7]" (rect 122 376 170 393)(font "Intel Clear" ))
+	(pt 112 392)
+	(pt 152 392)
+	(bus)
+)
+(connector
+	(text "XORVAL[0..7]" (rect 122 136 188 153)(font "Intel Clear" ))
+	(pt 184 152)
+	(pt 112 152)
+	(bus)
+)
+(connector
+	(text "AT[0..7]" (rect 682 128 718 145)(font "Intel Clear" ))
+	(pt 672 144)
+	(pt 736 144)
+	(bus)
+)
 (junction (pt 72 120))
 (junction (pt -16 264))
 (junction (pt -16 328))
 (junction (pt -40 264))
 (junction (pt -40 328))
-(junction (pt -56 264))
 (junction (pt -56 328))
 (junction (pt -24 328))
 (junction (pt -24 392))
 (junction (pt -8 328))
 (junction (pt -8 392))
-(junction (pt 112 328))
 (junction (pt -48 328))
 (junction (pt -48 392))
 (junction (pt 0 264))
