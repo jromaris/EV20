@@ -21,5 +21,5 @@ FUNCTION MIR
 )
 
 RETURNS (
-	q[27..0]
+	q[31..0]
 );

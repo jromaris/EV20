@@ -11,13 +11,13 @@ Hex:00/  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 NOP No operation Done
 Hex:01/  0 0 0 0 0 1 0 0 0 0 0 0 y y y y y y y y y y MOM Y,W Move Working Register to Memory M(Y) = W
 Hex:02/  0 0 0 0 1 0 0 0 0 0 0 0 y y y y y y y y y y MOM W,Y Move Memory to Working Register W = M(Y)
 
-Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 i i i i i j j j j j MOV Ri,Rj Move Register J to Register I {Ri, Rj: 0 a 27} Ri = Rj
-Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 i j j j j j MOV POi,Rj Move Register J to Output Port i POi = Rj
-Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 i i i i i 1 1 1 0 j MOV Ri,PIj Move Input Port j to Register I Ri = PIj
-Hex:08/  0 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 i 1 1 1 0 j MOV POi,PIj Move Input Port J to Output Port I POi = PIj
-Hex:09/  0 0 1 0 0 1 0 0 0 0 0 0 i i i i i 0 0 0 0 0 MOV Ri,W Move Working Register to Register I Ri = W
-Hex:09/  0 0 1 0 0 1 0 0 0 0 0 0 1 1 1 1 i 0 0 0 0 0 MOV POi,W Move Working Register to Output Port I POi = W
-Hex:0A/  0 0 1 0 1 0 0 0 0 0 0 0 i i i i i j j j j j ADW Ri,Rj Add with Carry Reg. J with Working Reg. to Reg. I Ri= W + Rj + CY
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 i i i i i 0 j j j j j MOV Ri,Rj Move Register J to Register I {Ri, Rj: 0 a 27} Ri = Rj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 1 1 1 1 i 0 j j j j j MOV POi,Rj Move Register J to Output Port i POi = Rj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 i i i i i 0 1 1 1 0 j MOV Ri,PIj Move Input Port j to Register I Ri = PIj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 1 1 1 1 i 0 1 1 1 0 j MOV POi,PIj Move Input Port J to Output Port I POi = PIj
+Hex:09/  0 0 1 0 0 1 0 0 0 0 0 i i i i i 0 0 0 0 0 0 MOV Ri,W Move Working Register to Register I Ri = W
+Hex:09/  0 0 1 0 0 1 0 0 0 0 0 1 1 1 1 i 0 0 0 0 0 0 MOV POi,W Move Working Register to Output Port I POi = W
+Hex:0A/  0 0 1 0 1 0 0 0 0 0 0 i i i i i 0 j j j j j ADW Ri,Rj Add with Carry Reg. J with Working Reg. to Reg. I Ri= W + Rj + CY
 
 Hex:20/  1 0 0 0 0 0 k k k k k k k k k k k k k k k k MOK W,#K Move Constant to Working Register W = K
 Hex:21/  1 0 0 0 0 1 k k k k k k k k k k k k k k k k ANK W,#K AND Constant with Working Register W= W & K
@@ -32,6 +32,10 @@ Hex:28/  1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CPL W Complement Working Re
 Hex:29/  1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CLR CY Clear Carry CY= 0
 Hex:2A/  1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 SET CY Set Carry CY= 1
 
+Hex:2B/  1 0 1 0 1 1 k k k k k k k k k k k k k k k k MOKey KeyReg,#K Move Constant to Key Register KeyReg = K
+Hex:2C/  1 0 1 1 0 0 k k k k k k k k k k k k k k k k ENC K Encrypt constant K, W = Enc(K)
+Hex:2D/  1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 ENC W Encrypt Working Register, W = Enc(W)
+Hex:2E/  1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 DENC W Desencrypt Encrypted Register, W = DEnc(W)
 
 Primeros 6 bits son direcciones de la MIR
 
@@ -49,40 +53,57 @@ Los 5 bits posteriores indican bus C en caso de que se lea este valor del contro
 
 Si el 1er bit es 0 y el 2do es 1 es un jump 
 
+registro 32 key
+registro 33 encrypt
 
+Encrypt bits
+
+00 o 11 nada
+01 encrypt
+10 decrypt
+
+Encrypt Type
+
+1er bit escribo key
+2do bit leo key
 
 Qué codifica cada instrucción al MIR
+-- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus - 2bits Encrypt Type - 2bits Encrypt
 
--- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type -
+NOP          : 00000000000000010001100000000000; +
+JMP X        : 00000000000000010000001000110000; +
+JZE X        : 00000000000000010000011000110000; +
+JNE X        : 00000000000000010000011000110000; +
+JCY X        : 00000000000000010100001000110000; +
+BSR S        : 00000000000000010000001000110000; +
+RET          : 00000000000000010000001000110000; +
 
-NOP         : 0000000000000001000110000000;
-JMP X       : 0000000000000001000000100011;
-JZE X       : 0000000000000001000001100011;
-JNE X       : 0000000000000001000001100011;
-JCY X       : 0000000000000001010000100011;
-BSR S       : 0000000000000001000000100011;
-RET         : 0000000000000001000000100011;
+MOM Y,W      : 00000000100000000000011000110000; +
+MOM W,Y      : 00000001000000000000101000110000; +
  
-MOM Y,W     : 0000000010000000000001100011;
-MOM W,Y     : 0000000100000000000010100011;
-   
-MOV Ri,Rj   : 0000000000000000001100000000;
-MOV POi,Rj  : 0000000000000000001100000000;
-MOV Ri,PIj  : 0000000000000000001100000000;
-MOV POi,PIj : 0000000000000000001100000000;
-MOV Ri,W    : 0001000001000100001001000000;
-MOV POi,W   : 0001000001000100001001000000;
-ADW Ri,Rj   : 0101000001000100111101000000;
+MOV Ri,Rj    : 00000000000000000011000000000000; +
+MOV POi,Rj   : 00000000000000000011000000000000; +
+MOV Ri,PIj   : 00000000000000000011000000000000; +
+MOV POi,PIj  : 00000000000000000011000000000000; +
+MOV Ri,W     : 00010000010001000010010000000000; +
+MOV POi,W    : 00010000010001000010010000000000; +
+ADW Ri,Rj    : 01010000010001001111010000000000; +
+ 
+			   
+MOK W,#K     : 00000010000000000000101000100000; +
+ANK W,#K     : 01110010010001000000111000100000; +
+ORK W,#K     : 01100010010001000000111000100000; +
+ADK W,#K     : 01010010010001001100111000100000; +
+MOV W,Rj     : 00000000000000000001101000100000; +
+MOV W,PIj    : 00000000000000000001101000100000; +
+ANR W,Rj     : 01110000010001000001111000100000; +
+ORR W,Rj     : 01100000010001000001111000100000; +
+ADR W,Rj     : 01010000010001001101111000100000; +
+CPL W        : 00110000010001000000111000100000; +
+CLR CY       : 10110000000000001000001000110000; +
+SET CY       : 11000000000000001000001000110000; +
 
-MOK W,#K    : 0000001000000000000010100010;
-ANK W,#K    : 0111001001000100000011100010;
-ORK W,#K    : 0110001001000100000011100010;
-ADK W,#K    : 0101001001000100110011100010;
-MOV W,Rj    : 0000000000000000000110100010;
-MOV W,PIj   : 0000000000000000000110100010;
-ANR W,Rj    : 0111000001000100000111100010;
-ORR W,Rj    : 0110000001000100000111100010;
-ADR W,Rj    : 0101000001000100110111100010;
-CPL W       : 0011000001000100000011100010;
-CLR CY      : 1011000000000000100000100011;
-SET CY      : 1100000000000000100000100011;
+MOKey        : 00000010000000000000001000001000;
+ENC K        : 00000010010000000000101000100101;
+ENC W        : 00000000010000000000111000100101;
+DENC W		 : 00000000010000000000111000100110;

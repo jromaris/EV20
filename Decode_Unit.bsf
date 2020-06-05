@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 328 240)
+	(rect 16 16 328 272)
 	(text "Decode_Unit" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 203 24 220)(font "Intel Clear" ))
+	(text "inst" (rect 8 235 24 252)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -121,7 +121,21 @@ refer to the applicable agreement for further details.
 		(text "C_Reg_Out[5 .. 0]" (rect 188 171 291 190)(font "Intel Clear" (font_size 8)))
 		(line (pt 312 176)(pt 296 176)(line_width 3))
 	)
+	(port
+		(pt 312 192)
+		(output)
+		(text "Enc_Type_Out [1 .. 0]" (rect 0 0 127 19)(font "Intel Clear" (font_size 8)))
+		(text "Enc_Type_Out [1 .. 0]" (rect 164 187 291 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 312 192)(pt 296 192)(line_width 3))
+	)
+	(port
+		(pt 312 208)
+		(output)
+		(text "ENC_Out[1 .. 0]" (rect 0 0 90 19)(font "Intel Clear" (font_size 8)))
+		(text "ENC_Out[1 .. 0]" (rect 201 203 291 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 312 208)(pt 296 208)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 296 208))
+		(rectangle (rect 16 16 296 240))
 	)
 )

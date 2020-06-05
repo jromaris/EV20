@@ -306,7 +306,7 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "out[9 .. 5]" (rect 794 312 837 329)(font "Intel Clear" ))
+	(text "out[10 .. 6]" (rect 794 312 843 329)(font "Intel Clear" ))
 	(pt 856 328)
 	(pt 784 328)
 	(bus)

@@ -628,6 +628,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "ENC_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ENC_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Enc_Type_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Enc_Type_Out[0]",
+					"strict" : false
+				},
+				{
 					"name" : "Mem_Out[21]",
 					"strict" : false
 				},

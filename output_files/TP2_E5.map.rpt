@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Wed Jun 03 22:33:27 2020
+Thu Jun 04 20:54:19 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated
+ 13. Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_u8a1:auto_generated
  14. Source assignments for Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated
  15. Source assignments for DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated
  16. Parameter Settings for User Entity Instance: Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 03 22:33:27 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 04 20:54:18 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; TP2_E5                                      ;
 ; Top-level Entity Name              ; TP2_E5                                      ;
@@ -84,9 +84,9 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 1,135                                       ;
 ;     Dedicated logic registers      ; 726                                         ;
 ; Total registers                    ; 726                                         ;
-; Total pins                         ; 291                                         ;
+; Total pins                         ; 295                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 63,232                                      ;
+; Total memory bits                  ; 63,488                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -241,8 +241,8 @@ refer to the applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_39a1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_39a1.tdf                 ;         ;
-; mir.mif                          ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/mir.mif                                ;         ;
+; db/altsyncram_u8a1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_u8a1.tdf                 ;         ;
+; MIR.mif                          ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel/Documents/GitHub/EV20/MIR.mif                                ;         ;
 ; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
@@ -290,14 +290,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 726         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 291         ;
-; Total memory bits                           ; 63232       ;
+; I/O pins                                    ; 295         ;
+; Total memory bits                           ; 63488       ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 755         ;
-; Total fan-out                               ; 7695        ;
+; Maximum fan-out                             ; 759         ;
+; Total fan-out                               ; 7739        ;
 ; Average fan-out                             ; 3.05        ;
 +---------------------------------------------+-------------+
 
@@ -307,7 +307,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TP2_E5                                         ; 1135 (0)            ; 726 (0)                   ; 63232       ; 0            ; 0       ; 0         ; 291  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
+; |TP2_E5                                         ; 1135 (0)            ; 726 (0)                   ; 63488       ; 0            ; 0       ; 0         ; 295  ; 0            ; |TP2_E5                                                                                                             ; TP2_E5                 ; work         ;
 ;    |16bitReg:inst11|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst11                                                                                             ; 16bitReg               ; work         ;
 ;    |16bitReg:inst1|                             ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|16bitReg:inst1                                                                                              ; 16bitReg               ; work         ;
 ;    |Carry_Block:inst5|                          ; 1 (1)               ; 5 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Carry_Block:inst5                                                                                           ; Carry_Block            ; work         ;
@@ -321,13 +321,13 @@ refer to the applicable agreement for further details.
 ;    |DATA_Mem:inst2|                             ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2                                                                                              ; DATA_Mem               ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component                                                              ; altsyncram             ; work         ;
 ;          |altsyncram_dkh1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated                               ; altsyncram_dkh1        ; work         ;
-;    |Decode_Unit:inst21|                         ; 7 (0)               ; 23 (0)                    ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
+;    |Decode_Unit:inst21|                         ; 7 (0)               ; 23 (0)                    ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21                                                                                          ; Decode_Unit            ; work         ;
 ;       |Instr_Separator:inst|                    ; 0 (0)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst                                                                     ; Instr_Separator        ; work         ;
 ;          |FFD22bits:inst|                       ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|Instr_Separator:inst|FFD22bits:inst                                                      ; FFD22bits              ; work         ;
-;       |MIR_DECODE:inst3|                        ; 7 (1)               ; 1 (1)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3                                                                         ; MIR_DECODE             ; work         ;
-;          |MIR:inst|                             ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst                                                                ; MIR                    ; work         ;
-;             |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
-;                |altsyncram_39a1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated ; altsyncram_39a1        ; work         ;
+;       |MIR_DECODE:inst3|                        ; 7 (1)               ; 1 (1)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3                                                                         ; MIR_DECODE             ; work         ;
+;          |MIR:inst|                             ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst                                                                ; MIR                    ; work         ;
+;             |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
+;                |altsyncram_u8a1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_u8a1:auto_generated ; altsyncram_u8a1        ; work         ;
 ;          |busmux:inst5|                         ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5                                                            ; busmux                 ; work         ;
 ;             |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000                                             ; lpm_mux                ; work         ;
 ;                |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|Decode_Unit:inst21|MIR_DECODE:inst3|busmux:inst5|lpm_mux:$00000|mux_crc:auto_generated                      ; mux_crc                ; work         ;
@@ -452,7 +452,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF             ;
 +------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
 ; DATA_Mem:inst2|altsyncram:altsyncram_component|altsyncram_dkh1:auto_generated|ALTSYNCRAM                               ; AUTO ; Single Port ; 1024         ; 16           ; --           ; --           ; 16384 ; None            ;
-; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 64           ; 28           ; --           ; --           ; 1792  ; MIR.mif         ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_u8a1:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 64           ; 32           ; --           ; --           ; 2048  ; MIR.mif         ;
 ; Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|ALTSYNCRAM                           ; AUTO ; ROM         ; 2048         ; 22           ; --           ; --           ; 45056 ; Program_Mem.mif ;
 +------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------+
 
@@ -506,7 +506,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RegisterBank:inst6|16bitRegEn:inst61|inst                                                                                ; Stuck at VCC due to stuck port data_in                                                                     ;
 ; RegisterBank:inst6|16bitRegEn:inst61|inst23                                                                              ; Stuck at VCC due to stuck port data_in                                                                     ;
 ; Control_Word_Register2:inst15|UC-1:inst151|inst70                                                                        ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
-; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated|rden_a_store ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
+; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_u8a1:auto_generated|rden_a_store ; Merged with Program_Mem:inst14|altsyncram:altsyncram_component|altsyncram_r7b1:auto_generated|rden_a_store ;
 ; Control_Word_Register2:inst15|C_Jump:inst162|inst70                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst70                                          ;
 ; Control_Word_Register2:inst15|T_jump:inst163|inst70                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst70                                          ;
 ; Control_Word_Register2:inst15|C_Jump:inst162|inst71                                                                      ; Merged with Control_Word_Register2:inst15|Alu_jump:inst161|inst71                                          ;
@@ -545,7 +545,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated ;
+; Source assignments for Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_u8a1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -583,7 +583,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                ;
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                       ;
 ; OPERATION_MODE                     ; ROM                  ; Untyped                                                       ;
-; WIDTH_A                            ; 28                   ; Signed Integer                                                ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                                ;
 ; WIDTHAD_A                          ; 6                    ; Signed Integer                                                ;
 ; NUMWORDS_A                         ; 64                   ; Signed Integer                                                ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                       ;
@@ -627,7 +627,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_39a1      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_u8a1      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1026,7 +1026,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Number of entity instances                ; 3                                                                            ;
 ; Entity Instance                           ; Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                                          ;
-;     -- WIDTH_A                            ; 28                                                                           ;
+;     -- WIDTH_A                            ; 32                                                                           ;
 ;     -- NUMWORDS_A                         ; 64                                                                           ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                 ;
 ;     -- WIDTH_B                            ; 1                                                                            ;
@@ -1065,7 +1065,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 291                         ;
+; boundary_port         ; 295                         ;
 ; cycloneiii_ff         ; 726                         ;
 ;     ENA               ; 581                         ;
 ;     ENA SLD           ; 26                          ;
@@ -1081,7 +1081,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         2 data inputs ; 56                          ;
 ;         3 data inputs ; 93                          ;
 ;         4 data inputs ; 896                         ;
-; cycloneiii_ram_block  ; 66                          ;
+; cycloneiii_ram_block  ; 70                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
 ; Average LUT depth     ; 4.16                        ;
@@ -1093,7 +1093,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1103,7 +1103,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 03 22:32:24 2020
+    Info: Processing started: Thu Jun 04 20:53:12 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1284,11 +1284,11 @@ Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|MIR
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
     Info (12134): Parameter "widthad_a" = "6"
-    Info (12134): Parameter "width_a" = "28"
+    Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_39a1.tdf
-    Info (12023): Found entity 1: altsyncram_39a1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_39a1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_39a1" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_39a1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u8a1.tdf
+    Info (12023): Found entity 1: altsyncram_u8a1 File: C:/Users/Manuel/Documents/GitHub/EV20/db/altsyncram_u8a1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_u8a1" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|MIR:inst|altsyncram:altsyncram_component|altsyncram_u8a1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5"
 Info (12130): Elaborated megafunction instantiation "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5"
 Info (12133): Instantiated megafunction "Decode_Unit:inst21|MIR_DECODE:inst3|BUSMUX:inst5" with the following parameter:
@@ -1490,16 +1490,16 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2099 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2107 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 274 output pins
+    Info (21059): Implemented 278 output pins
     Info (21060): Implemented 16 bidirectional pins
     Info (21061): Implemented 1742 logic cells
-    Info (21064): Implemented 66 RAM segments
+    Info (21064): Implemented 70 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Wed Jun 03 22:33:27 2020
-    Info: Elapsed time: 00:01:03
-    Info: Total CPU time (on all processors): 00:01:02
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Thu Jun 04 20:54:19 2020
+    Info: Elapsed time: 00:01:07
+    Info: Total CPU time (on all processors): 00:01:06
 
 
