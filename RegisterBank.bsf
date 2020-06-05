@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 264 176)
-	(text "registerbank" (rect 5 0 79 19)(font "Intel Clear" (font_size 8)))
+	(text "RegisterBank" (rect 5 0 82 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
 	(port
 		(pt 0 32)

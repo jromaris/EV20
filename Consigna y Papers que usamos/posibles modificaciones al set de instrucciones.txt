@@ -33,7 +33,7 @@ Hex:29/  1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CLR CY Clear Carry CY= 0
 Hex:2A/  1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 SET CY Set Carry CY= 1
 
 Hex:2B/  1 0 1 0 1 1 k k k k k k k k k k k k k k k k MOKey KeyReg,#K Move Constant to Key Register KeyReg = K
-Hex:2C/  1 0 1 1 0 0 k k k k k k k k k k k k k k k k ENC K Encrypt constant K, W = Enc(K)
+Hex:2C/  1 0 1 1 0 0 k k k k k k k k k k k k k k k k  Encrypt constant K, W = Enc(K)
 Hex:2D/  1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 ENC W Encrypt Working Register, W = Enc(W)
 Hex:2E/  1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 DENC W Desencrypt Encrypted Register, W = DEnc(W)
 

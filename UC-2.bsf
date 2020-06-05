@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 168 240)
+	(rect 16 16 176 304)
 	(text "UC-2" (rect 5 0 34 15)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 207 26 220)(font "Intel Clear" ))
+	(text "inst" (rect 8 271 26 284)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -48,8 +48,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 80)
 		(input)
-		(text "A2_IN[4..0]" (rect 0 0 63 15)(font "Intel Clear" (font_size 8)))
-		(text "A2_IN[4..0]" (rect 21 75 84 90)(font "Intel Clear" (font_size 8)))
+		(text "A2_IN[5..0]" (rect 0 0 63 15)(font "Intel Clear" (font_size 8)))
+		(text "A2_IN[5..0]" (rect 21 75 84 90)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
@@ -95,13 +95,41 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 176)(pt 16 176))
 	)
 	(port
-		(pt 152 32)
+		(pt 0 192)
+		(input)
+		(text "TE2_IN[1..0]" (rect 0 0 70 15)(font "Intel Clear" (font_size 8)))
+		(text "TE2_IN[1..0]" (rect 21 187 91 202)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "TE3_IN[1..0]" (rect 0 0 70 15)(font "Intel Clear" (font_size 8)))
+		(text "TE3_IN[1..0]" (rect 21 203 91 218)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "TE4_IN[1..0]" (rect 0 0 70 15)(font "Intel Clear" (font_size 8)))
+		(text "TE4_IN[1..0]" (rect 21 219 91 234)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "TE5_IN[1..0]" (rect 0 0 70 15)(font "Intel Clear" (font_size 8)))
+		(text "TE5_IN[1..0]" (rect 21 235 91 250)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 160 32)
 		(output)
 		(text "HOLD" (rect 0 0 34 15)(font "Intel Clear" (font_size 8)))
-		(text "HOLD" (rect 97 27 131 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 152 32)(pt 136 32))
+		(text "HOLD" (rect 105 27 139 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 32)(pt 144 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 136 208))
+		(rectangle (rect 16 16 144 272))
 	)
 )
