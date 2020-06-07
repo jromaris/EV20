@@ -136,4 +136,23 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform35.vwf
 set_global_assignment -name QIP_FILE DATA_Mem.qip
 set_global_assignment -name VERILOG_FILE bimux.v
 set_global_assignment -name VERILOG_FILE FFD22bits.v
+set_global_assignment -name BDF_FILE Fetch_Decode_Unit.bdf
+set_global_assignment -name VERILOG_FILE 16bitsNot.v
+set_global_assignment -name VERILOG_FILE 16bitAddder.v
+set_global_assignment -name VERILOG_FILE 16bitOr.v
+set_global_assignment -name VERILOG_FILE Or16bit.v
+set_global_assignment -name VERILOG_FILE Not16bitt.v
+set_global_assignment -name VERILOG_FILE Not16bit.v
+set_global_assignment -name VERILOG_FILE Adder16bitr.v
+set_global_assignment -name VERILOG_FILE Not16bits.v
+set_global_assignment -name VERILOG_FILE And16bits.v
+set_global_assignment -name VERILOG_FILE Or16bits.v
+set_global_assignment -name VERILOG_FILE Adder16bits.v
+set_global_assignment -name VERILOG_FILE Zero16bits.v
+set_global_assignment -name VERILOG_FILE Ones16bits.v
+set_global_assignment -name VERILOG_FILE One16bits.v
+set_global_assignment -name BDF_FILE ALU_Block.bdf
+set_global_assignment -name VERILOG_FILE bux_mux_13to1.v
+set_global_assignment -name VERILOG_FILE bus_mux_13to1.v
+set_global_assignment -name VERILOG_FILE mux_13to1.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

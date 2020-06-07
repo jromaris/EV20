@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 272 144)
+	(rect 16 16 240 144)
 	(text "encripter_decripter" (rect 5 0 119 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -40,9 +40,9 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "ENCRIPT_DECRIPT" (rect 0 0 113 19)(font "Intel Clear" (font_size 8)))
-		(text "ENCRIPT_DECRIPT" (rect 21 59 134 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
+		(text "ENC[1 .. 0]" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "ENC[1 .. 0]" (rect 21 59 83 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
@@ -52,13 +52,20 @@ refer to the applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 256 32)
+		(pt 224 32)
 		(output)
 		(text "OUTPUT[15..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
-		(text "OUTPUT[15..0]" (rect 143 27 235 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 256 32)(pt 240 32)(line_width 3))
+		(text "OUTPUT[15..0]" (rect 111 27 203 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "ENC_SEL" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
+		(text "ENC_SEL" (rect 149 43 203 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 48)(pt 208 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 240 112))
+		(rectangle (rect 16 16 208 112))
 	)
 )

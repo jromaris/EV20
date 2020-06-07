@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 136 216 312 232)
+	(rect 56 216 232 232)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "Jmp_Bits [5 .. 0]" (rect 5 0 87 12)(font "Arial" ))
 	(pt 176 8)
@@ -260,6 +260,31 @@ refer to the applicable agreement for further details.
 		(arc (pt 34 52)(pt 34 28)(rect 22 28 47 53))
 	)
 )
+(symbol
+	(rect 720 184 768 216)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst3" (rect 3 21 25 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 904 280)
 	(pt 768 280)
@@ -372,11 +397,6 @@ refer to the applicable agreement for further details.
 	(pt 336 224)
 )
 (connector
-	(pt 320 224)
-	(pt 336 224)
-	(bus)
-)
-(connector
 	(pt 904 248)
 	(pt 808 248)
 )
@@ -385,36 +405,9 @@ refer to the applicable agreement for further details.
 	(pt 808 248)
 )
 (connector
-	(pt 904 264)
-	(pt 776 264)
-)
-(connector
 	(text "Jmp_Bits[4]" (rect 346 168 403 185)(font "Intel Clear" ))
 	(pt 336 184)
 	(pt 808 184)
-)
-(connector
-	(pt 776 264)
-	(pt 776 208)
-)
-(connector
-	(pt 352 224)
-	(pt 352 208)
-)
-(connector
-	(pt 336 224)
-	(pt 352 224)
-	(bus)
-)
-(connector
-	(text "Jmp_Bits[2]" (rect 354 192 411 209)(font "Intel Clear" ))
-	(pt 352 208)
-	(pt 776 208)
-)
-(connector
-	(pt 352 224)
-	(pt 616 224)
-	(bus)
 )
 (connector
 	(pt 616 224)
@@ -422,14 +415,46 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Jmp_Bits[5 .. 0]" (rect 312 208 385 225)(font "Intel Clear" ))
-	(pt 312 224)
+	(text "Jmp_Bits[1 .. 0]" (rect 600 256 617 329)(font "Intel Clear" )(vertical))
+	(pt 616 328)
+	(pt 616 224)
+	(bus)
+)
+(connector
+	(text "Jmp_Bits[5 .. 0]" (rect 304 208 377 225)(font "Intel Clear" ))
+	(pt 320 224)
+	(pt 336 224)
+	(bus)
+)
+(connector
+	(pt 232 224)
 	(pt 320 224)
 	(bus)
 )
 (connector
-	(text "Jmp_Bits[1 .. 0]" (rect 600 256 617 329)(font "Intel Clear" )(vertical))
-	(pt 616 328)
+	(pt 904 264)
+	(pt 768 264)
+)
+(connector
+	(pt 768 264)
+	(pt 768 200)
+)
+(connector
+	(pt 352 224)
+	(pt 352 200)
+)
+(connector
+	(text "Jmp_Bits[2]" (rect 354 184 411 201)(font "Intel Clear" ))
+	(pt 352 200)
+	(pt 720 200)
+)
+(connector
+	(pt 336 224)
+	(pt 352 224)
+	(bus)
+)
+(connector
+	(pt 352 224)
 	(pt 616 224)
 	(bus)
 )

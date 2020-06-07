@@ -1,0 +1,113 @@
+Código Binario de Instrucción EV16 Nemónico Instrucción Significado
+Hex:10/  0 1 0 0 0 0 0 0 0 0 0 x x x x x x x x x x x JMP X Unconditional Jump PC = X
+Hex:11/  0 1 0 0 0 1 0 0 0 0 0 x x x x x x x x x x x JZE X Jump if Working Register is Zero IF W=0 THEN PC=X
+Hex:12/  0 1 0 0 1 0 0 0 0 0 0 x x x x x x x x x x x JNE X Jump if Working Register is Negative IF W15=1 THEN PC=X
+Hex:13/  0 1 0 0 1 1 0 0 0 0 0 x x x x x x x x x x x JCY X Jump if Carry IF CY THEN PC=X
+Hex:14/  0 1 0 1 0 0 0 0 0 0 0 0 s s s s s s s s s s BSR S Unconditional Branch (Relative) to Subroutine S Save PC; PC= PC + S
+Hex:15/  0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 RET Return From Subroutine PC= Latest Stored PC {+ 1}
+
+Hex:00/  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 NOP No operation Done		   
+
+Hex:01/  0 0 0 0 0 1 0 0 0 0 0 0 y y y y y y y y y y MOM Y,W Move Working Register to Memory M(Y) = W
+Hex:02/  0 0 0 0 1 0 0 0 0 0 0 0 y y y y y y y y y y MOM W,Y Move Memory to Working Register W = M(Y)
+
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 i i i i i 0 j j j j j MOV Ri,Rj Move Register J to Register I {Ri, Rj: 0 a 27} Ri = Rj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 1 1 1 1 i 0 j j j j j MOV POi,Rj Move Register J to Output Port i POi = Rj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 i i i i i 0 1 1 1 0 j MOV Ri,PIj Move Input Port j to Register I Ri = PIj
+Hex:08/  0 0 1 0 0 0 0 0 0 0 0 1 1 1 1 i 0 1 1 1 0 j MOV POi,PIj Move Input Port J to Output Port I POi = PIj
+Hex:09/  0 0 1 0 0 1 0 0 0 0 0 i i i i i 0 0 0 0 0 0 MOV Ri,W Move Working Register to Register I Ri = W
+Hex:09/  0 0 1 0 0 1 0 0 0 0 0 1 1 1 1 i 0 0 0 0 0 0 MOV POi,W Move Working Register to Output Port I POi = W
+Hex:0A/  0 0 1 0 1 0 0 0 0 0 0 i i i i i 0 j j j j j ADW Ri,Rj Add with Carry Reg. J with Working Reg. to Reg. I Ri= W + Rj + CY
+
+Hex:20/  1 0 0 0 0 0 k k k k k k k k k k k k k k k k MOK W,#K Move Constant to Working Register W = K
+Hex:21/  1 0 0 0 0 1 k k k k k k k k k k k k k k k k ANK W,#K AND Constant with Working Register W= W & K
+Hex:22/  1 0 0 0 1 0 k k k k k k k k k k k k k k k k ORK W,#K OR Constant with Working Register W= W OR K
+Hex:23/  1 0 0 0 1 1 k k k k k k k k k k k k k k k k ADK W,#K ADD with Carry Constant with Working Register W= W + K + CY
+Hex:24/  1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 j j j j j MOV W,Rj Move Register J to Working Register W= Rj
+Hex:24/  1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 j MOV W,PIj Move Input Port J to Working Register W= PIj
+Hex:25/  1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 j j j j j ANR W,Rj AND Register J with Working Register W= W & Rj
+Hex:26/  1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 j j j j j ORR W,Rj OR Register J with Working Register W= W OR Rj
+Hex:27/  1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 j j j j j ADR W,Rj ADD with Carry Register J with Working Register W= W + Rj + CY
+Hex:28/  1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CPL W Complement Working Register W= /W
+Hex:29/  1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 CLR CY Clear Carry CY= 0
+Hex:2A/  1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 SET CY Set Carry CY= 1
+Hex:2F/	 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 LShift Shift W Left
+Hex:30/	 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 RShift Shift R Right
+
+Hex:2B/  1 0 1 0 1 1 k k k k k k k k k k k k k k k k MOKey KeyReg,#K Move Constant to Key Register KeyReg = K
+Hex:2C/  1 0 1 1 0 0 k k k k k k k k k k k k k k k k  Encrypt constant K, W = Enc(K)
+Hex:2D/  1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 ENC W Encrypt Working Register, W = Enc(W)
+Hex:2E/  1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 DENC W Desencrypt Encrypted Register, W = DEnc(W)
+
+Primeros 6 bits son direcciones de la MIR
+
+Ultimos 16 bits son constante K
+
+Ultimos 11 bits dicen a donde se hace el salto (excepto con el RET que es todo 0)
+
+Ultimos 10 bits indican Address de memoria
+
+Ultimos 5 bits dicen bus A en caso de que sea necesario
+
+Los 5 bits posteriores indican bus C en caso de que se lea este valor del control store
+(si los primeros 3 bits no son 001 se saca el valor de la control Store)
+(si los primeros 3 bits de la instrucción son 001 se saca el valor de C de la instrucción)
+
+Si el 1er bit es 0 y el 2do es 1 es un jump 
+
+registro 32 key
+registro 33 encrypt
+
+Encrypt bits
+
+00 o 11 nada
+01 encrypt
+10 decrypt
+
+Encrypt Type
+
+1er bit escribo key
+2do bit leo key
+
+Qué codifica cada instrucción al MIR
+-- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus - 2bits Encrypt Type - 2bits Encrypt
+
+NOP          : 0000 00 0 00 000000 0000000 100011 00 00; +
+JMP X        : 0000 00 0 00 000000 1000000 100011 00 00; +
+JZE X        : 0000 00 0 00 000000 1000001 100011 00 00; +
+JNE X        : 0000 00 0 00 000000 1000001 100011 00 00; +
+JCY X        : 0000 00 0 00 000000 1010000 100011 00 00; +
+BSR S        : 0000 00 0 00 000000 1000000 100011 00 00; +
+RET          : 0000 00 0 00 000000 1000000 100011 00 00; +
+													 
+MOM Y,W      : 0000 00 0 01 000000 0000001 100011 00 00; +
+MOM W,Y      : 0000 00 0 10 000000 0000010 100011 00 00; +
+													 
+MOV Ri,Rj    : 0000 00 0 00 000000 0001100 000000 00 00; +
+MOV POi,Rj   : 0000 00 0 00 000000 0001100 000000 00 00; +
+MOV Ri,PIj   : 0000 00 0 00 000000 0001100 000000 00 00; +
+MOV POi,PIj  : 0000 00 0 00 000000 0001100 000000 00 00; +
+MOV Ri,W     : 0001 00 0 00 100010 0001001 000000 00 00; +
+MOV POi,W    : 0001 00 0 00 100010 0001001 000000 00 00; +
+ADW Ri,Rj    : 0101 00 0 00 100010 0111101 000000 00 00; +
+													 
+													 
+MOK W,#K     : 0000 00 1 00 000000 0000010 100010 00 00; +
+ANK W,#K     : 0111 00 1 00 100010 0000011 100010 00 00; +
+ORK W,#K     : 0110 00 1 00 100010 0000011 100010 00 00; +
+ADK W,#K     : 0101 00 1 00 100010 0110011 100010 00 00; +
+MOV W,Rj     : 0000 00 0 00 000000 0000110 100010 00 00; +
+MOV W,PIj    : 0000 00 0 00 000000 0000110 100010 00 00; +
+ANR W,Rj     : 0111 00 0 00 100010 0000111 100010 00 00; +
+ORR W,Rj     : 0110 00 0 00 100010 0000111 100010 00 00; +
+ADR W,Rj     : 0101 00 0 00 100010 0110111 100010 00 00; +
+CPL W        : 0011 00 0 00 100010 0000011 100010 00 00; +
+CLR CY       : 1011 00 0 00 000000 0100000 100011 00 00; +
+SET CY       : 1100 00 0 00 000000 0100000 100011 00 00; +
+LShift		 : 0001	10 0 00 100010 0000011 100010 00 00; +
+RShift		 : 0001 01 0 00 100010 0000011 100010 00 00; +
+
+MOKey        : 0000 00 1 00 000000 0000000 100000 10 00; +
+ENC K        : 0000 00 1 00 100000 0000010 100010 01 01; +
+ENC W        : 0000 00 0 00 100000 0000011 100010 01 01; +
+DENC W		 : 0000 00 0 00 100000 0000011 100010 01 10; +

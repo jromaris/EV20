@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/04/2020 23:18:34"
+// Generated on "06/07/2020 16:35:22"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -48,6 +48,7 @@ wire [10:0] DEC_Jump_PC;
 wire [15:0] DEC_K_VAL;
 wire [6:0] DEC_TYPE;
 wire [1:0] E_out;
+wire [15:0] ENC_DECR;
 wire [1:0] ENC_Out;
 wire [1:0] Enc_Type_Out;
 wire [15:0] FromToW;
@@ -91,6 +92,7 @@ TP2_E5 i1 (
 	.DEC_K_VAL(DEC_K_VAL),
 	.DEC_TYPE(DEC_TYPE),
 	.E_out(E_out),
+	.ENC_DECR(ENC_DECR),
 	.ENC_Out(ENC_Out),
 	.Enc_Type_Out(Enc_Type_Out),
 	.FromToW(FromToW),
