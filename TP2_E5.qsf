@@ -52,6 +52,7 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE RegisterBank.bdf
 set_global_assignment -name BDF_FILE "UC-1.bdf"
 set_global_assignment -name VERILOG_FILE ALU.v
@@ -59,7 +60,6 @@ set_global_assignment -name BDF_FILE TP2_E5.bdf
 set_global_assignment -name QIP_FILE MIR.qip
 set_global_assignment -name BDF_FILE Control_Word_Register.bdf
 set_global_assignment -name BDF_FILE Decode_Unit.bdf
-set_global_assignment -name BDF_FILE Decode_Test.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name BDF_FILE 5B_to_6B.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
@@ -90,9 +90,7 @@ set_global_assignment -name VERILOG_FILE FFD5bits.v
 set_global_assignment -name QIP_FILE PROGRAM_MEM.qip
 set_global_assignment -name VERILOG_FILE PC_counter.v
 set_global_assignment -name BDF_FILE MIR_DECODE.bdf
-set_global_assignment -name BDF_FILE ../../../Desktop/TP2_E5.bdf
 set_global_assignment -name BDF_FILE ../../../Desktop/panchito.bdf
-set_global_assignment -name BDF_FILE ../../../Desktop/debug.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
@@ -134,7 +132,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform33.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform34.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform35.vwf
 set_global_assignment -name QIP_FILE DATA_Mem.qip
-set_global_assignment -name VERILOG_FILE bimux.v
 set_global_assignment -name VERILOG_FILE FFD22bits.v
 set_global_assignment -name BDF_FILE Fetch_Decode_Unit.bdf
 set_global_assignment -name VERILOG_FILE 16bitsNot.v
@@ -155,4 +152,3 @@ set_global_assignment -name BDF_FILE ALU_Block.bdf
 set_global_assignment -name VERILOG_FILE bux_mux_13to1.v
 set_global_assignment -name VERILOG_FILE bus_mux_13to1.v
 set_global_assignment -name VERILOG_FILE mux_13to1.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

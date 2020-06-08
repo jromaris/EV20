@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 240 144)
+	(rect 16 16 240 112)
 	(text "encripter_decripter" (rect 5 0 119 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
+	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -45,13 +45,6 @@ refer to the applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 0 80)
-		(input)
-		(text "clock" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
-		(text "clock" (rect 21 75 50 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
 		(pt 224 32)
 		(output)
 		(text "OUTPUT[15..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
@@ -66,6 +59,6 @@ refer to the applicable agreement for further details.
 		(line (pt 224 48)(pt 208 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 208 112))
+		(rectangle (rect 16 16 208 80))
 	)
 )

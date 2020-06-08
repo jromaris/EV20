@@ -15,7 +15,7 @@ DATA_RADIX = BIN;             -- Las palabras las escribo en binario
 CONTENT                       -- start of (address : data pairs)
 BEGIN
 
--- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus 
+-- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus - 2bits Encrypt Type - 2bits Encrypt
 -- MOK W,#K (cargo un 8000 en W)
 000 : 1000001111000000000000;                -- memory address : data
 -- BSR
@@ -44,6 +44,12 @@ BEGIN
 030 : 1000000001000000000000;
 -- MOV Ri,W
 031 : 0010010000001000000000;
+-- CPL
+032 : 1010000000000000000000;
+-- ORR
+033 : 1001100000000000001000;
+-- RET
+034 : 0101010000000000000000;
 -- NOP
 [035..7FF] :0000000000000000000000;
 END;
