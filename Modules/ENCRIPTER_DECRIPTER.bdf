@@ -21,7 +21,23 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -864 128 -696 144)
+	(rect 1304 240 1496 256)
+	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
+	(text "ENCRIPT_DECRIPT" (rect 5 0 95 17)(font "Intel Clear" ))
+	(pt 192 8)
+	(drawing
+		(line (pt 108 12)(pt 133 12))
+		(line (pt 108 4)(pt 133 4))
+		(line (pt 137 8)(pt 192 8))
+		(line (pt 108 12)(pt 108 4))
+		(line (pt 133 4)(pt 137 8))
+		(line (pt 133 12)(pt 137 8))
+	)
+	(text "VCC" (rect 152 7 172 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -792 128 -624 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "KEY[15..0]" (rect 5 0 59 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,25 +53,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -832 224 -664 240)
+	(rect -792 224 -624 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "INPUT[15..0]" (rect 5 0 69 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 1256 288 1424 304)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ENC[1 .. 0]" (rect 5 0 53 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -72,22 +72,6 @@ refer to the applicable agreement for further details.
 	(rect 1584 160 1760 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "OUTPUT[15..0]" (rect 90 0 165 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 1656 376 1832 392)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ENC_SEL" (rect 90 0 139 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -451,39 +435,6 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 152 80))
-	)
-)
-(symbol
-	(rect 1576 360 1640 408)
-	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst13" (rect 3 37 31 54)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 15 32))
-	)
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 15 16))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 48 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 36)(pt 25 36))
-		(line (pt 14 13)(pt 25 13))
-		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
-		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
-		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
 (connector
@@ -892,6 +843,26 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt -488 232)
+	(pt -624 232)
+	(bus)
+)
+(connector
+	(pt -488 120)
+	(pt -488 232)
+	(bus)
+)
+(connector
+	(pt -488 232)
+	(pt -488 344)
+	(bus)
+)
+(connector
+	(pt -328 136)
+	(pt -360 136)
+	(bus)
+)
+(connector
 	(pt -360 328)
 	(pt -336 328)
 )
@@ -905,8 +876,29 @@ refer to the applicable agreement for further details.
 	(pt -336 360)
 )
 (connector
+	(text "KEY[0]" (rect -376 288 -359 321)(font "Intel Clear" )(vertical))
+	(pt -360 136)
+	(pt -360 328)
+)
+(connector
+	(text "KEY[1]" (rect -400 320 -383 353)(font "Intel Clear" )(vertical))
+	(pt -384 136)
+	(pt -384 360)
+)
+(connector
 	(pt -440 136)
 	(pt -440 472)
+	(bus)
+)
+(connector
+	(text "KEY[15..0]" (rect -622 120 -573 137)(font "Intel Clear" ))
+	(pt -384 136)
+	(pt -440 136)
+	(bus)
+)
+(connector
+	(pt -440 136)
+	(pt -624 136)
 	(bus)
 )
 (connector
@@ -959,6 +951,10 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 1496 208)
+	(pt 1496 248)
+)
+(connector
 	(pt 928 344)
 	(pt 928 104)
 )
@@ -975,6 +971,16 @@ refer to the applicable agreement for further details.
 	(pt 1232 72)
 	(pt 1160 72)
 	(bus)
+)
+(connector
+	(text "KEY[0]" (rect 914 56 947 73)(font "Intel Clear" ))
+	(pt 896 72)
+	(pt 992 72)
+)
+(connector
+	(text "KEY[1]" (rect 946 88 979 105)(font "Intel Clear" ))
+	(pt 928 104)
+	(pt 992 104)
 )
 (connector
 	(text "XORVAL[5]" (rect 56 157 73 212)(font "Intel Clear" )(vertical))
@@ -1678,106 +1684,6 @@ refer to the applicable agreement for further details.
 	(pt 736 144)
 	(bus)
 )
-(connector
-	(pt 1424 296)
-	(pt 1432 296)
-	(bus)
-)
-(connector
-	(pt 1432 280)
-	(pt 1432 296)
-)
-(connector
-	(pt 1432 328)
-	(pt 1432 296)
-	(bus)
-)
-(connector
-	(pt -440 136)
-	(pt -384 136)
-	(bus)
-)
-(connector
-	(pt -488 232)
-	(pt -664 232)
-	(bus)
-)
-(connector
-	(pt -488 120)
-	(pt -488 232)
-	(bus)
-)
-(connector
-	(pt -488 232)
-	(pt -488 344)
-	(bus)
-)
-(connector
-	(text "KEY[15 ..0]" (rect -510 120 -459 137)(font "Intel Clear" ))
-	(pt -696 136)
-	(pt -440 136)
-	(bus)
-)
-(connector
-	(text "KEY[15 .. 0]" (rect -360 120 -306 137)(font "Intel Clear" ))
-	(pt -328 136)
-	(pt -360 136)
-	(bus)
-)
-(connector
-	(text "KEY[0]" (rect -376 288 -359 321)(font "Intel Clear" )(vertical))
-	(pt -360 136)
-	(pt -360 328)
-)
-(connector
-	(text "KEY[1]" (rect -400 320 -383 353)(font "Intel Clear" )(vertical))
-	(pt -384 136)
-	(pt -384 360)
-)
-(connector
-	(text "KEY[0]" (rect 914 56 947 73)(font "Intel Clear" ))
-	(pt 896 72)
-	(pt 992 72)
-)
-(connector
-	(text "KEY[1]" (rect 946 88 979 105)(font "Intel Clear" ))
-	(pt 928 104)
-	(pt 992 104)
-)
-(connector
-	(pt 1496 208)
-	(pt 1496 280)
-)
-(connector
-	(pt 1456 376)
-	(pt 1576 376)
-)
-(connector
-	(pt 1456 280)
-	(pt 1456 376)
-)
-(connector
-	(pt 1432 392)
-	(pt 1576 392)
-)
-(connector
-	(text "ENC[0]" (rect 1416 394 1433 427)(font "Intel Clear" )(vertical))
-	(pt 1432 328)
-	(pt 1432 392)
-)
-(connector
-	(pt 1432 280)
-	(pt 1456 280)
-)
-(connector
-	(text "ENC[1]" (rect 1442 264 1475 281)(font "Intel Clear" ))
-	(pt 1456 280)
-	(pt 1496 280)
-)
-(connector
-	(pt 1640 384)
-	(pt 1656 384)
-)
 (junction (pt 72 120))
 (junction (pt -16 264))
 (junction (pt -16 328))
@@ -1850,8 +1756,10 @@ refer to the applicable agreement for further details.
 (junction (pt 736 144))
 (junction (pt 104 264))
 (junction (pt 112 392))
+(junction (pt -488 232))
 (junction (pt -360 136))
 (junction (pt -384 136))
+(junction (pt -440 136))
 (junction (pt 928 344))
 (junction (pt 928 360))
 (junction (pt 72 216))
@@ -1910,7 +1818,3 @@ refer to the applicable agreement for further details.
 (junction (pt 864 328))
 (junction (pt 848 328))
 (junction (pt 848 392))
-(junction (pt -440 136))
-(junction (pt 1432 296))
-(junction (pt 1456 280))
-(junction (pt -488 232))
