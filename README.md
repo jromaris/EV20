@@ -1,1 +1,1 @@
-# EV20: RISC- pipelined processor with Encryption/Decryption module
+# EV20: RISC- Pipelined processor with Encryption/Decryption module
