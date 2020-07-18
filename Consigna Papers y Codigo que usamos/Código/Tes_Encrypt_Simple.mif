@@ -1,0 +1,27 @@
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+                                    
+
+-- single-line comment
+
+ 
+
+DEPTH = 2048;                  -- Tengo 2048 direcciones de memoria
+WIDTH = 22;                   -- Tamaño de palabra en bits es 32
+ADDRESS_RADIX = HEX;          -- Las direcciones las escribo en Hexadecimal
+DATA_RADIX = BIN;             -- Las palabras las escribo en binario
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+ 
+-- 4bits ALU - 2bits Shift - 1bit Kmx - 1bit MR - 1bit MW - 6bits B bus - 7bits Type - 6bits C bus - 2bits Encrypt Type - 2bits Encrypt
+-- MOKey
+000 : 1010110000000000001111;
+-- ENC K
+001 : 1011001111111100000000;
+-- DENC W
+002 : 1011100000000000100010;
+-- SET CY
+[003..7FF] :1010100000000000000000;
+END;

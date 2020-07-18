@@ -1,0 +1,10 @@
+//Flip Flop de 3 bits
+module RisingEdge_DFlipFlop(D,clk,Q);
+input [2:0] in; // Data input 
+input clk; // clock input 
+output [2:0] out; // output Q 
+always @(posedge clk) 
+begin
+ Q <= D; 
+end 
+endmodule 

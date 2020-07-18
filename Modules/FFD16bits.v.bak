@@ -1,0 +1,11 @@
+//Flip Flop de 16 bits
+module RisingEdge_DFlipFlop(in,clk,out);
+input [15:0] in; // Data input 
+input clk; // clock input 
+output [15:0] out; // output Q 
+reg [15:0] out;
+always @(posedge clk) 
+begin
+ out = in; 
+end 
+endmodule 
